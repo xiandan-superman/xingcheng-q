@@ -175,9 +175,12 @@ export function arcRender(seed: ArcSeed, t: number, scale: number, id: string, o
 /* ---------------------------------------------------------------- anneaux */
 
 const RING_RNG = createRng(0xa11ce)
+/** Quatre familles seulement : marque, lumiere, contraste froid, profondeur. */
+const RING_HUES = [18, 46, 192, 268] as const
 
 /**
- * Quatre anneaux lisibles, assez lents pour que le corps et les yeux restent le sujet.
+ * Quatre anneaux lisibles, chacun dans une famille chromatique stable. Ils
+ * retrouvent la richesse du Bloub d'origine sans refaire un arc-en-ciel continu.
  */
 export const RINGS: ArcSeed[] = Array.from({ length: 4 }, (_, i) => ({
   a: 1.3 + RING_RNG() * 0.1,
@@ -186,8 +189,8 @@ export const RINGS: ArcSeed[] = Array.from({ length: 4 }, (_, i) => ({
   speed: 1.8 + RING_RNG() * 0.35,
   phase: RING_RNG() * TAU,
   sweep: 0.6 + RING_RNG() * 0.25,
-  hue: 8 + i * 6 + RING_RNG() * 3,
-  hueSpan: 7 + RING_RNG() * 5,
+  hue: RING_HUES[i]!,
+  hueSpan: 7 + RING_RNG() * 3,
   width: 0.05 + RING_RNG() * 0.012,
   cx: 0,
   cy: 0.1
