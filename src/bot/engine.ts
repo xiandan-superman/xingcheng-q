@@ -1,4 +1,4 @@
-import { arcRender, type ArcRender, type DotRender } from './decor'
+import { arcRender, type ArcRender, type DotRender, type StarRender } from './decor'
 import { blendExpression, type BotExpression } from './expressions'
 import { decalageDesYeux } from './eyefit'
 import { blinkScale, eyePoses, liveliness } from './face'
@@ -33,6 +33,7 @@ export interface BotFrame {
   arcs: ArcRender[]
   notif: { x: number; y: number; r: number } | null
   notch: { x: number; y: number; r: number } | null
+  star: StarRender | null
 }
 
 /**
@@ -96,6 +97,20 @@ const lerpEye = (a: Pose['eyes'][number], b: Pose['eyes'][number], t: number) =>
 /** Interpolation de deux poses. Le decor se croise en opacite, pas en geometrie. */
 function blendPose(a: Pose, b: Pose, t: number): Pose {
   const out = 1 - t
+  const star =
+    a.star && b.star
+      ? {
+          x: lerp(a.star.x, b.star.x, t),
+          y: lerp(a.star.y, b.star.y, t),
+          s: lerp(a.star.s, b.star.s, t),
+          o: lerp(a.star.o, b.star.o, t),
+          rot: lerp(a.star.rot ?? 0, b.star.rot ?? 0, t)
+        }
+      : a.star
+        ? { ...a.star, o: a.star.o * out }
+        : b.star
+          ? { ...b.star, o: b.star.o * t }
+          : null
   return {
     sil: blend(a.sil, b.sil, t),
     offX: lerp(a.offX, b.offX, t),
@@ -119,6 +134,7 @@ function blendPose(a: Pose, b: Pose, t: number): Pose {
     ],
     // la pastille appartient a un seul des deux etats, elle ne se melange pas
     notif: t < 0.5 ? a.notif : b.notif,
+    star,
     dotsBehind: t < 0.5 ? a.dotsBehind : b.dotsBehind
   }
 }
@@ -549,6 +565,9 @@ export class BotEngine {
     const ny = pose.notif ? (pose.notif.y * nFit + offY) * R : 0
     const notif = pose.notif ? { x: nx, y: ny, r: pose.notif.r * R } : null
     const notch = pose.notif ? { x: nx, y: ny, r: pose.notif.notch * R } : null
+    const star = pose.star
+      ? { ...pose.star, x: (pose.star.x + offX) * R, y: (pose.star.y + offY) * R }
+      : null
 
     return {
       bodyPath,
@@ -562,7 +581,8 @@ export class BotEngine {
         .filter((a) => a.opacity > 0.01)
         .map((a) => arcRender(a.seed, a.t, R, a.id, a.opacity)),
       notif,
-      notch
+      notch,
+      star
     }
   }
 }

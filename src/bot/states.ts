@@ -11,17 +11,17 @@ import {
   NOTIF_R,
   RINGS,
   SWOOSH,
-  STAR_SPARK,
+  STAR_DEFAULT,
   particles,
   type ArcSpec,
-  type DotRender
+  type DotRender,
+  type StarRender
 } from './decor'
 import { EYE_H, EYE_SPLIT, EYE_W, REST_GAZE, type HeadGaze } from './face'
 import { TAU, clamp, easings } from './math'
 import {
   circle,
   hullOfCircles,
-  polyPath,
   profileFromPolygon,
   silhouette,
   type Silhouette
@@ -62,6 +62,8 @@ export interface Pose {
   dots: DotRender[]
   arcs: ArcSpec[]
   notif: { x: number; y: number; r: number; notch: number } | null
+  /** Signature de marque : attachee au corps ou integree au symbole de l'etat. */
+  star: StarRender | null
   /** true = le decor passe derriere le corps (particules de l'eclatement) */
   dotsBehind: boolean
 }
@@ -84,6 +86,7 @@ function base(over: Partial<Pose> = {}): Pose {
     dots: [],
     arcs: [],
     notif: null,
+    star: { ...STAR_DEFAULT },
     dotsBehind: false,
     ...over
   }
@@ -108,13 +111,6 @@ const barItalic = (pose: Partial<Silhouette> = {}): Silhouette => ({
   sy: 1,
   ...pose
 })
-
-/**
- * Le point du "!" penche n'est pas un disque : c'est une goutte, bout rond
- * (r 0.118) du cote de la barre et pointe effilee a l'oppose, longueur 0.300
- * dans l'axe du glyphe. Centree sur le barycentre du bout rond.
- */
-const TEAR = polyPath(hullOfCircles(0, 0, 0.118, 0, 0.172, 0.012))
 
 /**
  * Le triangle ne tourne pas sur lui-meme : son centre decrit un cercle de
@@ -209,18 +205,20 @@ export const STATES: StateDef[] = [
     blinkIn: true,
     pose: (t) => {
       const squash = Math.sin(clamp(t / 0.22) * Math.PI)
+      const sx = 1 + squash * 0.12
+      const sy = 1 - squash * 0.1
       return base({
         // Le personnage reste reconnaissable ; la reflexion devient un accessoire.
-        sil: circle(0.62, { sx: 1 + squash * 0.12, sy: 1 - squash * 0.1, cy: 0.16 }),
+        sil: circle(0.62, { sx, sy, cy: 0.16 }),
         gaze: { yaw: 13, pitch: 18, roll: -13 },
         eyes: pair(0.2, 0.34),
+        star: { x: -0.62 * 0.62 * sx, y: -0.39 * 0.62 * sy + 0.16, s: 0.62, o: 0.58 },
         dots: [0, 1, 2].map((i) => {
           const k = dotPulse(t, i)
           return {
             x: 0.28 + i * 0.24,
             y: -0.52 - i * 0.12,
             r: DOT_R * 0.55 * (1 + (DOT_PEAK - 1) * k),
-            ...(i === 1 ? { d: STAR_SPARK, color: '#ffd36a' } : {}),
             opacity: 0.55 + 0.45 * k
           }
         })
@@ -284,17 +282,15 @@ export const STATES: StateDef[] = [
       return base({
         sil: barItalic({ rot: tilt, cx: x, cy: -0.325 - buzz }),
         eyeAlpha: 0,
-        dots: [
-          {
-            // le point suit l'axe du glyphe, a 0.580 du centre de la barre
-            x: x - Math.sin(tilt) * 0.58,
-            y: -0.325 + Math.cos(tilt) * 0.58 + buzz * 2.8,
-            r: 0.118,
-            d: TEAR,
-            rot: (tilt * 180) / Math.PI,
-            opacity: 1
-          }
-        ]
+        dots: [],
+        // Le point du « ! » devient la signature : aucune seconde etoile volante.
+        star: {
+          x: x - Math.sin(tilt) * 0.58,
+          y: -0.325 + Math.cos(tilt) * 0.58 + buzz * 2.8,
+          s: 0.72,
+          o: 0.9,
+          rot: (tilt * 180) / Math.PI
+        }
       })
     }
   },
@@ -353,15 +349,9 @@ export const STATES: StateDef[] = [
             rot: 8,
             color: '#f04424',
             opacity: pop
-          },
-          {
-            x: 0.6,
-            y: -1.1 - (1 - pop) * 0.25,
-            r: 0.065,
-            color: '#f04424',
-            opacity: pop
           }
-        ]
+        ],
+        star: { x: 0.6, y: -1.1 - (1 - pop) * 0.25, s: 0.65, o: pop * 0.9, rot: 8 }
       })
     }
   },
@@ -381,6 +371,12 @@ export const STATES: StateDef[] = [
         gaze: { yaw: 5, pitch: -5, roll: -8 },
         split: 16,
         eyes: pair(0.31, 0.07),
+        star: {
+          x: -0.62,
+          y: -0.39 * (1 + breath * 0.01) + 0.035 + breath * 0.065,
+          s: 0.68,
+          o: 0.34
+        },
         dots: [
           {
             x: 0.57,
@@ -405,6 +401,7 @@ export const STATES: StateDef[] = [
     pose: () =>
       base({
         sil: silhouette('egg'),
+        star: { ...STAR_DEFAULT, s: 0.85 },
         gaze: { yaw: 19.97, pitch: 26.01, roll: -17.1 },
         // les yeux se resserrent comme le corps
         split: 11.07,
@@ -422,6 +419,7 @@ export const STATES: StateDef[] = [
     pose: () =>
       base({
         sil: silhouette('hexagon'),
+        star: { ...STAR_DEFAULT, s: 0.85 },
         gaze: { yaw: 23.11, pitch: 24.42, roll: -13.3 },
         split: 13.37,
         eyes: pair(0.177, 0.411)
@@ -440,6 +438,7 @@ export const STATES: StateDef[] = [
       const fade = clamp(t / 0.35) * clamp((2.2 - t) / 0.5)
       return base({
         sil: spinningTriangle(0),
+        star: { x: -0.18, y: -0.22, s: 0.85, o: 0.58 },
         gaze: { yaw: 12, pitch: -8, roll: -6 },
         split: 15,
         eyes: pair(0.18, 0.34),
@@ -476,17 +475,7 @@ export const STATES: StateDef[] = [
           roll: -13
         },
         eyes: pair(0.19, 0.4),
-        dots: [
-          {
-            x: Math.cos(t * 2.2) * 1.18,
-            y: 0.1 + Math.sin(t * 2.2) * 0.34,
-            r: 0.075,
-            d: STAR_SPARK,
-            rot: t * 80,
-            color: '#ffd36a',
-            opacity: fade
-          }
-        ],
+        dots: [],
         arcs: RINGS.map((s, i) => ({
           id: `rg${i}`,
           seed: s,
@@ -554,9 +543,16 @@ export const STATES: StateDef[] = [
     blinkIn: false,
     pose: (t) => {
       const hit = Math.sin(clamp(t / 0.55) * Math.PI)
+      const bodyScale = 1 + hit * 0.1
       const ring = clamp((t - 0.08) / 0.55) * clamp((0.9 - t) / 0.25)
       return base({
-        sil: circle(1 + hit * 0.1),
+        sil: circle(bodyScale),
+        star: {
+          x: STAR_DEFAULT.x * bodyScale,
+          y: STAR_DEFAULT.y * bodyScale,
+          s: bodyScale,
+          o: STAR_DEFAULT.o
+        },
         eyeAlpha: 1 - hit * 0.7,
         dots: particles(t, 1),
         arcs: ring > 0.01 ? [{ id: 'burst-ring', seed: { ...BURST_RING, a: 0.85 + ring * 0.7 }, t: 0, opacity: ring }] : [],
@@ -584,7 +580,9 @@ export const STATES: StateDef[] = [
       return base({
         sil: circle(COMET_DOT * 1.15, { cx: x, cy: y }),
         eyeAlpha: 0,
-        dots: [{ x, y, r: 0.095, d: STAR_SPARK, rot: travel * 180, color: '#ffd36a', opacity: fade }],
+        dots: [],
+        // La signature reste au centre du noyau et voyage avec lui.
+        star: { x, y, s: 0.55, o: fade * 0.78, rot: 0 },
         arcs: COMET_RIBBONS.map((s, i) => ({
           id: `cm${i}`,
           seed: { ...s, cx: x - 0.28, cy: y + 0.04 },

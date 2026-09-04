@@ -294,5 +294,7 @@ def manifest():
     (PACK/'manifest.json').write_text(json.dumps({'version':'2.0.0','source':'Bloub engine','files':files},ensure_ascii=False,indent=2),encoding='utf-8')
 
 if __name__=='__main__':
-    ensure_dirs(); copy_engine_assets(); extract_peaks(); semantic_overview(); standard_assets(); sticker_pack(); scene_actions(); core_motion(); make_share_assets(); guidelines_visual(); manifest()
+    ensure_dirs(); copy_engine_assets(); extract_peaks(); semantic_overview(); standard_assets(); sticker_pack(); scene_actions(); core_motion(); make_share_assets(); guidelines_visual()
+    subprocess.run(['python3', str(ROOT / 'scripts/write_brand_docs.py')], check=True)
+    manifest()
     print(f'Built {len(list(PACK.rglob("*")))} entries in {PACK}')

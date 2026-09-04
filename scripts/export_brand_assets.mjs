@@ -29,6 +29,11 @@ const samples = [
   ['waiting-access', [['idle', 3.2]]]
 ]
 
+const only = process.argv.find((arg) => arg.startsWith('--only='))
+  ?.slice('--only='.length)
+  .split(',')
+  .filter(Boolean)
+
 const emotions = [
   ['calm', 'neutre'], ['focus', 'attentif'], ['curious', 'curieux'],
   ['happy', 'heureux'], ['excited', 'excite'], ['laughing', 'hilare'],
@@ -88,7 +93,8 @@ try {
 
   if (process.argv.includes('--small-only')) process.exitCode = 0
 
-  for (const [id, raw] of process.argv.includes('--small-only') ? [] : samples) {
+  const selectedSamples = only ? samples.filter(([id]) => only.includes(id)) : samples
+  for (const [id, raw] of process.argv.includes('--small-only') ? [] : selectedSamples) {
     const blocks = raw.map(([state, duration]) => ({ state, duration }))
     const duration = raw.reduce((sum, item) => sum + item[1], 0)
     const dir = mkdtempSync(join(tmpdir(), `xingcheng-${id}-`))

@@ -203,6 +203,38 @@ describe('etats', () => {
     expect(horsSequence).toEqual(['swirl'])
   })
 
+  it('porte la signature quatre pointes dans les 15 etats', () => {
+    for (const state of STATES) {
+      expect(new BotEngine(100, state.id).sample(0.9).star, state.id).not.toBeNull()
+    }
+  })
+
+  it('interpole la signature sans saut pendant un changement d etat', () => {
+    const e = new BotEngine(100, 'idle')
+    const avant = e.sample(1).star!
+    e.setState('thinking', 1)
+    const debut = e.sample(1).star!
+    expect(debut.x).toBeCloseTo(avant.x, 5)
+    expect(debut.y).toBeCloseTo(avant.y, 5)
+
+    const frames = Array.from({ length: 25 }, (_, i) => e.sample(1 + i / 60).star!)
+    for (let i = 1; i < frames.length; i++) {
+      expect(Math.hypot(frames[i]!.x - frames[i - 1]!.x, frames[i]!.y - frames[i - 1]!.y)).toBeLessThan(8)
+    }
+  })
+
+  it('integre la signature au point d exclamation et au noyau de comete', () => {
+    const alert = new BotEngine(100, 'alert').sample(0.8)
+    expect(alert.dots).toHaveLength(0)
+    expect(alert.star!.o).toBeCloseTo(0.9)
+
+    const cometA = new BotEngine(100, 'comet').sample(0.3).star!
+    const cometB = new BotEngine(100, 'comet').sample(1.5).star!
+    expect(cometB.x).toBeGreaterThan(cometA.x)
+    expect(cometA.rot).toBe(0)
+    expect(cometB.rot).toBe(0)
+  })
+
   it('montre le visage sur les etats a visage, le cache sur les autres', () => {
     const avec: StateId[] = ['idle', 'thinking', 'wink', 'wide', 'notify', 'exclaim', 'sleep', 'egg', 'hexagon']
     const sans: StateId[] = ['alert']

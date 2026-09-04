@@ -55,6 +55,22 @@ export interface DotRender {
 }
 
 /**
+ * La signature a quatre pointes de Xingcheng Q. Les coordonnees de pose sont
+ * en rayons de boule ; `s` redimensionne le glyphe de 16 unites du viewBox.
+ */
+export interface StarRender {
+  x: number
+  y: number
+  s: number
+  o: number
+  rot?: number
+}
+
+export const STAR_PATH = 'M0-8C0-3 3 0 8 0C3 0 0 3 0 8C0 3-3 0-8 0C-3 0 0-3 0-8Z'
+
+export const STAR_DEFAULT: StarRender = { x: -0.62, y: -0.39, s: 1, o: 0.58, rot: 0 }
+
+/**
  * Ce qu'un etat declare : la geometrie de l'arc reste en unites de rayon de
  * boule, c'est le moteur (seul a connaitre l'echelle du viewBox) qui la
  * rasterise. Sans ca les etats devraient connaitre le viewBox.

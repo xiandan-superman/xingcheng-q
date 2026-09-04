@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, shallowRef, triggerRef, watch } from 'vue'
-import { NOTIF_BLUE } from '@/bot/decor'
+import { NOTIF_BLUE, STAR_PATH } from '@/bot/decor'
 import { BotEngine, type BotFrame } from '@/bot/engine'
 import { clamp, easings } from '@/bot/math'
 import { t } from '@/i18n'
@@ -110,27 +110,10 @@ const frame = shallowRef<BotFrame>(
 const uid = Math.random().toString(36).slice(2, 8)
 const maskId = `bot-mask-${uid}`
 const brandGradientId = `xingcheng-gradient-${uid}`
-const brandClipId = `xingcheng-clip-${uid}`
 const isXingcheng = computed(() => props.color === 'xingcheng')
 const bodyFill = computed(() => (isXingcheng.value ? `url(#${brandGradientId})` : ink.value))
-const showBrandStar = computed(
-  () => isXingcheng.value && state.value !== 'burst' && state.value !== 'comet'
-)
-const displayTime = computed(() => props.frozenAt ?? elapsed.value)
-const brandStar = computed(() => {
-  if (state.value === 'thinking') return { x: -30, y: -15, scale: 0.85, opacity: 0.72 }
-  if (state.value === 'alert') {
-    const p = clamp(displayTime.value / 1.5)
-    const travel = easings.easeInOutCubic(p) * 0.82 - 0.087
-    const back = displayTime.value > 1.6 ? clamp((displayTime.value - 1.6) / 0.4) : 0
-    const x = (travel * (1 - back) + 0.1 * back) * 100
-    return { x, y: -51, scale: 0.72, opacity: 0.72 }
-  }
-  if (state.value === 'sleep') {
-    return { x: -58, y: -38, scale: 1.12, opacity: 0.58 + Math.sin(displayTime.value * 4.2) * 0.12 }
-  }
-  return { x: -62, y: -39, scale: props.size <= 128 ? 1.35 : 1, opacity: props.size <= 128 ? 0.75 : 0.58 }
-})
+const smallStarScale = props.size <= 128 ? 1.35 : 1
+const smallStarOpacity = props.size <= 128 ? 1.3 : 1
 
 let raf = 0
 let nextAt = Infinity
@@ -540,10 +523,6 @@ function dotAttrs(dot: BotFrame['dots'][number]) {
         <stop offset="1" stop-color="#f04424" />
       </radialGradient>
 
-      <clipPath :id="brandClipId" clipPathUnits="userSpaceOnUse">
-        <path :d="frame.bodyPath" />
-      </clipPath>
-
       <!--
         Les yeux sont de vrais trous perces dans le corps (comme sur x.ai), pas
         des formes blanches posees dessus : ils restent donc automatiquement
@@ -640,17 +619,17 @@ function dotAttrs(dot: BotFrame['dots'][number]) {
         <rect :x="-VB" :y="-VB" :width="VB * 2" :height="VB * 2" :fill="bodyFill" />
       </g>
 
-      <path
-        v-if="showBrandStar"
-        d="M0-8C0-3 3 0 8 0C3 0 0 3 0 8C0 3-3 0-8 0C-3 0 0-3 0-8Z"
-        fill="#ffd08a"
-        :opacity="brandStar.opacity"
-        :transform="`translate(${brandStar.x} ${brandStar.y}) scale(${brandStar.scale})`"
-        :clip-path="`url(#${brandClipId})`"
-        aria-hidden="true"
-      />
-
     </g>
+
+    <!-- La signature appartient a la pose : elle suit le corps et ses morphs. -->
+    <path
+      v-if="isXingcheng && frame.star"
+      :d="STAR_PATH"
+      fill="#ffd08a"
+      :opacity="Math.min(1, frame.star.o * smallStarOpacity)"
+      :transform="`translate(${frame.star.x} ${frame.star.y}) rotate(${frame.star.rot ?? 0}) scale(${frame.star.s * smallStarScale})`"
+      aria-hidden="true"
+    />
 
     <g v-if="!frame.dotsBehind">
       <component

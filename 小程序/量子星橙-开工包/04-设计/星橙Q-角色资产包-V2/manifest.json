@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "01-原引擎14状态板.jpg",
-      "bytes": 285631,
-      "sha256": "36ded2d6392a99f4f230919f7580446400d55abc8be7a0f4786282a2a00201e0"
+      "bytes": 285350,
+      "sha256": "50586a93c36b8f8e1d387290e08052efa8c600bdb814887e0e92b5ad00ca076e"
     },
     {
       "path": "README.md",
@@ -14,603 +14,603 @@
     },
     {
       "path": "assets/core-motion/xingcheng-q-happy-jump.gif",
-      "bytes": 1020805,
-      "sha256": "0c84520f126f9f568b97282b617b535b4c787e5fe5a354d54bdd7fe379b5a1a9"
+      "bytes": 1020714,
+      "sha256": "5af93470efec2c16482a667a25a05d6d9f6a5e4cc7498b7e3c2d481cc5a00229"
     },
     {
       "path": "assets/core-motion/xingcheng-q-happy-jump.mp4",
-      "bytes": 30574,
-      "sha256": "2944671d04045eaafe15e2c520befafbb1e0a7d53320238b72a986bc26e692eb"
+      "bytes": 30397,
+      "sha256": "d72795afefd672b295a9fa4a1b454fda1ac3d7daa7c618380c732f9fb973bc99"
     },
     {
       "path": "assets/core-motion/xingcheng-q-happy-jump.png",
-      "bytes": 30587,
-      "sha256": "c0d705a358b506e1f972cd0b9215abdc6aaf62e1b54916ba962e8ff7cd1e6624"
+      "bytes": 30592,
+      "sha256": "229907c2b37584345340ca18733a742e41e6e0d15975c6f971a30dc8bd3a6732"
     },
     {
       "path": "assets/core-motion/xingcheng-q-idle-blink.gif",
-      "bytes": 269374,
-      "sha256": "269eb4b26566fe44dd1dfe620cf17a513ae948579930668ab2c7170603a01d3e"
+      "bytes": 269870,
+      "sha256": "10e0159f9a95fd3335732a4c1edb40aa28d22155e22fad9af42677e037ac5f9c"
     },
     {
       "path": "assets/core-motion/xingcheng-q-idle-blink.mp4",
-      "bytes": 22617,
-      "sha256": "6547bdc11bb330435cb4642c4803f255b6ea9e908370ff6ca687a553c41e53d3"
+      "bytes": 22892,
+      "sha256": "69d4c7a0190dfcf2a373ea72dbb93f37626e63a37fadb022e2e2900f016520e5"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-calm.png",
-      "bytes": 85818,
-      "sha256": "d8e7c5a5380b44da034b2fadeb97ab755b0859cd2a41eac3a79e99197e4d4e72"
+      "bytes": 85760,
+      "sha256": "87792a41efe5eb4bd23552c6e4f13171466e96dfaaf6a88c3324e6ece0767097"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-confused.png",
-      "bytes": 85447,
-      "sha256": "3dd3dbef027c3a9665283be2cb605f2ec88d4a3ca7bdbc50f47462622f3c9ec0"
+      "bytes": 85384,
+      "sha256": "c3cf688654d775a12c0a54e1700fd7a364505f717ab43ebab7731a2f7c66ec79"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-curious.png",
-      "bytes": 84980,
-      "sha256": "b936cd68d5f51b4b03cb4ee3be6e8715328d4bbc7478b85923a0a48d5129f4df"
+      "bytes": 84921,
+      "sha256": "0a15ff037bfc8c3741f2de92a4bf27bdc5562b5f9a04128d1221a123b5354d7d"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-excited.png",
-      "bytes": 83330,
-      "sha256": "12b9bd6ba434fc406709ab0479a15f0767783609ae58ede921287e5a073d1dfb"
+      "bytes": 83265,
+      "sha256": "93fbcdc6ea7a868fa1c9ec46cc79f18d1ed3e85f61ddb30e4d6b1983245ddde1"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-focus.png",
-      "bytes": 85159,
-      "sha256": "8a05357d73314e15f92b4b6385adf4fa3702799aab5d81a016921382400411f3"
+      "bytes": 85091,
+      "sha256": "6cdf9c32914a9d25f68115ce1b4d7704576180879a69495193da1dc204b0d6a1"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-gentle-reminder.png",
-      "bytes": 83297,
-      "sha256": "9a9db1f2fd6737540abb2ba4abfab18807e58af614ebd9e58c4bb068f64d7bfd"
+      "bytes": 83236,
+      "sha256": "7fbc162e0838ba1c138c734bae99a7394cdfd76f0467c5b43c5330f0839728ae"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-happy.png",
-      "bytes": 85203,
-      "sha256": "25860e5f4dcc5a3a7c64926423e2ca72bd2979ba3e90a3015aea2b4e7f202572"
+      "bytes": 85142,
+      "sha256": "872a162577ee2cd0b68bae1493f2181be0aa6a9e29b6533c2da9631ac9c1c4d4"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-laughing.png",
-      "bytes": 86010,
-      "sha256": "5a88e0709f814bd2450e12daa4a535c162175a41910b1511fb2ad60c24bf4473"
+      "bytes": 85962,
+      "sha256": "51bc24fc90e9e84c6e0a3c335cbe2cbe83b170ac0e573dfe67032d6fbd499805"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-proud.png",
-      "bytes": 84310,
-      "sha256": "7402f2c2fed478bb8f59e571496d35d748bd42b3895b480a91bfcd8c0f88fb5f"
+      "bytes": 84244,
+      "sha256": "a4fb04f2c0677926d75383ac9203e3344a500db65ed9c7227dac8d3e6de992c6"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-sad.png",
-      "bytes": 85102,
-      "sha256": "30a7959fd7d22d7a9a9a85530f4bcdc656110f3de0f82a4bc7062adf794fb3d5"
+      "bytes": 85044,
+      "sha256": "6c9816ee7eaf4ecd2b85dd53ef7ad809e629b07cc2107465f15af3e872716689"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-sleepy.png",
-      "bytes": 84250,
-      "sha256": "e3c1de6b61230a3f1fdb1a16e199f2ca79528a09563ad0060a647717e220db1b"
+      "bytes": 84190,
+      "sha256": "fe527d1033328f792b3a5ec7ef075806741aaadeb925f33763f44733b4c04bd4"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-calm.svg",
-      "bytes": 10352,
-      "sha256": "21456f85a799480fd7dd87abe23f0e3fa4dc9dd8680159a2c57594cdf55e70e8"
+      "bytes": 7891,
+      "sha256": "8209a1bb09c6828f2c6d8bc08ddce457e9ba91d53fe723e0ae9b2aca164f9adb"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-confused.svg",
-      "bytes": 10311,
-      "sha256": "16f5f765b9b7c545b93d01b7d82f5347c27daa991820226f62150cf433428ab5"
+      "bytes": 7850,
+      "sha256": "4dd541e91733834f557d1e10c75738a6fca24749f2f8d10a0e47bfce2e7084b5"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-curious.svg",
-      "bytes": 10288,
-      "sha256": "794492cc6ea83b097f47fd526baf25fd525851ead23029775cd46285741d5190"
+      "bytes": 7827,
+      "sha256": "83bcb3b91fffd06d24e22cd8d1be9c572b4168cc37b9a30db62814011dfbda06"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-excited.svg",
-      "bytes": 10288,
-      "sha256": "a81ad0a1a50a911f5d402bc727153df0a95b2c5f56391dc10a17ead074de37f1"
+      "bytes": 7827,
+      "sha256": "9240e6f1b267818bdd686a93be8d4ac6d7d6e75b0d3b40c3c86a6b89059c3bcc"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-focus.svg",
-      "bytes": 10358,
-      "sha256": "69624ba37102fa37a71afa095cd354c8e4f8bf4e0006b7d99b845fa20fecf0f5"
+      "bytes": 7897,
+      "sha256": "03b06dc8ba224701577147ab6cad31b9c41dd41187ac877ea192575ae81a8359"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-gentle-reminder.svg",
-      "bytes": 10333,
-      "sha256": "0a92865f522832e8b524c295323c655bf0b87d0d4a3a0f519cd9b7fcb5cc1892"
+      "bytes": 7872,
+      "sha256": "7fa31641e063cf5a1116d57ec773bcc3266c6e44bef911da33e019efd96e2293"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-happy.svg",
-      "bytes": 10184,
-      "sha256": "917bd0b6b466526f35e20dd2d6c34896f13cbcc3d9b36143ed5b54fbe2c51b94"
+      "bytes": 7723,
+      "sha256": "edb1f1b5ab92804e0af13087413a0530008269b493ff449c69dbfc46ee25b0b9"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-laughing.svg",
-      "bytes": 10192,
-      "sha256": "6b9f597da57f5cb491108f82f9c74ac759ee0b7fcce1dd928a572ed600cdb438"
+      "bytes": 7731,
+      "sha256": "d72001280f1872d59e8a1a408ee74bcfe39c23eef752da9ff97d60637b895c61"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-proud.svg",
-      "bytes": 10328,
-      "sha256": "383e659b7f0b51cfb988796686c94dca36e9689da250a3858f32c9ea8b941991"
+      "bytes": 7867,
+      "sha256": "f0f062d649634fac5c8f5583bdb434a07b737e09ceb967309481800271dbc49b"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-sad.svg",
-      "bytes": 10294,
-      "sha256": "f2addc47e7850d823e524396ef76343b8e4ad3640036227dd7f47fee4c9747fc"
+      "bytes": 7833,
+      "sha256": "51b9eabcbde089bbc3f3c462ab688e26c97f0600ccf6730eb7f7a31114c7bdb5"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-sleepy.svg",
-      "bytes": 10295,
-      "sha256": "6b3736feeaa7d8415ee0031cb4d4d984c3c282fe1dbf9ac0caabfb38feff667e"
+      "bytes": 7834,
+      "sha256": "b0e7019667f9dd91162db45d6c1609f8eadc1dffdf990a83f4c752a657d00a63"
     },
     {
       "path": "assets/guidelines/主体与配件边界.jpg",
-      "bytes": 137675,
-      "sha256": "73f04adff90ac0d756a243f2844cba3d29c3bb8ecdfb68afe8fcb0069b52eb8c"
+      "bytes": 137740,
+      "sha256": "2fcf22a4f0b00b5eb17f8d8624f286e3635c463ad3d7081911574781008c96d0"
     },
     {
       "path": "assets/posters/xingcheng-q-poster-16x9.jpg",
-      "bytes": 85459,
-      "sha256": "00693b3d9bda10267bcf24e10c26f9d0ebbc07023e885d064ddea12029e68b9b"
+      "bytes": 85433,
+      "sha256": "fafb092f09fcc8a54458f66cc139bca3b15831a57fceb947efa9dd0b3a11694e"
     },
     {
       "path": "assets/posters/xingcheng-q-poster-1x1.jpg",
-      "bytes": 93012,
-      "sha256": "77197a993d5e685c02ed98cb8362b830013839c18a8a12728aa33c1068b06616"
+      "bytes": 93042,
+      "sha256": "f2272893ad5c50a0081f54cff3a2da2049d6e94b60153304465769dc41bf5359"
     },
     {
       "path": "assets/posters/xingcheng-q-poster-3x4.jpg",
-      "bytes": 100996,
-      "sha256": "ad97c01a153038796249e587bceff067b3f5d6aabfb577f2bcdacfe413460f95"
+      "bytes": 100968,
+      "sha256": "38cb22056141743c5ae1f1525cda2940df054f6e516de71701d7bbaf988847b0"
     },
     {
       "path": "assets/posters/xingcheng-q-poster-9x16.jpg",
-      "bytes": 103701,
-      "sha256": "3d97bf2ac47359790fe51677dc93f95f9b0fe779a7aad08823535024dd8ed684"
+      "bytes": 103700,
+      "sha256": "557f4a40f6ce9383cde6e5d461a15b1fc09b85345669c7ebf4cabd43b8a664d3"
     },
     {
       "path": "assets/scene-actions/00-场景动作总览.jpg",
-      "bytes": 68363,
-      "sha256": "e0c156afc594f6bdb0d5cc667cc35ba54d26fe9cf63b03d343ccafeb50f10ad9"
+      "bytes": 68374,
+      "sha256": "9a2e32a6c33d679d0de042c09cae361492d58993a3459033c1752724ce68e7fe"
     },
     {
       "path": "assets/scene-actions/xingcheng-q-answer-writing.gif",
-      "bytes": 575403,
-      "sha256": "eb75f57d78d974848280ec2a98b6adec9675802e01568fd3f66d069bef7cc6bd"
+      "bytes": 576172,
+      "sha256": "1a35cbbd41ca49e762493e9c246ed53b2a6bdee44f28607fac522c7415ce9ad0"
     },
     {
       "path": "assets/scene-actions/xingcheng-q-answer-writing.png",
-      "bytes": 38379,
-      "sha256": "2f3fb0fd59a8abf54c2ce0eead9fe59409a0783b12a4df6ba78b88a2e7b9e045"
+      "bytes": 38376,
+      "sha256": "ab77111ff67b815307ce963dc7f0d253c948289ddfe57a3b1b6b837f5f64a962"
     },
     {
       "path": "assets/scene-actions/xingcheng-q-present-result.gif",
-      "bytes": 296452,
-      "sha256": "1bd7a97445afc28a8efa5b37ce35a8c2372d75d00b5a38b5be96c6c770cfd775"
+      "bytes": 295299,
+      "sha256": "ab20abd751d5b8e96017d3809e3e6c7e863073eca5e3d95c846540bdde258962"
     },
     {
       "path": "assets/scene-actions/xingcheng-q-present-result.png",
-      "bytes": 34321,
-      "sha256": "86d66d2ada6c7230f3bed04a55f11753a28f5c86279fdcc0f9fad04a6ffd87ae"
+      "bytes": 34300,
+      "sha256": "81fca5805b484635cf3d4b255cf54de28923507f3d2a84ca4a9147fe386812b5"
     },
     {
       "path": "assets/scene-actions/xingcheng-q-wave-invite.gif",
-      "bytes": 1000941,
-      "sha256": "bd37e1e4ad2f28ee45f5cbc2369ba09c028a744a68f083c0a3184ce3dc41fa9c"
+      "bytes": 1001091,
+      "sha256": "8e6099daf5051b08fa7cea5250c2eb147b9ac6a7ffe95732e95e8070aee06c2a"
     },
     {
       "path": "assets/scene-actions/xingcheng-q-wave-invite.png",
-      "bytes": 36932,
-      "sha256": "34b6555fb3ddcb00c2f60f4e32e2565dd15c1c413184683e180c430c1cf66dd7"
+      "bytes": 36869,
+      "sha256": "0f5e79508076a3caf743f107b46fbfbacbccffa5f4f6b52e2015179f4216b273"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-attention.gif",
-      "bytes": 328217,
-      "sha256": "c8a538d5b191cc6554aadc6c13fec45a63aa4af56045128c62a13ca87f96a44e"
+      "bytes": 300940,
+      "sha256": "ae9a4d26f619daf118e0b60d1ecaf818075eed495e032163cec362b0ca56c8c6"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-correct.gif",
-      "bytes": 279006,
-      "sha256": "11e883ac5f8b8263b8fdcd283b6cd0b6270dd5e5fa8e46b668541d18e51298c7"
+      "bytes": 276196,
+      "sha256": "97d548c687adc041f0d36dda32b575d0ce7ee36a3a6432d94c1122d83fcd8ab3"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-daily-complete.gif",
-      "bytes": 1902848,
-      "sha256": "4d7f09cc048d29657812de03fbe0fe7437a6b8c59487bfe4c009d6713d19086d"
+      "bytes": 1869131,
+      "sha256": "2d76fd2e56925c0f1185ed38910c0d5456355121fc1d0d9d2d821f34536ba403"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-empty.gif",
-      "bytes": 568498,
-      "sha256": "e1f2c642cc4b6c4a9c74deac4433247ca3b28bc703ac00eddfa1d5b226935dbb"
+      "bytes": 572002,
+      "sha256": "03dfbc767f38fdfe7aafedda41e9773715b8097ceafbf1430280f5c66fbfb664"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-invite.gif",
-      "bytes": 460243,
-      "sha256": "1d7c0eebc92db1da2736524928d55895407dfb149f7e6a6c6f7c447d182a22b5"
+      "bytes": 469446,
+      "sha256": "d9e65d7a1ad3983e328ad3afbf545a3f9584e4515d225137dc15fc030b1baaff"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-loading.gif",
-      "bytes": 341029,
-      "sha256": "6d4be2dcc2181c6f7ef4fa84dad692e7192ca065f56028f175146af59cd3304e"
+      "bytes": 351257,
+      "sha256": "05409f102d8cbdeb0c56715ba6ff6ce8219846d11db58a8524eb68462d5469ba"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-milestone.gif",
-      "bytes": 1628807,
-      "sha256": "5297b3b93babf3266a96e4a071941849f67e26814e50befdfe174fe84223cc0b"
+      "bytes": 1585892,
+      "sha256": "6f0132a00116c25092506a58f3ca77061c85b1595470e70757cd134fe9a5f6f0"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-needs-review.gif",
-      "bytes": 521408,
-      "sha256": "b766cf580c1331e355f5fba88c89c0a7f625ba0124c513159be1e033c60a7272"
+      "bytes": 535476,
+      "sha256": "64a0fc7cc22e36e8ac5cd2a95ae993c8b5b8851b2759a79f7287f889cee1b27f"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-notification.gif",
-      "bytes": 377483,
-      "sha256": "35a69c11f12561ee3f2e5c6bbc94007f25d0537d141de7b791e15d59e1420a45"
+      "bytes": 372300,
+      "sha256": "eaec112f0e073d77add61fdfae537479bf4a6407d7e14e994921f71757395fc8"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-offline.gif",
-      "bytes": 578825,
-      "sha256": "b651970abe6f49f4c09ec131920a0f0bcb38b5efb967725fa9a8f0df46cdf464"
+      "bytes": 593935,
+      "sha256": "666e443682f4b8580c082ed9ff29dd361011afb6ac8f238d03baba5248e2b3cf"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-rest.gif",
-      "bytes": 269374,
-      "sha256": "269eb4b26566fe44dd1dfe620cf17a513ae948579930668ab2c7170603a01d3e"
+      "bytes": 269870,
+      "sha256": "10e0159f9a95fd3335732a4c1edb40aa28d22155e22fad9af42677e037ac5f9c"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-submitting.gif",
-      "bytes": 471144,
-      "sha256": "275f8570ce50e6204a4db158c51502c82dbe53bb756ce29a51cf4ed347e3db67"
+      "bytes": 489303,
+      "sha256": "9f35528556d38e04d49b2fd2e352e32b653da4a8e9c825ce8a7974aba77e1e33"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-transition.gif",
-      "bytes": 358194,
-      "sha256": "00acd98370adbcdb4c47707b916cffdc5512a00b097ad248bb0973335578cf78"
+      "bytes": 361421,
+      "sha256": "5e196306acc2e6896c558e375bf9c72bdefd0d534ec7a43e1201b42659708aa8"
     },
     {
       "path": "assets/semantic/gif/xingcheng-q-waiting-access.gif",
-      "bytes": 292707,
-      "sha256": "cbac4311e782b539494887ea587f44ba8ad9764f65cb560ad6e321b6d334c541"
+      "bytes": 294095,
+      "sha256": "5dfdd3b93ada23d11c9cbc735d747db5d1d3c883e072ae10f2aec4cf7ed76c0e"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-attention.mp4",
-      "bytes": 31300,
-      "sha256": "174d7fa2f3985384cb44c894245cfeeb5c23f0663120afc4d632a2c0fe307f59"
+      "bytes": 29130,
+      "sha256": "ecfd84f4e9a60ac65e68035df409a7901dc4ce982b1928eda5a9c4a0b07e2604"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-correct.mp4",
-      "bytes": 23827,
-      "sha256": "f26901201ab0eee0a83c8358bfbdc0bf5ee8156c3a1b0532f103fb88919ce345"
+      "bytes": 23516,
+      "sha256": "1c1a076877bdd5670a46d2eb47c200960cf2f4ef275ac5f5c3c2657784d5e0df"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-daily-complete.mp4",
-      "bytes": 189975,
-      "sha256": "b0c35b62bf5892183f7217e9caefde6748e732dc92c1690e41821cac1139c509"
+      "bytes": 185310,
+      "sha256": "7634b07cb85abee8be366b886f47d25d2cce6a6c99a8963acde1b85515a4558b"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-empty.mp4",
-      "bytes": 38422,
-      "sha256": "b5bb4dc6e326dd1724f48cc68fab30bdcd00fd8dcc1f7ec6554cd319d589582a"
+      "bytes": 38355,
+      "sha256": "657ebf91e1149139c0a5f62f278f18103244fa52d36afc755133960c72c3c126"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-invite.mp4",
-      "bytes": 35552,
-      "sha256": "701b03d6bf798f447bfd2fb94443dc271e250d34e234df7de46554af3a3e9ad1"
+      "bytes": 35938,
+      "sha256": "442a71ffd3b3a2a6f3cc8719cadf395fb45105b238112d69c58c8480c2391def"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-loading.mp4",
-      "bytes": 34483,
-      "sha256": "ac9f4568925e3935b11b407685ea47ec62b1e4120d4d42d2575468bf416cdec5"
+      "bytes": 35503,
+      "sha256": "df60c7f4e47d7153e0dc32dcb02aff06c0b89605d7f7478e7ab01452bd4249d3"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-milestone.mp4",
-      "bytes": 153671,
-      "sha256": "3012d7c86e40461cdbfa0ade8358aee8c422def9827e91eb6d7b7fe29c98ae52"
+      "bytes": 147719,
+      "sha256": "cf78c4da932a9679aa90fbcaf10734ba9a1acbab08981ef3fc871019a544d97b"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-needs-review.mp4",
-      "bytes": 48175,
-      "sha256": "7764e039945badb37f2fc8e7b50def26df24075de0db91b2c6e4e1d129b1e6ea"
+      "bytes": 49548,
+      "sha256": "422ba229cfa9e499944c8b47284a43d91d36f7597d71e9ba56fddae98728bd93"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-notification.mp4",
-      "bytes": 33086,
-      "sha256": "3bfdb7b6e1ee4abd2bb7236d58c9a1ad231ae755cbd4b9d038d43732eceb4f39"
+      "bytes": 32931,
+      "sha256": "d515a802c748a94323254edcf4fa328ed5879b664e7b6ed84de368151ab5bac9"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-offline.mp4",
-      "bytes": 55482,
-      "sha256": "0fd18745054d895924a72c02bdf728f64d796a6e568d16e6d346e92813221ae6"
+      "bytes": 56259,
+      "sha256": "02a6bf601281831e2d6ce2685b96062727357288115390f735e54401d2776726"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-rest.mp4",
-      "bytes": 22617,
-      "sha256": "6547bdc11bb330435cb4642c4803f255b6ea9e908370ff6ca687a553c41e53d3"
+      "bytes": 22892,
+      "sha256": "69d4c7a0190dfcf2a373ea72dbb93f37626e63a37fadb022e2e2900f016520e5"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-submitting.mp4",
-      "bytes": 48268,
-      "sha256": "f7c82d5e12c08aea37bd5f6ea103d249902eb538b8b46610638f9e25a45ed9e3"
+      "bytes": 48459,
+      "sha256": "0cd35e2144f5a7b07176f9db2a7b8b4caa03bf653415bad05c2c8f2eec72cc36"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-transition.mp4",
-      "bytes": 36272,
-      "sha256": "5aa704d64301d9bb1967a736ba98f2b2207588a4e4ff8f77542e10b34df2d740"
+      "bytes": 35154,
+      "sha256": "55d9dd78b77855dbc5db40803fa5b14adc51fb6d7703779fc4b690e84a9f2f79"
     },
     {
       "path": "assets/semantic/mp4/xingcheng-q-waiting-access.mp4",
-      "bytes": 23591,
-      "sha256": "3ddf9a609e552f5594d3eb90ca16469f3163b053e62a23946508a24fc1a51a36"
+      "bytes": 24109,
+      "sha256": "baa331b9ff8b50afb74d8c6b0ee5e934c33e32f76f494244535de90ef0c3b8ec"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-attention.png",
-      "bytes": 7694,
-      "sha256": "4ff31d8842ab272808591621553248e93d951192c4cc96260fe1e108cee2d603"
+      "bytes": 6303,
+      "sha256": "9622f14772c86834f153b9aea9fbab6d6ebb86829f9ec143032587f4a84ae592"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-attention.webp",
-      "bytes": 1530,
-      "sha256": "0c069786049c10953d39415de0d812951d92ee1a95c40136c475ae4ae071b610"
+      "bytes": 1272,
+      "sha256": "fca5a71dc3b5d8a40e9d133bd4d2e5a7e2a85acc42b1730522982ebd312a2bf8"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-correct.png",
-      "bytes": 27789,
-      "sha256": "8b8f9bcedea4777f2b8196c13f4732cab04cf738abe8cabda5c9cad553791a56"
+      "bytes": 27928,
+      "sha256": "0f70f7d022163fc7432928236593de8097b351a26cab7aaae482efb5d35972db"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-correct.webp",
-      "bytes": 4292,
-      "sha256": "58b5b97324b1542fa369691e4540ab6f57636af09db025d8d1c57678b8f7c462"
+      "bytes": 4350,
+      "sha256": "f738e462e1c4371766208f0cf0f0668c3e55d3d00e3f8401dbe0e54be4b5b2c4"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-daily-complete.png",
-      "bytes": 45774,
-      "sha256": "6089961a47dc35b661195b4019e4e60e90c4d9c970da55d230642061b2a20260"
+      "bytes": 45535,
+      "sha256": "c552e8b594b47d3c4bcc6f9bf61ca2df5b0179c4b21a5431873fe8ad91a2b716"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-daily-complete.webp",
-      "bytes": 7324,
-      "sha256": "446b1cd6a3083a2b0d9fc7043a6a3b3bcac9d1b13ef876d7faa233b3757c0267"
+      "bytes": 7302,
+      "sha256": "e1793ae3515b3988022b1296d895735c5406f5336322077f547bd2b727257cc0"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-empty.png",
-      "bytes": 26534,
-      "sha256": "46eece9c4fc0b7c4de45a9930f16e78689b48135523ef86435a622bcd8f22b8d"
+      "bytes": 25844,
+      "sha256": "af1c7ce7763eab885ecc9366d1a7460aa71abd154101728f9648188632dc40e0"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-empty.webp",
-      "bytes": 4084,
-      "sha256": "1e73532d0dfe81df42d39d17036c1cdf991c85e5059f1a68baac7963348325ef"
+      "bytes": 3986,
+      "sha256": "96d11a70f887e03b906283c12fb5ed740c11b04a9996a574b2a11f3c311a0837"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-invite.png",
-      "bytes": 29175,
-      "sha256": "f5263e34210f92dfaeb8e8bfef5a0e7db16a917b42b7d1af0e79616b87c99a72"
+      "bytes": 29012,
+      "sha256": "2bcd28b52fdf554c9c5f8d717a89d2527d4893f9c123587d0f0f03c8f31082e1"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-invite.webp",
-      "bytes": 4712,
-      "sha256": "8fb2ef947b16647c25f31b89eb539f530c61d31f1fdd4115c80955bf527f5c38"
+      "bytes": 4684,
+      "sha256": "5169352f74db22c08ffa7f5949cff9fd5208b8a7aad6c92887127554d809abb6"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-loading.png",
-      "bytes": 19327,
-      "sha256": "382f64ee9c55ce0ef013de5097d99d325b7118515b6e8a46cc71bd2748ceedb3"
+      "bytes": 20109,
+      "sha256": "6d47d976e5d49df28edb03e7241f192b57ae694c721a5d2a788b6818379d6692"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-loading.webp",
-      "bytes": 3310,
-      "sha256": "44bb041854d6270e336a853e4347058c166e028899678f39a7e5225ced3ef0a9"
+      "bytes": 3392,
+      "sha256": "a84a0091f41be25b0d09a86c6127d7133c742b0b1ed45dfa67e7d4138c472009"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-milestone.png",
-      "bytes": 49338,
-      "sha256": "ba6a21fe0263525d208b292041e8f533decffd702d56b763fbed4ba9ff4a57cc"
+      "bytes": 49405,
+      "sha256": "f7134cf1a89d55280e5ae9241836fe10b2a6a3d4538150358ba41baf5a63929d"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-milestone.webp",
-      "bytes": 8548,
-      "sha256": "87c3a3332a40aae7e3fdbd2911d4eed7a3083157d93243a079ada74704d583b7"
+      "bytes": 8566,
+      "sha256": "2efc0f40596fbdf6be60f4bf0c0230b5d56ab04935cd29e9c53046b4b8637d9c"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-needs-review.png",
-      "bytes": 19190,
-      "sha256": "93a7221840278c6c1fbdabbc0c02d748f00eefed2692c3db6abacbc508ef3ccc"
+      "bytes": 20178,
+      "sha256": "c12a044c90c9086df778a8f8eef3f40dbc4c11ce6e03b0415b9fd8693816b092"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-needs-review.webp",
-      "bytes": 3346,
-      "sha256": "704b35ab30c8e274afa2817994b167dbffca0287fd3449fbec57763c706e4adf"
+      "bytes": 3476,
+      "sha256": "d6c6cce73d09a4274edaa78a305b7aee319e2f2d43dcaeb940f3b356e2b215f4"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-notification.png",
-      "bytes": 28992,
-      "sha256": "da76e38bd803b2e342dd0f8712bb04b034f357155e74064fb9253b7b8c75b7d5"
+      "bytes": 29631,
+      "sha256": "768b62949f6873f55e82b45fdb401264e2436a2280d761c03a466140a2bebf97"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-notification.webp",
-      "bytes": 4988,
-      "sha256": "dd7ac9d9e3cc88d2c26742401da3e6f4c1ae831fd004b8161997d22cb4a5cc8c"
+      "bytes": 4936,
+      "sha256": "0792f810c279c8da7d22c7f6626f87192d27061353b6f5d9a56dbe0d04aa6add"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-offline.png",
-      "bytes": 10729,
-      "sha256": "a653e73e0d5b2a59ed43faccb9e7398766d6ef508ae61c522a26c4e39aeceaab"
+      "bytes": 10276,
+      "sha256": "97dee62bdfe734cf3dc36af5f2c3bd7ca5bdb9211ec7f4498dbd241ff0f2a401"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-offline.webp",
-      "bytes": 1864,
-      "sha256": "15e1d0c2db6600041c4bace06f1773f9d8b01016b34fd352bac8e77cbdc6de83"
+      "bytes": 1762,
+      "sha256": "4a87fd8ad0751d03ecf0e153b4c8e85d49ae6ba0ccb4775cf0f2c37f93230eeb"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-rest.png",
-      "bytes": 28044,
-      "sha256": "bbc313265f25c9d409c87aa866927db8e3b9bacd878c6639d8147333f01c895a"
+      "bytes": 27152,
+      "sha256": "0bca457c0f764701d60c4498d5fa8dcd65b308438f648465049632bf48a6de85"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-rest.webp",
-      "bytes": 4360,
-      "sha256": "6f86c7f9bbc21f9a57cba84358a7be628b129838c6b7707f3e26827dd1c4591d"
+      "bytes": 4396,
+      "sha256": "2c5deff95a3b21f8d8198d294f5be0f8fffc54a4f24b464eea920c461b97ccb9"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-submitting.png",
-      "bytes": 27717,
-      "sha256": "62cc589febedc756a55c87e9771a9b2438cb03fe5718572cf1bd4274d84219e2"
+      "bytes": 28368,
+      "sha256": "e1c17ec5d1f3289a3e6d8dab98682d6d03496a55e5f5bd046307cae1c897a181"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-submitting.webp",
-      "bytes": 4916,
-      "sha256": "870023361320e1807651baa3c9237b0470cf6bc5f87286fc38bccd0b38e8a7d5"
+      "bytes": 4960,
+      "sha256": "530995ce0fa7e71da3017aadd7d4bbfbe7d55a5cf80333d30ab63653296c8d0f"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-transition.png",
-      "bytes": 12064,
-      "sha256": "387ccc549cd50175353011e8e4589afb3e8b2bf41fa4088bdab2af7f8aaff957"
+      "bytes": 11622,
+      "sha256": "18aeb0330d6d2dd2b06ba8b7dcbf74f16957a688390ca23bb87b603880cfe30d"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-transition.webp",
-      "bytes": 1880,
-      "sha256": "4b5316c231e7becdb2bb9d88f096b5906bb38e52286436f2cc7dfcf938531ef4"
+      "bytes": 1810,
+      "sha256": "0aebeb56000094375ab91731ceb0998772e7d811cb0492015666fd4d8a0ce89f"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-waiting-access.png",
-      "bytes": 27971,
-      "sha256": "25c043afacc0782d03424bdd23ed623eeed0933098bb746b973c9ae5fd08df51"
+      "bytes": 27168,
+      "sha256": "ae962d713494ddd2c2f1b96a1c1dd73fecf5e7a535a18e5222f94d6d20b83641"
     },
     {
       "path": "assets/semantic/static/xingcheng-q-waiting-access.webp",
-      "bytes": 4360,
-      "sha256": "e1b0ff23a56b8da1e7948d09a5195020ce87f37cdd377157aded3f3a0af3e1e4"
+      "bytes": 4366,
+      "sha256": "329b08320f8974f346fc94393f0078688be5bfd35fb8ddceb12c792b72bb4866"
     },
     {
       "path": "assets/share-cards/01-开始学习.jpg",
-      "bytes": 71146,
-      "sha256": "ddc9d1a440f02686a852926319e0615a0a523aca0879133a08e821771874b56b"
+      "bytes": 71208,
+      "sha256": "7045d8bcae7ea0dada80fe225740d8aeb4dfac96b01f5dca1f01ad742f8f5be8"
     },
     {
       "path": "assets/share-cards/02-每日完成.jpg",
-      "bytes": 77546,
-      "sha256": "71678f521cab64bc4671e3fb99ad65b59c07ba2026014f57a80e81d93dc3a0bb"
+      "bytes": 77519,
+      "sha256": "fe9ebb1c581f09eebe1fb3934c4ee24af931863d368ff779224736f6177d0a30"
     },
     {
       "path": "assets/share-cards/03-连续达成.jpg",
-      "bytes": 72605,
-      "sha256": "48d1c4122845b522380a88b07bed7f74a3b7956c88dbbd1a24e2cad7f048ecc5"
+      "bytes": 72633,
+      "sha256": "ca322432b8d5df0de4bfb7f5152438552c138cc7a883e3b25469fabdfe2261b5"
     },
     {
       "path": "assets/share-cards/04-温和复习.jpg",
-      "bytes": 78295,
-      "sha256": "45eafedefdb4f0d83e582c71bc2e3132c0619c06b221df24d083b0caa58911a6"
+      "bytes": 78279,
+      "sha256": "8c04465d59e83a60d9f51dc46247ca1a863f64a59326ffe00d4da179cd70e472"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-1024.png",
-      "bytes": 48446,
-      "sha256": "ead032f6f20ad6a6afaa5bd97d2958e71f8602a951ab0ad9c44f4c7631cf8857"
+      "bytes": 48467,
+      "sha256": "e33fb6b547964ff39db36a006875e140b7b970814366a505c2aa7719f75044ad"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-128.png",
-      "bytes": 4033,
-      "sha256": "768dd799c88151705ea0cd6a39d25d102102218c7c0d73c07d636e58f2802475"
+      "bytes": 4036,
+      "sha256": "6fd9f7a0a5282640c65ac201149e9befe7e8e7b77febf5c4905fac0ea651cd77"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-256.png",
-      "bytes": 15131,
-      "sha256": "7393ac0917b3f85e63c4663e47d8aadd6c9464d1d82191bbe1f2b26f7771ed54"
+      "bytes": 15126,
+      "sha256": "3df7af7b9c7c2a21e118b4f31fdaa6bda5f10e44ab344018c5eba2e3070c54cd"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-32.png",
-      "bytes": 1421,
-      "sha256": "ad80493f36acfeeeb70876c7339b132c4a5bcedff14a0a1a2c35e2fa614dca47"
+      "bytes": 1425,
+      "sha256": "87996c7319f5d1d467c9084b4d7f0906d9945bdf314adcd0e3db18453143f671"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-512.png",
-      "bytes": 34373,
-      "sha256": "af1993f910bc0e95dfcb47d0ee1c970c8a6b01c6d389987fae77d581fc3742c5"
+      "bytes": 34352,
+      "sha256": "1a616fb890fc69273a77a40d5c512a2591731b7dc8178a121ea08f4cd23abe89"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-64.png",
-      "bytes": 3273,
-      "sha256": "a731999a19bd3f67792dd114cdd2dfdb62c7c2b5301a2c6ca2abcb71d7545159"
+      "bytes": 3279,
+      "sha256": "0060828675541cd807811501cf3589703b5dea68588a3fc21ec3d8923f85a5d3"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar-cream.jpg",
-      "bytes": 49613,
-      "sha256": "40d9ca1c5c53b5c6341a1d09c63c3ec268aae2077d058dbd2a7b10ba462e8d3b"
+      "bytes": 49610,
+      "sha256": "62d2c9328986b2f086c3d27eb8dbfa05a0faceac105ccde9feeaac5287a2939a"
     },
     {
       "path": "assets/standard/xingcheng-q-avatar.svg",
-      "bytes": 10352,
-      "sha256": "21456f85a799480fd7dd87abe23f0e3fa4dc9dd8680159a2c57594cdf55e70e8"
+      "bytes": 7891,
+      "sha256": "8209a1bb09c6828f2c6d8bc08ddce457e9ba91d53fe723e0ae9b2aca164f9adb"
     },
     {
       "path": "assets/stickers/00-十一情绪表情包总览.jpg",
-      "bytes": 139444,
-      "sha256": "b1a78ccabe855470dd0c59a66e1f01c762460911368dc4f0d7928d037a006d32"
+      "bytes": 139394,
+      "sha256": "592a0149c4595fb8b833c10e1290cb885e104621a1f2221fc631718763cea4a4"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-calm.png",
-      "bytes": 33526,
-      "sha256": "54c77235eb65bafef6c2dcd6998ee591147f5e82552805511417b34a4a9b0922"
+      "bytes": 33514,
+      "sha256": "60318ca886d49008f6323c51488cbd5b17fd0d0c200d0d6bc4d0a5dc4ccb5682"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-confused.png",
-      "bytes": 34837,
-      "sha256": "cec7d8f8745c00bcc5b141c75356a802b300f669b05ce0681115dcfad4a49496"
+      "bytes": 34842,
+      "sha256": "334d35098f6b11cdec3311ba4994176647beabdc78204ef77fc553a8c6574dcd"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-curious.png",
       "bytes": 37839,
-      "sha256": "ed515763fe7c45085739bf98a7a3c9977aa19760f4cf4b6af47181d0d02a40b0"
+      "sha256": "b88fa4be26b6916dc637ad1a11111ff0d4402ce8b34bf363634adaaf62739c72"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-excited.png",
-      "bytes": 34466,
-      "sha256": "325b34f8a3e3a6354eaf479cf63b149acd82c2f49e4276d12e9a43d3d2bb9bfe"
+      "bytes": 34447,
+      "sha256": "77d7fa8a5e3ae9dd58a21a74e800fe37ead08e308bf5878a803fb67b2ff3e782"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-focus.png",
-      "bytes": 35918,
-      "sha256": "8105e1d66d0cd7d5de59687960950b6a20f70b89855f5d7ebf45dc93dcb71dff"
+      "bytes": 35938,
+      "sha256": "f60111f7d3387615b9349e42654b6551576670ba422ffb7fa2c7d66ce10b63d3"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-gentle-reminder.png",
-      "bytes": 40037,
-      "sha256": "cc3e834dc700b29818acd470a32955c9a1e361f01cf7416c66cdadab2de9be6c"
+      "bytes": 40041,
+      "sha256": "98f14438294bbad6efa371b6899688457e4fac5dbff3483658600cd124bf1a14"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-happy.png",
-      "bytes": 37871,
-      "sha256": "8f4e721a98cb140b6bfb48f227854d43bf8ae098934667688c2dd4eab22fda8e"
+      "bytes": 37879,
+      "sha256": "03553f2e882401718af369567b78e5b3352ee8d45e58a50ed6f801378f60a593"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-laughing.png",
-      "bytes": 36394,
-      "sha256": "b756fae9eb8af964fbe5204e06ccf7c132d427d0464a0fbdfefb8ff085d8f96e"
+      "bytes": 36365,
+      "sha256": "b0b2e04e10b414887d905d0518bcd23c0c813d7f0c8dff10f8d75cf6e647267f"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-proud.png",
-      "bytes": 34785,
-      "sha256": "55ccbd6e0ae20e9a273967be307a7c5f15748ea2a1b1219c94c4e92fcb9f00b3"
+      "bytes": 34820,
+      "sha256": "98db870e8c9fbe706a661082742530f746a265dc87bb47b55ba3ebeef1d33d7a"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-sad.png",
-      "bytes": 37513,
-      "sha256": "865a6309f8f73ab27d5c4b0bf4bf9b0a16dc9b553fd2a5798995b5922dc5c62a"
+      "bytes": 37510,
+      "sha256": "16975bccba9af441386eb0fe48624d07aa9ec07273cd37ee0baeeeac05025e39"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-sleepy.png",
-      "bytes": 37636,
-      "sha256": "dabdd79842480504fe5f7e0ff51d85fbf1b97ac3c622a5b75097458341f95f7b"
+      "bytes": 37635,
+      "sha256": "3abb55cf60d76f70e2a11a1a7248e3c29c9c84fd3d9ff4e5b89a2a60e24ef42b"
     },
     {
       "path": "docs/01-角色圣经.md",
-      "bytes": 1371,
-      "sha256": "e9b5340ff4a6b72f8700acaf4154d56871f33208aae0199355b2d1285513cf85"
+      "bytes": 1470,
+      "sha256": "4b9c181bbf8a2fab1114d45c958d145cbcab2ff9f46bb702f60b9a17cc222592"
     },
     {
       "path": "docs/02-情绪与语义状态映射.md",
@@ -641,6 +641,11 @@
       "path": "docs/07-传播文案库.md",
       "bytes": 830,
       "sha256": "0e49fc19d9cd6117540233c74581bf2d227079f30e13ef5c3dfebdee79de0051"
+    },
+    {
+      "path": "docs/08-四芒星常驻规范.md",
+      "bytes": 1172,
+      "sha256": "e6c23282fcb8cb04b1de96b1cc821a1e3854dd4271754382d5e4ebea5ecd1988"
     }
   ]
 }
