@@ -9,6 +9,16 @@
 
 在线体验：[星橙Q 动画形象](https://xiandan-superman.github.io/xingcheng-q/)
 
+角色状态审阅：[14 个产品状态与 8 个基础情绪](https://xiandan-superman.github.io/xingcheng-q/#roles)
+
+## 品牌角色资产
+
+- [星橙Q 角色资产包 V2.0 使用说明](小程序/量子星橙-开工包/04-设计/星橙Q-角色资产包-V2/README.md)
+- [下载 V2.0 正式压缩包](小程序/量子星橙-开工包/04-设计/星橙Q-角色资产包-V2.0-正式版.zip)
+- [小程序调用映射](小程序/量子星橙-开工包/04-设计/星橙Q-角色资产包-V2/docs/04-小程序调用映射.md)
+
+V2.0 包含 14 个产品语义动画、8 个基础情绪、静态兜底图、3 个克制的场景配件动作、表情包、分享卡、海报以及品牌使用规范。全部角色画面均来自本项目的 Bloub SVG 引擎。
+
 ![星橙Q 动画头像](output/xingcheng-q-avatar.gif)
 
 ## Running it

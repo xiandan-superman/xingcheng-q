@@ -1,0 +1,577 @@
+{
+  "version": "2.0.0",
+  "source": "Bloub engine",
+  "fileCount": 114,
+  "files": [
+    {
+      "path": "01-原引擎14状态板.jpg",
+      "bytes": 250308,
+      "sha256": "350bf43c0ca8f6f0034dd12f563ec637c909e610be658ada07255d65a817de9f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1627,
+      "sha256": "295c515e418e790f593d1dec58ec632fe934845cd421582d81fdb374adb3378c"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-calm.png",
+      "bytes": 427744,
+      "sha256": "43035119b54f93b046c6ac528437058cc839c5525397f6082f0d7cbdc9a5870a"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-confused.png",
+      "bytes": 431398,
+      "sha256": "fc77724ab9557ef5d83c8d5574e16e696a746d35c318e2c5e536ad96eea5ec41"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-curious.png",
+      "bytes": 422950,
+      "sha256": "149ddc862f3c47b4b75e4850f829d3de62c96dbe14b06447a9208ca484bd3f06"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-focus.png",
+      "bytes": 422892,
+      "sha256": "a3db4bf80dc8166bc346cbe899548f3ba6ffae1adebf83fc29afaf380ccc4f90"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-gentle-reminder.png",
+      "bytes": 409034,
+      "sha256": "b18044c77fd7b16564d99e63b4fd6dff83298e88733880642e82c57688b8a179"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-happy.png",
+      "bytes": 431026,
+      "sha256": "e31fbd289b7d3403cb27f1adc8b1f56edf0a87244fed3221ce5907816d8e74ee"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-proud.png",
+      "bytes": 430975,
+      "sha256": "ed9d819beb27ffb1058b96caf091fdf0d6da36889ca3d5058f6967d54a31d9dc"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-sleepy.png",
+      "bytes": 432174,
+      "sha256": "3356dcbd244332310af117e0a77090350df84cce60706b88546af9ed05dca7e7"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-calm.svg",
+      "bytes": 8847,
+      "sha256": "d876dbf24cbe44d5653c444df019c8df3a815f96cc8f8a027cfc3eb205866be7"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-confused.svg",
+      "bytes": 8807,
+      "sha256": "ed70effb1b8d5e5cf5c5d9485b6a139cbf52c55606d966cff44c20d2a772ba66"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-curious.svg",
+      "bytes": 8784,
+      "sha256": "9dc4f85c8a0aa5902e326536072bdd0854269cc64fc715cdf6a0df325634e565"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-focus.svg",
+      "bytes": 8854,
+      "sha256": "977822442737af32cf5edf669800c021bcd6644d2c0f79e41b956a1fda488cb5"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-gentle-reminder.svg",
+      "bytes": 8829,
+      "sha256": "eac58fb3a703368515b0af417fd787be4c580a7c3c62543a935e8eb1d44fdb82"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-happy.svg",
+      "bytes": 8823,
+      "sha256": "2eab8ceaa819efaac364dd3b8c2926013ca3b7c96f648e074695be7b518f855e"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-proud.svg",
+      "bytes": 8824,
+      "sha256": "415199099032182d1d663aa244e4e38e31e15c1eea6b3088b3211d7e43502669"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-sleepy.svg",
+      "bytes": 8791,
+      "sha256": "b5baa4973a0dccdb2945d38becb3edd6e81c4d0ac36bc9626c462680326111ae"
+    },
+    {
+      "path": "assets/guidelines/主体与配件边界.jpg",
+      "bytes": 145645,
+      "sha256": "0a6b9b2b7787d0a119bb016d1ea52f107ea028fe4af45d36e0d88fbf42c851d2"
+    },
+    {
+      "path": "assets/posters/xingcheng-q-poster-16x9.jpg",
+      "bytes": 90741,
+      "sha256": "4b6577e98c9755b3d78a0d72308b50640c6bb92de10ba07e4f43dac0bd8c41f0"
+    },
+    {
+      "path": "assets/posters/xingcheng-q-poster-1x1.jpg",
+      "bytes": 98506,
+      "sha256": "e746866586603b65d11d63f520e04f71a7cd28a9cde17c768982ab3baa1431e3"
+    },
+    {
+      "path": "assets/posters/xingcheng-q-poster-3x4.jpg",
+      "bytes": 112843,
+      "sha256": "dccc72a0fa1d98f93ac030da9c34c96d69c3860bdc55cec6c73913dc1fa2862c"
+    },
+    {
+      "path": "assets/posters/xingcheng-q-poster-9x16.jpg",
+      "bytes": 116283,
+      "sha256": "a4d9aa408220d95cc81b20f921de83e5192e9d41832cec7a4bf4b4f528a2052d"
+    },
+    {
+      "path": "assets/scene-actions/00-场景动作总览.jpg",
+      "bytes": 73779,
+      "sha256": "425d15b4e1386259672d478cd158c467325fde1057e24576cd158a16aca63bbb"
+    },
+    {
+      "path": "assets/scene-actions/xingcheng-q-answer-writing.gif",
+      "bytes": 1442751,
+      "sha256": "2d339ab6ca9e87840025ce900d611aad6fe074361a2365b66b5ecae6abfb0731"
+    },
+    {
+      "path": "assets/scene-actions/xingcheng-q-answer-writing.png",
+      "bytes": 69207,
+      "sha256": "eda67a49f64da1a0a3275221b58b2ed18198c1942e4bc41d368974e5b54ce5b0"
+    },
+    {
+      "path": "assets/scene-actions/xingcheng-q-present-result.gif",
+      "bytes": 383605,
+      "sha256": "f4c2aac01fa3a8e1c0b04a7e67c55ab6ccce6d4ebaea0b91ca22450dfa7b8004"
+    },
+    {
+      "path": "assets/scene-actions/xingcheng-q-present-result.png",
+      "bytes": 59818,
+      "sha256": "8d5a828c3eaed2868ff094a3d81b0ec80663c78bebf058ec526bc91f47992731"
+    },
+    {
+      "path": "assets/scene-actions/xingcheng-q-wave-invite.gif",
+      "bytes": 1790454,
+      "sha256": "7aa73a7871589968ec158d593c34931327d7ec2a1191bb6e9a22c359715e5570"
+    },
+    {
+      "path": "assets/scene-actions/xingcheng-q-wave-invite.png",
+      "bytes": 64010,
+      "sha256": "c84540c73f609b23c4cf19295b1741b0349a460a2af7cf76fce953064ae88505"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-attention.gif",
+      "bytes": 521978,
+      "sha256": "d0816d76552fedc29914310c9b64139f0178bfa4f5732f10e1eec3d4abc9c2df"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-correct.gif",
+      "bytes": 984967,
+      "sha256": "5743b01f623cd1e083626a095150e095bc202593c661fb56b39caaa04cb4b7dc"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-daily-complete.gif",
+      "bytes": 2611199,
+      "sha256": "62e84e1cdfd63b8315d6fde5cd27d5047e3194ba6ed24261dbf989b6765e21cf"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-empty.gif",
+      "bytes": 479659,
+      "sha256": "f85fa5db4c1f505a753d9d87eb3cd8eba92266b8b70b11d7b1518785fad37840"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-invite.gif",
+      "bytes": 1411093,
+      "sha256": "8e05f686ee30b776a8549d3b5a81df1a50e340288312945beb2c13e7a534dfae"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-loading.gif",
+      "bytes": 459682,
+      "sha256": "ec996cd246bc260e142594d25de82e5588f82002ff0f61c4df85f759e519f8b4"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-milestone.gif",
+      "bytes": 2121476,
+      "sha256": "e23956ace16620816e74407994a49c11ff53619a1d39133c5cd65337ec59e0ae"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-needs-review.gif",
+      "bytes": 855493,
+      "sha256": "bb3b91c8be4a97ae272c657ade9a7820309243d598714ef203bb676bb7956b77"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-notification.gif",
+      "bytes": 1152791,
+      "sha256": "5a373b84045607ba071528b8d5e85e7104432e292827b829480894d8106b3e38"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-offline.gif",
+      "bytes": 782922,
+      "sha256": "c940fa903103669ca10dfadebeca11364adf1ae91ea49b9effc5e077fc84a2d1"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-rest.gif",
+      "bytes": 992543,
+      "sha256": "d87f21cf392d0b790752163e33985b1399a84825538bb009e9110057aa8b92c9"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-submitting.gif",
+      "bytes": 1016931,
+      "sha256": "b9a987cf625302a59f00b79e95029c6ac9089d5d84faf0035f22ffc2c57b589e"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-transition.gif",
+      "bytes": 692531,
+      "sha256": "2e73286ba603c73865f29ef0f1c7c04b52f587f8e5361d1288ee349bce87ddf4"
+    },
+    {
+      "path": "assets/semantic/gif/xingcheng-q-waiting-access.gif",
+      "bytes": 1056988,
+      "sha256": "7d7d54d343ea4a6d5255198504f6b457eaa3beb791006ee4e67eb8dded3d3e4b"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-attention.mp4",
+      "bytes": 200122,
+      "sha256": "9590bcb956cb48781ed47b9000af98fa52f3ea6ac9dc35cdc4a648df7e4725aa"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-correct.mp4",
+      "bytes": 169019,
+      "sha256": "4cf00ba014d8af7d60aa19c53762a660c3254ab1fd75cd80e346e8977ce87338"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-daily-complete.mp4",
+      "bytes": 1982317,
+      "sha256": "f656905a9df3a3fcfd9b1fa5f0cfc4d97f6a0d98707309a14146914f2ee2f40b"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-empty.mp4",
+      "bytes": 145058,
+      "sha256": "8d0973c12f01d5e56f2184ba21e1134280bab07d86a916c6e2a184c13ac79fce"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-invite.mp4",
+      "bytes": 310643,
+      "sha256": "6a8fd130ae2da196f499844436f2225f8ad5b565037b2dfae44c0f404e2cc6d0"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-loading.mp4",
+      "bytes": 158718,
+      "sha256": "309ef7174d1ba14a352fdf25f4412f1b4628c9fed8d1a23e4316f8604e46e8bb"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-milestone.mp4",
+      "bytes": 1753711,
+      "sha256": "29baadb2ddddc5ea8bf4897cef54327140fd4fcffbbd842e1041378293eb1693"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-needs-review.mp4",
+      "bytes": 281338,
+      "sha256": "625e22dddc20a49fee1a68d5ac56869cc89ae44b598403f6dc173f615474317f"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-notification.mp4",
+      "bytes": 245158,
+      "sha256": "2f65fdca4395ff51ebeea6e4447deff40b341fea03a499eeb725a3f803404ab6"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-offline.mp4",
+      "bytes": 365674,
+      "sha256": "a3953982bbecb6e2644018b2bbfa4d61527b292e4bad4c13992a89bfaddcc267"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-rest.mp4",
+      "bytes": 164946,
+      "sha256": "ee5c4ae6ae2461fb36b01e1263ac8200501be7d5b20e541de3fbdc5d06dd2597"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-submitting.mp4",
+      "bytes": 343694,
+      "sha256": "fc63a5c91561541eb924db9896ff31f694fb7ed6fdadb84a97658fe685f11d6e"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-transition.mp4",
+      "bytes": 244227,
+      "sha256": "7bcd860113b37df8c27568f4fcd7e6feb8a92e3e3004ed24b3f2a8d6a60ea472"
+    },
+    {
+      "path": "assets/semantic/mp4/xingcheng-q-waiting-access.mp4",
+      "bytes": 176672,
+      "sha256": "47884d5bf1afdee2d3643636d3fce66c2faa53088586f40259305ef65c723a90"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-attention.png",
+      "bytes": 3979,
+      "sha256": "860428dbd95c863d7f6978a796ac19045f55c803052de1c56e50f3e63e3e7f55"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-attention.webp",
+      "bytes": 1562,
+      "sha256": "ce29903268ea4cee5c5c91e54c23bdcfa18d57e89ec4c2e8234c73c4cf8c1a28"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-correct.png",
+      "bytes": 19808,
+      "sha256": "9d76c9e1efd9d73a64e39245462a3416b612712feb8edb7d9a651b9c20c7ff9e"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-correct.webp",
+      "bytes": 4206,
+      "sha256": "dc0a814c0550feb7bea1bc6fc4f8665f6fb9d8e70bca23b56ad23162d2c38b9b"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-daily-complete.png",
+      "bytes": 2449,
+      "sha256": "d8069cad3ada6c743b0a4dda7d33fb3d4467b205264a617122c4cd6c89a2d541"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-daily-complete.webp",
+      "bytes": 1012,
+      "sha256": "2d351e886c4bdbf537f845b2b3f4f597e1a1b460990a8bf803a6026c4acb4eea"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-empty.png",
+      "bytes": 2210,
+      "sha256": "10991542b8c788a3ff402cff9cda75a9ee6214710a0d43fe99511cca363cb2f9"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-empty.webp",
+      "bytes": 726,
+      "sha256": "eb38ce8bc3b20d61a56ed6c1c21941a403ccb8894da9a37fa2c1d2ae15511afe"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-invite.png",
+      "bytes": 18997,
+      "sha256": "9de9833bc0858b333570e439b2363b8cb7519c23d06ccf10b0fc1311dce64021"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-invite.webp",
+      "bytes": 4978,
+      "sha256": "0dc16893e2e49025042b9a5e957dc844480f03e41b03ac7f5b585ebf1ce5d9a3"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-loading.png",
+      "bytes": 3478,
+      "sha256": "e534a389aba8e43fdeea02657e9f14f055e73c1c8ea012fb1ddcf3e3fbe179d6"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-loading.webp",
+      "bytes": 1620,
+      "sha256": "98132411ca8377a6fa9c65dec660b22fbe93dfa541ae0695028c2c71ef4d94da"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-milestone.png",
+      "bytes": 2484,
+      "sha256": "a3f2540fcd058eb6fd76b19c97239b6138bb40b9cd0c79323d9775b6a1429e90"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-milestone.webp",
+      "bytes": 1026,
+      "sha256": "33dd0870dc2b965786781a0ead01771b4b26c1b7f5ac9d9fa4d10774430430ca"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-needs-review.png",
+      "bytes": 3755,
+      "sha256": "061cf37530222d39af4b735957a2b6f8649df6a9c5d08b399f767e37985cd238"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-needs-review.webp",
+      "bytes": 1602,
+      "sha256": "9e46baa79eedc2741882051c4c45e64be24c21b8e8e5e4d7e4404f2cc16c4836"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-notification.png",
+      "bytes": 19785,
+      "sha256": "96298530e8d007ff90df88360f9cabbae85a2c0ee511b372e78b125638f3104c"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-notification.webp",
+      "bytes": 4882,
+      "sha256": "a980395dc73f8aa25f109dd1d84e401aa159839332098827ce6b033bc035e808"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-offline.png",
+      "bytes": 7431,
+      "sha256": "144ed80ad7c79be432e7532dd7ac1dd39e068cb11934931103576ad7e7ac6b24"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-offline.webp",
+      "bytes": 2304,
+      "sha256": "b3abd026f6834ef7ce8d98824e7cb2f4548329bf37376ab92004ba3c80b775a1"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-rest.png",
+      "bytes": 19827,
+      "sha256": "1e76a4702f52b2664173fc055bc4caf9acf59db9e0dc86ebc61795cf6ce2e751"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-rest.webp",
+      "bytes": 4250,
+      "sha256": "770f71678d6fe0444be370f0f719fbac9825656aeff4a98af9128344c340e9d3"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-submitting.png",
+      "bytes": 16734,
+      "sha256": "c746913dbc4f818378bf6c5600d77387869ce0dc976ca51d52f9cfa75818009f"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-submitting.webp",
+      "bytes": 5086,
+      "sha256": "6af9b007df02a7b564cbd36cc0d5a2cb1afc1d6c7f171ab29bcbcae9a7f9182f"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-transition.png",
+      "bytes": 4632,
+      "sha256": "a600ba3d023a835fd98d6d7077aad6e90e9b159c0ce9c6e80aafaf92c5213d9b"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-transition.webp",
+      "bytes": 2344,
+      "sha256": "b3c258816c32f75128301d60572ee5d874228f309e63a41e266f2d69d902ad35"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-waiting-access.png",
+      "bytes": 19702,
+      "sha256": "7372aff877f6e22eda3ddb7f178f6e2a87fba356e9abdc4ef0a87366f848829c"
+    },
+    {
+      "path": "assets/semantic/static/xingcheng-q-waiting-access.webp",
+      "bytes": 4222,
+      "sha256": "5f2a63d221991c027eefd458156ab2fff1f11495c6d95c206c1650d4de7dc950"
+    },
+    {
+      "path": "assets/share-cards/01-开始学习.jpg",
+      "bytes": 75685,
+      "sha256": "76e3fbca5fd8c8752af6f8c78747ae4c4accf15523b3750e15e604bc1cd8713d"
+    },
+    {
+      "path": "assets/share-cards/02-每日完成.jpg",
+      "bytes": 80280,
+      "sha256": "84f52c6aa0069c6a9c0a0239ef887e698bdc4034873ab74d0ed4243be8f14571"
+    },
+    {
+      "path": "assets/share-cards/03-连续达成.jpg",
+      "bytes": 76901,
+      "sha256": "c5256daa0717dbe906dba24e211acd3f723202c7aac033d5c9596a7223c760b1"
+    },
+    {
+      "path": "assets/share-cards/04-温和复习.jpg",
+      "bytes": 82890,
+      "sha256": "0497d943b1520ac7d661563ba269fa452b033a818647e0b90fe8cf57a5a8afa6"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-1024.png",
+      "bytes": 155017,
+      "sha256": "c895cab7007d16b89fca118d0acf2f3601be1b95a1c24c13f1e88b2b2f3d6613"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-128.png",
+      "bytes": 9418,
+      "sha256": "263236c708cb9ebc9fd420182b6b3ef7bfd29016ba44cbf29834708a89e3ebb9"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-256.png",
+      "bytes": 27970,
+      "sha256": "2a13e484630ca4e415174d75ca95888a4be9d8e7b14783c1e3cb1173cf8f1d54"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-32.png",
+      "bytes": 1565,
+      "sha256": "a8a74cf6be88a77761eb5138c4d1b751433b20d78830234cd0f76b5d2c1a1493"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-512.png",
+      "bytes": 80597,
+      "sha256": "e5183c79f108d419bd71b0feee36f02ce25a99dd152f705717ee9d5e1d59abbf"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-64.png",
+      "bytes": 3623,
+      "sha256": "a7c66e61865a9988ddfd244c10180a33dbb57e9dd92d2ae512483d1fafbab4f9"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar-cream.jpg",
+      "bytes": 60935,
+      "sha256": "7a8a2b3c7198213a93285fe171e52a5ce8ac82ab9479b22127dabfa005635a78"
+    },
+    {
+      "path": "assets/standard/xingcheng-q-avatar.svg",
+      "bytes": 8847,
+      "sha256": "d876dbf24cbe44d5653c444df019c8df3a815f96cc8f8a027cfc3eb205866be7"
+    },
+    {
+      "path": "assets/stickers/00-八情绪表情包总览.jpg",
+      "bytes": 112493,
+      "sha256": "40ac738a801c4cdbb90be4d05343be9ab28707cd975cbbd1327d3824e37fd0e0"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-calm.png",
+      "bytes": 69016,
+      "sha256": "fe5a347712aef57f7f47f8dac0d99c9f057e7c5ab7ea90db8d839494f95f219d"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-confused.png",
+      "bytes": 69973,
+      "sha256": "3a0f376569cf4190df1851eab02cd3c10acef0df6615fbcb7b8f01f091e0bced"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-curious.png",
+      "bytes": 72418,
+      "sha256": "748fe8b7033bf40f3e6b971f71b2a4ff20465532a2ef0afb7d0c22725585f7ee"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-focus.png",
+      "bytes": 70660,
+      "sha256": "44a16d09d278d135208f39aac50f27db2a20e0b74fa1338e91eaee22041137fb"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-gentle-reminder.png",
+      "bytes": 73556,
+      "sha256": "aba09e6502e8c4808e7fb6e1a73d10336c718101cf446ed5fc66242ecab18616"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-happy.png",
+      "bytes": 71620,
+      "sha256": "9a0ae2ced8bc17d4d4ec5bf8c2c9de24a2b03f7d82aec53aad3fc21e510c6927"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-proud.png",
+      "bytes": 69934,
+      "sha256": "3e6fe87205b3db9ff2c5f7ca33bc083889699e04275ce6c5d868378e4c7ee30b"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-sleepy.png",
+      "bytes": 72805,
+      "sha256": "3e2a69d61ea81972c70a26876f293bf4bf4ddb5dd0b314e432b307eb087ebb86"
+    },
+    {
+      "path": "docs/01-角色圣经.md",
+      "bytes": 1368,
+      "sha256": "9f9bb3470c2074a67e0a2bc321775bae962d019e1767dcbe0ca003cbee3e8e79"
+    },
+    {
+      "path": "docs/02-情绪与语义状态映射.md",
+      "bytes": 1849,
+      "sha256": "a75f5371110428c023766aa8b73c082672a26867252fb93ae2e47c74e042c4ff"
+    },
+    {
+      "path": "docs/03-动效与格式规范.md",
+      "bytes": 1122,
+      "sha256": "b33de69f6095ca183d9b7fef646422f791cd724196b7eb8ac5a0cbb982f8c898"
+    },
+    {
+      "path": "docs/04-小程序调用映射.md",
+      "bytes": 1967,
+      "sha256": "784fed11b01ac6523d7c048cadf5a1297f8aefde60532b8f6327adac27842565"
+    },
+    {
+      "path": "docs/05-品牌与安全区规范.md",
+      "bytes": 922,
+      "sha256": "0c6388b22b0934f8c444a06952dcba42933a2becbd83be51b3ba2f8e05a54a21"
+    },
+    {
+      "path": "docs/06-禁用示例.md",
+      "bytes": 724,
+      "sha256": "bb07bc33d8e7d08d03efb809625d4f8da803c7a0e906b631df36c8cdcf412534"
+    },
+    {
+      "path": "docs/07-传播文案库.md",
+      "bytes": 830,
+      "sha256": "0e49fc19d9cd6117540233c74581bf2d227079f30e13ef5c3dfebdee79de0051"
+    }
+  ]
+}

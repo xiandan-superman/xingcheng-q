@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import BotTile from '@/components/BotTile.vue'
+import BrandRoleBoard from '@/components/BrandRoleBoard.vue'
 import Customizer from '@/components/Customizer.vue'
 import BloubBot from '@/components/BloubBot.vue'
 import ExportBar from '@/components/ExportBar.vue'
@@ -72,6 +73,7 @@ function readHash() {
     named: known,
     playing: !params.has('stop'),
     gallery: params.has('planche'),
+    brandBoard: params.has('roles'),
     // `#arrivee` : rejouer l'arrivee sans avoir a revenir sur le site. Elle ne se
     // joue qu'a la VENUE, donc sans ce lien on ne peut pas la revoir de la seance.
     arrivee: params.has('arrivee')
@@ -80,6 +82,7 @@ function readHash() {
 
 const initial = readHash()
 const gallery = ref(initial.gallery)
+const brandBoard = ref(initial.brandBoard)
 
 /* ----------------------------------------------------------------- arrivee */
 
@@ -302,7 +305,8 @@ window.addEventListener('hashchange', () => {
     return
   }
   gallery.value = next.gallery
-  if (next.gallery) return
+  brandBoard.value = next.brandBoard
+  if (next.gallery || next.brandBoard) return
   // Seul un lien qui NOMME un etat deplace la lecture. Sans ce garde, revenir
   // de la planche (`#planche` puis `#`) ramenerait au debut du montage.
   if (!next.named) return
@@ -742,7 +746,9 @@ watch(
 </script>
 
 <template>
-  <div v-if="gallery" class="p-5">
+  <BrandRoleBoard v-if="brandBoard" />
+
+  <div v-else-if="gallery" class="p-5">
     <a class="text-xs text-[var(--muted)] underline underline-offset-2" href="#">
       {{ t('gallery.back') }}
     </a>
