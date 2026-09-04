@@ -8,9 +8,10 @@ D={
 ## 目录
 
 - `assets/standard`：标准头像，32–1024 px、SVG、米白背景 JPG。
-- `assets/emotions`：8 个基础情绪，每个含 PNG 与 SVG。
+- `assets/emotions`：11 个基础情绪，每个含 PNG 与 SVG。
 - `assets/semantic`：14 个产品语义状态，每个含 GIF、MP4、PNG、WebP。
 - `assets/scene-actions`：执笔填写、招手邀请、托举成果 3 个克制配件动作。
+- `assets/core-motion`：待机眨眼、开心跳跃两套高频核心动态。
 - `assets/stickers`：8 张传播表情图与总览。
 - `assets/share-cards`：4 张 1200×630 分享卡。
 - `assets/posters`：1:1、3:4、9:16、16:9 海报。
@@ -75,8 +76,11 @@ D={
 | focus | 专注 | 答题、分析、搜索 | 让我想想 |
 | curious | 好奇 | 新内容、探索入口 | 发现新星 |
 | happy | 开心 | 单题正确、轻量鼓励 | 这题对了 |
+| excited | 兴奋 | 新关卡、即将开始 | 出发！ |
+| laughing | 大笑 | 高价值成果、惊喜反馈 | 太棒了 |
 | proud | 自豪 | 阶段成果、连续达成 | 稳稳拿下 |
 | confused | 疑惑 | 答案待复习、内容不确定 | 再看一遍 |
+| sad | 难过 | 目标未达成、同理反馈 | 我陪着你 |
 | sleepy | 疲惫 | 休息提示、低活跃 | 稍微休息 |
 | gentle-reminder | 温和提醒 | 复习、学习提醒 | 该充星能了 |
 

@@ -46,8 +46,11 @@ const emotions = [
   { id: 'focus', title: '专注', expression: 'attentif', phrase: '让我想想' },
   { id: 'curious', title: '好奇', expression: 'curieux', phrase: '发现新星' },
   { id: 'happy', title: '开心', expression: 'heureux', phrase: '这题对了' },
+  { id: 'excited', title: '兴奋', expression: 'excite', phrase: '出发！' },
+  { id: 'laughing', title: '大笑', expression: 'hilare', phrase: '太棒了' },
   { id: 'proud', title: '自豪', expression: 'fier', phrase: '稳稳拿下' },
   { id: 'confused', title: '疑惑', expression: 'confus', phrase: '再看一遍' },
+  { id: 'sad', title: '难过', expression: 'triste', phrase: '我陪着你' },
   { id: 'sleepy', title: '疲惫', expression: 'somnolent', phrase: '稍微休息' },
   { id: 'gentle-reminder', title: '温和提醒', expression: 'surpris', phrase: '该充星能了' }
 ]
@@ -137,7 +140,7 @@ async function exportEmotion(event: MouseEvent, emotion: (typeof emotions)[numbe
     <section class="emotion-board">
       <div class="emotion-board__heading">
         <p>FOUNDATION EXPRESSIONS</p>
-        <h2>八个基础情绪</h2>
+        <h2>十一个基础情绪</h2>
         <span>全部直接取自原引擎的眼神与头部姿态系统</span>
       </div>
       <div class="emotion-board__grid">

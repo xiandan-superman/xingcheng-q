@@ -1,7 +1,6 @@
 {
   "version": "2.0.0",
   "source": "Bloub engine",
-  "fileCount": 114,
   "files": [
     {
       "path": "01-原引擎14状态板.jpg",
@@ -10,8 +9,33 @@
     },
     {
       "path": "README.md",
-      "bytes": 1627,
-      "sha256": "295c515e418e790f593d1dec58ec632fe934845cd421582d81fdb374adb3378c"
+      "bytes": 1708,
+      "sha256": "6e87882253154d0ebd5bd4a9b664c89088cb274aa418e33109ee5db64464899d"
+    },
+    {
+      "path": "assets/core-motion/xingcheng-q-happy-jump.gif",
+      "bytes": 2238018,
+      "sha256": "15256981617013f65c0addad3ffbb9425669bdc8f4769a990bf20c61b312c3ba"
+    },
+    {
+      "path": "assets/core-motion/xingcheng-q-happy-jump.mp4",
+      "bytes": 38109,
+      "sha256": "6a8cbcb2c762a34cd4b1a2468c7ae07835ee55847c557a83b61b422da34ee3d9"
+    },
+    {
+      "path": "assets/core-motion/xingcheng-q-happy-jump.png",
+      "bytes": 68472,
+      "sha256": "2f52650942495e13d09fbb91a94d4104d669e696d3e53eb9302646f89e523a5d"
+    },
+    {
+      "path": "assets/core-motion/xingcheng-q-idle-blink.gif",
+      "bytes": 992543,
+      "sha256": "d87f21cf392d0b790752163e33985b1399a84825538bb009e9110057aa8b92c9"
+    },
+    {
+      "path": "assets/core-motion/xingcheng-q-idle-blink.mp4",
+      "bytes": 164946,
+      "sha256": "ee5c4ae6ae2461fb36b01e1263ac8200501be7d5b20e541de3fbdc5d06dd2597"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-calm.png",
@@ -29,6 +53,11 @@
       "sha256": "149ddc862f3c47b4b75e4850f829d3de62c96dbe14b06447a9208ca484bd3f06"
     },
     {
+      "path": "assets/emotions/png/xingcheng-q-emotion-excited.png",
+      "bytes": 401008,
+      "sha256": "cf6326fa9c2228b3b9559bf9b8ff97d8b7b241bfbfc22b25addc5e636cbdf1b3"
+    },
+    {
       "path": "assets/emotions/png/xingcheng-q-emotion-focus.png",
       "bytes": 422892,
       "sha256": "a3db4bf80dc8166bc346cbe899548f3ba6ffae1adebf83fc29afaf380ccc4f90"
@@ -44,9 +73,19 @@
       "sha256": "e31fbd289b7d3403cb27f1adc8b1f56edf0a87244fed3221ce5907816d8e74ee"
     },
     {
+      "path": "assets/emotions/png/xingcheng-q-emotion-laughing.png",
+      "bytes": 427112,
+      "sha256": "be7eb8dc797e8b4ff5300c56194e68739e3762d295e350bd20b44a895ce30a18"
+    },
+    {
       "path": "assets/emotions/png/xingcheng-q-emotion-proud.png",
       "bytes": 430975,
       "sha256": "ed9d819beb27ffb1058b96caf091fdf0d6da36889ca3d5058f6967d54a31d9dc"
+    },
+    {
+      "path": "assets/emotions/png/xingcheng-q-emotion-sad.png",
+      "bytes": 430000,
+      "sha256": "c2d387e62e76585c292907371394e116ae84ff17ac3f240e659e8bd854b08911"
     },
     {
       "path": "assets/emotions/png/xingcheng-q-emotion-sleepy.png",
@@ -69,6 +108,11 @@
       "sha256": "9dc4f85c8a0aa5902e326536072bdd0854269cc64fc715cdf6a0df325634e565"
     },
     {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-excited.svg",
+      "bytes": 8905,
+      "sha256": "d3562721b08ffea46772330234b875ac3dd25fd4e187f72fb3ea203c1596bb40"
+    },
+    {
       "path": "assets/emotions/svg/xingcheng-q-emotion-focus.svg",
       "bytes": 8854,
       "sha256": "977822442737af32cf5edf669800c021bcd6644d2c0f79e41b956a1fda488cb5"
@@ -84,9 +128,19 @@
       "sha256": "2eab8ceaa819efaac364dd3b8c2926013ca3b7c96f648e074695be7b518f855e"
     },
     {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-laughing.svg",
+      "bytes": 8810,
+      "sha256": "44e08705c9f32035fa85a5649dbffb3fbd5642df06edb01b8595e537ec582a1c"
+    },
+    {
       "path": "assets/emotions/svg/xingcheng-q-emotion-proud.svg",
       "bytes": 8824,
       "sha256": "415199099032182d1d663aa244e4e38e31e15c1eea6b3088b3211d7e43502669"
+    },
+    {
+      "path": "assets/emotions/svg/xingcheng-q-emotion-sad.svg",
+      "bytes": 8912,
+      "sha256": "33b51ef32947bc6da38841b36189b8bf840c7eff665a44276f1247b3799bcfcf"
     },
     {
       "path": "assets/emotions/svg/xingcheng-q-emotion-sleepy.svg",
@@ -494,9 +548,9 @@
       "sha256": "d876dbf24cbe44d5653c444df019c8df3a815f96cc8f8a027cfc3eb205866be7"
     },
     {
-      "path": "assets/stickers/00-八情绪表情包总览.jpg",
-      "bytes": 112493,
-      "sha256": "40ac738a801c4cdbb90be4d05343be9ab28707cd975cbbd1327d3824e37fd0e0"
+      "path": "assets/stickers/00-十一情绪表情包总览.jpg",
+      "bytes": 154278,
+      "sha256": "4156e97c7534a3d444f39e536d9ce95ff9db5456917f4746f0c0674185aba85a"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-calm.png",
@@ -514,6 +568,11 @@
       "sha256": "748fe8b7033bf40f3e6b971f71b2a4ff20465532a2ef0afb7d0c22725585f7ee"
     },
     {
+      "path": "assets/stickers/xingcheng-q-sticker-excited.png",
+      "bytes": 68062,
+      "sha256": "e5383278aafda056f469c25840cccd073963aed2aea0ac1eaec2d40f42c754af"
+    },
+    {
       "path": "assets/stickers/xingcheng-q-sticker-focus.png",
       "bytes": 70660,
       "sha256": "44a16d09d278d135208f39aac50f27db2a20e0b74fa1338e91eaee22041137fb"
@@ -529,9 +588,19 @@
       "sha256": "9a0ae2ced8bc17d4d4ec5bf8c2c9de24a2b03f7d82aec53aad3fc21e510c6927"
     },
     {
+      "path": "assets/stickers/xingcheng-q-sticker-laughing.png",
+      "bytes": 71135,
+      "sha256": "52fea1b7ea91744de65c15c2f369b286224542292a99c02822eaeb7a774f4461"
+    },
+    {
       "path": "assets/stickers/xingcheng-q-sticker-proud.png",
       "bytes": 69934,
       "sha256": "3e6fe87205b3db9ff2c5f7ca33bc083889699e04275ce6c5d868378e4c7ee30b"
+    },
+    {
+      "path": "assets/stickers/xingcheng-q-sticker-sad.png",
+      "bytes": 72655,
+      "sha256": "e48295aed9c38588902d52e3f192ef7e7134fcfcc0a446fa3042b39b4dd5726f"
     },
     {
       "path": "assets/stickers/xingcheng-q-sticker-sleepy.png",
@@ -545,8 +614,8 @@
     },
     {
       "path": "docs/02-情绪与语义状态映射.md",
-      "bytes": 1849,
-      "sha256": "a75f5371110428c023766aa8b73c082672a26867252fb93ae2e47c74e042c4ff"
+      "bytes": 2041,
+      "sha256": "9bcd962fbe696a10399298308e7c6c7c5d0d67543490730ba83c8c38392b9b2e"
     },
     {
       "path": "docs/03-动效与格式规范.md",

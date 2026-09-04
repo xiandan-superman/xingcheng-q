@@ -4,6 +4,8 @@ import hashlib
 import json
 import math
 import shutil
+import subprocess
+import tempfile
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -26,7 +28,9 @@ SEMANTICS = [
 EMOTIONS = [
     ('calm', '平静', '在呢'), ('focus', '专注', '让我想想'),
     ('curious', '好奇', '发现新星'), ('happy', '开心', '这题对了'),
+    ('excited', '兴奋', '出发！'), ('laughing', '大笑', '太棒了'),
     ('proud', '自豪', '稳稳拿下'), ('confused', '疑惑', '再看一遍'),
+    ('sad', '难过', '我陪着你'),
     ('sleepy', '疲惫', '稍微休息'), ('gentle-reminder', '温和提醒', '该充星能了')
 ]
 PEAK = {
@@ -50,7 +54,7 @@ def ensure_dirs():
         'assets/semantic/gif', 'assets/semantic/mp4', 'assets/semantic/static',
         'assets/emotions/png', 'assets/emotions/svg', 'assets/standard',
         'assets/stickers', 'assets/share-cards', 'assets/posters',
-        'assets/scene-actions', 'assets/guidelines', 'docs'
+        'assets/scene-actions', 'assets/core-motion', 'assets/guidelines', 'docs'
     ]:
         (PACK / p).mkdir(parents=True, exist_ok=True)
 
@@ -143,12 +147,13 @@ def sticker_pack():
         thumb.thumbnail((310,310),Image.Resampling.LANCZOS)
         contact.paste(thumb,(x,y))
         contact.paste(thumb,(x+320,y)) if False else None
-    # true 4x2 contact sheet
-    contact=Image.new('RGB',(1320,670),CREAM)
+    # grille de quatre colonnes, dimensionnee selon le catalogue
+    rows=math.ceil(len(EMOTIONS)/4)
+    contact=Image.new('RGB',(1320,20+rows*325),CREAM)
     for i,(eid,_,_) in enumerate(EMOTIONS):
         s=Image.open(PACK/f'assets/stickers/xingcheng-q-sticker-{eid}.png').convert('RGB').resize((310,310),Image.Resampling.LANCZOS)
         contact.paste(s,(20+(i%4)*325,20+(i//4)*325))
-    contact.save(PACK/'assets/stickers/00-八情绪表情包总览.jpg',quality=94)
+    contact.save(PACK/'assets/stickers/00-十一情绪表情包总览.jpg',quality=94)
 
 def action_frame(base: Image.Image, kind: str, phase: float):
     S=2; c=Image.new('RGBA',(640*S,640*S),CREAM); d=ImageDraw.Draw(c)
@@ -193,6 +198,37 @@ def scene_actions():
         frames[9].save(PACK/f'assets/scene-actions/xingcheng-q-{names[kind]}.png',quality=96)
         overview.paste(frames[9],(10+i*645,10))
     overview.save(PACK/'assets/scene-actions/00-场景动作总览.jpg',quality=94)
+
+def jump_pose(base: Image.Image, t: float, size: int):
+    """Un saut unique : anticipation, envol, reception, puis pose stable."""
+    if t < .14:
+        u=t/.14; y=12*u; sx=1+.045*u; sy=1-.055*u
+    elif t < .50:
+        u=(t-.14)/.36; y=12-92*math.sin(math.pi*u); sx=1-.025*math.sin(math.pi*u); sy=1+.05*math.sin(math.pi*u)
+    elif t < .68:
+        u=(t-.50)/.18; bump=math.sin(math.pi*u); y=10*bump; sx=1+.055*bump; sy=1-.065*bump
+    else:
+        y=0; sx=sy=1
+    role=fit(base,(int(size*.69),int(size*.69)))
+    role=role.resize((max(1,int(role.width*sx)),max(1,int(role.height*sy))),Image.Resampling.LANCZOS)
+    c=Image.new('RGB',(size,size),CREAM)
+    x=(size-role.width)//2; yy=int(size*.13+y)-(role.height-int(size*.69))//2
+    c.paste(role,(x,yy),role)
+    return c
+
+def core_motion():
+    out=PACK/'assets/core-motion'; out.mkdir(parents=True,exist_ok=True)
+    shutil.copy2(PACK/'assets/semantic/gif/xingcheng-q-rest.gif',out/'xingcheng-q-idle-blink.gif')
+    shutil.copy2(PACK/'assets/semantic/mp4/xingcheng-q-rest.mp4',out/'xingcheng-q-idle-blink.mp4')
+    # 跳跃使用明确的弯月笑眼，避免窄直眼在运动中读成严肃。
+    base=rgba(PACK/'assets/emotions/png/xingcheng-q-emotion-laughing.png')
+    gif=[jump_pose(base,i/59,640) for i in range(60)]
+    gif[0].save(out/'xingcheng-q-happy-jump.gif',save_all=True,append_images=gif[1:],duration=50,loop=0,optimize=True)
+    gif[24].save(out/'xingcheng-q-happy-jump.png',quality=96)
+    with tempfile.TemporaryDirectory() as td:
+        td=Path(td)
+        for i in range(90): jump_pose(base,i/89,512).save(td/f'{i:04d}.png')
+        subprocess.run(['ffmpeg','-loglevel','error','-y','-framerate','30','-i',str(td/'%04d.png'),'-c:v','libx264','-pix_fmt','yuv420p','-movflags','+faststart',str(out/'xingcheng-q-happy-jump.mp4')],check=True)
 
 def share_card(filename, eyebrow, title, body, role_id, accent=ORANGE):
     c=Image.new('RGBA',(1200,630),CREAM); d=ImageDraw.Draw(c)
@@ -256,5 +292,5 @@ def manifest():
     (PACK/'manifest.json').write_text(json.dumps({'version':'2.0.0','source':'Bloub engine','files':files},ensure_ascii=False,indent=2),encoding='utf-8')
 
 if __name__=='__main__':
-    ensure_dirs(); copy_engine_assets(); extract_peaks(); semantic_overview(); standard_assets(); sticker_pack(); scene_actions(); make_share_assets(); guidelines_visual(); manifest()
+    ensure_dirs(); copy_engine_assets(); extract_peaks(); semantic_overview(); standard_assets(); sticker_pack(); scene_actions(); core_motion(); make_share_assets(); guidelines_visual(); manifest()
     print(f'Built {len(list(PACK.rglob("*")))} entries in {PACK}')

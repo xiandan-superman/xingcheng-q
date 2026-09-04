@@ -535,7 +535,11 @@ function dotAttrs(dot: BotFrame['dots'][number]) {
           :d="eye.d"
           :transform="eye.matrix"
           :opacity="eye.alpha"
-          fill="#000"
+          :fill="eye.strokeWidth ? 'none' : '#000'"
+          :stroke="eye.strokeWidth ? '#000' : 'none'"
+          :stroke-width="eye.strokeWidth"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         />
         <circle
           v-if="frame.notch"

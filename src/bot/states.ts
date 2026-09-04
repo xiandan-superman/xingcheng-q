@@ -40,6 +40,8 @@ export interface EyeCfg {
    * la tristesse, qui demandent des inclinaisons en miroir, sont hors de portee.
    */
   tilt?: number
+  /** 0 = gelule, 1 = arc ferme leve aux extremites (oeil de rire) */
+  smile?: number
 }
 
 export interface Pose {

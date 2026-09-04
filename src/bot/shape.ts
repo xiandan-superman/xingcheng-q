@@ -308,3 +308,13 @@ export function capsulePath(w: number, h: number): string {
     `A${r2(r)} ${r2(r)} 0 0 1 ${r2(-hw)} ${r2(hh - r)}Z`
   )
 }
+
+/** Axe d'un oeil ferme qui sourit. Le trait est rendu avec un bout rond. */
+export function smileEyePath(w: number, h: number, smile = 1): string {
+  const hw = Math.max(w, 0.01) / 2
+  const hh = Math.max(h, 0.01) / 2
+  const s = Math.max(0, Math.min(1, smile))
+  const endY = hh * 0.55
+  const topY = endY - h * (0.35 + 1.25 * s)
+  return `M${r2(-hw)} ${r2(endY)}Q0 ${r2(topY)} ${r2(hw)} ${r2(endY)}`
+}

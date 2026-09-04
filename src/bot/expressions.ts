@@ -48,12 +48,18 @@ export interface BotExpression {
 }
 
 /** `tilt` en degrés, positif = le haut de la gélule part vers la droite. */
-const eye = (w: number, h: number, tilt = 0, open = 1): EyeCfg => ({ w, h, tilt, open })
+const eye = (w: number, h: number, tilt = 0, open = 1, smile = 0): EyeCfg => ({
+  w,
+  h,
+  tilt,
+  open,
+  smile
+})
 
 /** Les deux yeux identiques, inclinaisons en miroir si `tilt` est fourni. */
-const pair = (w: number, h: number, tilt = 0, open = 1): [EyeCfg, EyeCfg] => [
-  eye(w, h, tilt, open),
-  eye(w, h, -tilt, open)
+const pair = (w: number, h: number, tilt = 0, open = 1, smile = 0): [EyeCfg, EyeCfg] => [
+  eye(w, h, tilt, open, smile),
+  eye(w, h, -tilt, open, smile)
 ]
 
 export const EXPRESSIONS: BotExpression[] = [
@@ -78,9 +84,11 @@ export const EXPRESSIONS: BotExpression[] = [
   },
   {
     id: 'excite',
-    gaze: { yaw: 6, pitch: -14, roll: 0 },
-    split: 19.5,
-    eyes: pair(0.4, 0.56, -10)
+    // Grands yeux francs et paralleles : l'ancien miroir faisait lire de
+    // l'inquietude. Le leger roulis apporte l'energie sans froncer le regard.
+    gaze: { yaw: 7, pitch: 10, roll: 0 },
+    split: 20,
+    eyes: [eye(0.4, 0.58, -5), eye(0.4, 0.58, -5)]
   },
   {
     // yeux plissés en arc : les hauts convergent légèrement
@@ -91,9 +99,11 @@ export const EXPRESSIONS: BotExpression[] = [
   },
   {
     id: 'hilare',
-    gaze: { yaw: 4, pitch: 14, roll: 0 },
+    // Deux vrais arcs de rire. Une paire de gelules inclinees se lisait encore
+    // comme des sourcils inquiets, meme dans le sens oppose a la colere.
+    gaze: { yaw: 3, pitch: 13, roll: 0 },
     split: 18,
-    eyes: pair(0.34, 0.13, 20)
+    eyes: pair(0.38, 0.18, 0, 1, 1)
   },
   {
     // hauts des yeux qui convergent fort vers le centre + yeux étrécis
@@ -103,11 +113,12 @@ export const EXPRESSIONS: BotExpression[] = [
     eyes: pair(0.34, 0.15, 30)
   },
   {
-    // l'inverse : les hauts divergent, et le regard tombe
+    // Regard bas, paupieres lourdes et inclinaison douce. L'ancienne pose a
+    // -28deg etait trop graphique et se confondait avec une grimace.
     id: 'triste',
-    gaze: { yaw: 3, pitch: -13, roll: 0 },
-    split: 16,
-    eyes: pair(0.22, 0.4, -28)
+    gaze: { yaw: -2, pitch: -19, roll: 0 },
+    split: 15.5,
+    eyes: pair(0.2, 0.42, -12, 0.78)
   },
   {
     id: 'effraye',
@@ -174,7 +185,8 @@ const lerpEyeCfg = (a: EyeCfg, b: EyeCfg, t: number): EyeCfg => ({
   w: lerp(a.w, b.w, t),
   h: lerp(a.h, b.h, t),
   tilt: lerp(a.tilt ?? 0, b.tilt ?? 0, t),
-  open: lerp(a.open, b.open, t)
+  open: lerp(a.open, b.open, t),
+  smile: lerp(a.smile ?? 0, b.smile ?? 0, t)
 })
 
 /** Interpolation de deux expressions : le changement se fait en glissant. */

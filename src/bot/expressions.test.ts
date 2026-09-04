@@ -61,6 +61,19 @@ describe('catalogue des expressions', () => {
     expect(Math.sign(colere[0]!)).toBe(-Math.sign(triste[0]!))
   })
 
+  it('separe clairement le rire, la colere et l excitation', () => {
+    const hilare = EXPRESSION_BY_ID.get('hilare')!
+    const colere = EXPRESSION_BY_ID.get('colere')!
+    const excite = EXPRESSION_BY_ID.get('excite')!
+    // Le rire utilise deux arcs ; la colere reste une paire de gelules inclinees.
+    expect(hilare.eyes[0]!.smile).toBe(1)
+    expect(hilare.eyes[1]!.smile).toBe(1)
+    expect(colere.eyes[0]!.smile ?? 0).toBe(0)
+    // L'excitation garde un regard ouvert et parallele, sans V anxieux.
+    expect(excite.eyes[0]!.tilt).toBe(excite.eyes[1]!.tilt)
+    expect(excite.eyes[0]!.h).toBeGreaterThan(0.5)
+  })
+
   it('garde les deux yeux dans la silhouette, sur les 16 expressions', () => {
     for (const e of EXPRESSIONS) {
       const f = new BotEngine(100, 'idle', cercle(), e).sample(1)

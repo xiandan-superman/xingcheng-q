@@ -10,6 +10,7 @@ import {
   radiusAtAngle,
   toPoints,
   type Point,
+  smileEyePath,
   type Silhouette
 } from './shape'
 import { STATE_BY_ID, type Pose, type StateDef, type StateId } from './states'
@@ -18,6 +19,8 @@ export interface RenderedEye {
   d: string
   matrix: string
   alpha: number
+  /** Les yeux de rire sont des arcs ouverts a extremites rondes. */
+  strokeWidth?: number
 }
 
 export interface BotFrame {
@@ -520,9 +523,13 @@ export class BotEngine {
         // a l'ecran, pas le long de l'axe de la gelule.
         const k = blinkScale(Math.min(lid, cfg.open))
         eyes.push({
-          d: capsulePath(cfg.w * R, cfg.h * R),
+          d:
+            (cfg.smile ?? 0) > 0.08
+              ? smileEyePath(cfg.w * R, cfg.h * R, cfg.smile)
+              : capsulePath(cfg.w * R, cfg.h * R),
           matrix: `matrix(${r2(ax)},${r2(ay * k)},${r2(cx2)},${r2(cy2 * k)},${r2(e.x * fit + (offX + decalage.x) * R)},${r2(e.y * fit + (offY + decalage.y) * R)})`,
-          alpha: pose.eyeAlpha * clamp(e.depth / 0.12)
+          alpha: pose.eyeAlpha * clamp(e.depth / 0.12),
+          strokeWidth: (cfg.smile ?? 0) > 0.08 ? cfg.h * R * 0.68 : undefined
         })
       }
     }
@@ -555,4 +562,3 @@ export class BotEngine {
     }
   }
 }
-
