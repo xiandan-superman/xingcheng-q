@@ -1,10 +1,15 @@
-# bloub
+# 星橙Q
 
-An SVG recreation of the x.ai bot avatar: **one filled black shape** that morphs
-between 14 states, **two white shapes** for the eyes that morph independently, on
-a plain background. No animation library.
+量子星橙的 SVG 动画形象。保留 Bloub 的 14 状态变形、眼睛动画、视线跟随、
+时间轴和多格式导出能力，并将默认角色改造成橙色圆球形象“星橙Q”。
 
-![The avatar going through idle, wink, orbit and burst](docs/demo.gif)
+本项目基于 [jeremy-prt/bloub](https://github.com/jeremy-prt/bloub) 改造。
+上游代码采用 MIT 许可；原项目说明其模仿的角色设计不包含在 MIT 许可内，
+因此本版本使用独立的量子星橙品牌配色与表面识别元素。
+
+在线体验：[星橙Q 动画形象](https://xiandan-superman.github.io/xingcheng-q/)
+
+![星橙Q 动画头像](output/xingcheng-q-avatar.gif)
 
 ## Running it
 

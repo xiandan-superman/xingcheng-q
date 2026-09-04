@@ -455,7 +455,7 @@ watch(expression, (v) => ecris('expression', v))
  * portent `app.name` et `app.title` dans les trois locales. La constante est donc
  * ecrite ici plutot que tiree de `t('app.name')`, qui n'a pas la meme casse.
  */
-const NOM = 'BLOUB'
+const NOM = '星橙Q'
 
 /* ----------------------------------------------------------------- humeurs */
 

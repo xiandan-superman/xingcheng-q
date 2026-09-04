@@ -95,6 +95,13 @@ const engine = new BotEngine(R, state.value, shapeRadii.value, expression.value)
 const frame = shallowRef<BotFrame>(engine.sample(props.frozenAt ?? 0))
 const uid = Math.random().toString(36).slice(2, 8)
 const maskId = `bot-mask-${uid}`
+const brandGradientId = `xingcheng-gradient-${uid}`
+const brandClipId = `xingcheng-clip-${uid}`
+const isXingcheng = computed(() => props.color === 'xingcheng')
+const bodyFill = computed(() => (isXingcheng.value ? `url(#${brandGradientId})` : ink.value))
+const showBrandStar = computed(
+  () => isXingcheng.value && Boolean(STATE_BY_ID.get(state.value)?.baseBody)
+)
 
 let raf = 0
 let nextAt = Infinity
@@ -492,6 +499,22 @@ function dotAttrs(dot: BotFrame['dots'][number]) {
     :aria-label="t('app.botAria')"
   >
     <defs>
+      <radialGradient
+        :id="brandGradientId"
+        gradientUnits="userSpaceOnUse"
+        cx="-42"
+        cy="-48"
+        r="220"
+      >
+        <stop offset="0" stop-color="#ff9a22" />
+        <stop offset="0.52" stop-color="#ff6a1a" />
+        <stop offset="1" stop-color="#f04424" />
+      </radialGradient>
+
+      <clipPath :id="brandClipId" clipPathUnits="userSpaceOnUse">
+        <path :d="frame.bodyPath" />
+      </clipPath>
+
       <!--
         Les yeux sont de vrais trous perces dans le corps (comme sur x.ai), pas
         des formes blanches posees dessus : ils restent donc automatiquement
@@ -581,8 +604,17 @@ function dotAttrs(dot: BotFrame['dots'][number]) {
       -->
       <path :d="frame.bodyPath" :fill="props.paper" />
       <g :mask="`url(#${maskId})`">
-        <rect :x="-VB" :y="-VB" :width="VB * 2" :height="VB * 2" :fill="ink" />
+        <rect :x="-VB" :y="-VB" :width="VB * 2" :height="VB * 2" :fill="bodyFill" />
       </g>
+
+      <path
+        v-if="showBrandStar"
+        d="M-62-47C-62-42-59-39-54-39C-59-39-62-36-62-31C-62-36-65-39-70-39C-65-39-62-42-62-47Z"
+        fill="#ffd08a"
+        opacity="0.58"
+        :clip-path="`url(#${brandClipId})`"
+        aria-hidden="true"
+      />
     </g>
 
     <g v-if="!frame.dotsBehind">

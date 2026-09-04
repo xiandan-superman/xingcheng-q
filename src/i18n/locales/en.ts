@@ -7,9 +7,9 @@ import type fr from './fr'
  */
 const en: typeof fr = {
   app: {
-    name: 'bloub',
-    title: 'bloub — animated SVG avatar',
-    botAria: 'Animated bloub avatar'
+    name: 'Xingcheng Q',
+    title: 'Xingcheng Q — animated mascot',
+    botAria: 'Animated Xingcheng Q mascot'
   },
 
   gallery: {
@@ -49,8 +49,8 @@ const en: typeof fr = {
     gifDetail:
       'GIF transparency is all-or-nothing: with no background, the ball\u2019s edge comes out a little hard.',
     gifBackground: 'Background',
-    fond_blanc: 'White background',
-    fond_blanc_aide: 'Smooth edge, for light surfaces',
+    fond_blanc: 'Warm cream background',
+    fond_blanc_aide: 'Brand background with a smooth edge',
     fond_transparent: 'Transparent background',
     fond_transparent_aide: 'Fits any background, edge a little hard',
     gifConfirm: 'Download',
@@ -144,6 +144,7 @@ const en: typeof fr = {
   },
 
   colors: {
+    xingcheng: 'Star orange',
     encre: 'Ink',
     creme: 'Cream',
     brun: 'Brown',

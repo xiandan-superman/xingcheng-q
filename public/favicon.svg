@@ -1,38 +1,28 @@
-<!--
-  Le bot au repos, pas un dessin approchant : le corps est le cercle parfait de
-  rayon 100 et les deux matrices d'yeux sont celles produites par
-  `engine.sample(1)` sur l'etat `idle` (repere tangent de la sphere compris).
-  D'ou l'oeil de droite plus etroit que celui de gauche (0,64 contre 0,87) :
-  c'est la compression de profondeur, pas une faute de frappe.
-
-  Les yeux sont des trous, comme dans l'application : le fond de l'onglet passe
-  au travers. Le corps s'inverse en theme sombre, sinon un disque noir disparait
-  sur une barre d'onglets noire.
--->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-108 -108 216 216">
-  <style>
-    .corps {
-      fill: #0a0a0c;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .corps {
-        fill: #f9f9f9;
-      }
-    }
-  </style>
-
-  <mask id="yeux">
-    <circle r="100" fill="#fff" />
-    <path
-      d="M-9.3 -11.3A9.3 9.3 0 0 1 0 -20.6L0 -20.6A9.3 9.3 0 0 1 9.3 -11.3L9.3 11.3A9.3 9.3 0 0 1 0 20.6L0 20.6A9.3 9.3 0 0 1 -9.3 11.3Z"
-      transform="matrix(0.87,-0.33,0.45,0.84,21.42,-43.32)"
-    />
-    <path
-      d="M-9.3 -11.3A9.3 9.3 0 0 1 0 -20.6L0 -20.6A9.3 9.3 0 0 1 9.3 -11.3L9.3 11.3A9.3 9.3 0 0 1 0 20.6L0 20.6A9.3 9.3 0 0 1 -9.3 11.3Z"
-      transform="matrix(0.64,-0.06,0.45,0.84,62.98,-53.9)"
-    />
-  </mask>
-
-  <circle r="100" class="corps" mask="url(#yeux)" />
+  <defs>
+    <radialGradient id="xingcheng" gradientUnits="userSpaceOnUse" cx="-38" cy="-42" r="190">
+      <stop offset="0" stop-color="#ff9a22" />
+      <stop offset=".52" stop-color="#ff6a1a" />
+      <stop offset="1" stop-color="#f04424" />
+    </radialGradient>
+    <mask id="face">
+      <circle r="100" fill="#fff" />
+      <path
+        d="M-9.3-11.3A9.3 9.3 0 0 1 0-20.6A9.3 9.3 0 0 1 9.3-11.3V11.3A9.3 9.3 0 0 1 0 20.6A9.3 9.3 0 0 1-9.3 11.3Z"
+        transform="matrix(.87 -.33 .45 .84 21.42 -43.32)"
+        fill="#000"
+      />
+      <path
+        d="M-9.3-11.3A9.3 9.3 0 0 1 0-20.6A9.3 9.3 0 0 1 9.3-11.3V11.3A9.3 9.3 0 0 1 0 20.6A9.3 9.3 0 0 1-9.3 11.3Z"
+        transform="matrix(.64 -.06 .45 .84 62.98 -53.9)"
+        fill="#000"
+      />
+    </mask>
+  </defs>
+  <circle r="100" fill="url(#xingcheng)" mask="url(#face)" />
+  <path
+    d="M-48-53C-48-49-46-46-42-46C-46-46-48-44-48-40C-48-44-50-46-54-46C-50-46-48-49-48-53Z"
+    fill="#ffd08a"
+    opacity=".62"
+  />
 </svg>

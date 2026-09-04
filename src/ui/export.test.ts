@@ -171,9 +171,9 @@ describe('fond du gif', () => {
   })
 
   /* « Fond blanc » doit etre BLANC, pas le `--paper` legerement casse du site. */
-  it('peint du blanc pur, et rien du tout en transparent', () => {
+  it('peint le fond creme de la marque, et rien du tout en transparent', () => {
     expect(couleurDeFond('blanc')).toBe(BLANC)
-    expect(BLANC).toBe('#ffffff')
+    expect(BLANC).toBe('#fff8ee')
     expect(couleurDeFond('transparent')).toBeNull()
   })
 })
@@ -205,8 +205,8 @@ describe('nettoyage du markup', () => {
 
 describe('nom de fichier', () => {
   it('se construit sur les ids et pas sur les libelles', () => {
-    expect(nomFichier('goutte', 'neutre', 'encre', 'png')).toBe('bloub-goutte-neutre-encre.png')
-    expect(nomFichier('cercle', 'hilare', 'violet', 'svg')).toBe('bloub-cercle-hilare-violet.svg')
+    expect(nomFichier('goutte', 'neutre', 'encre', 'png')).toBe('xingchengq-goutte-neutre-encre.png')
+    expect(nomFichier('cercle', 'hilare', 'violet', 'svg')).toBe('xingchengq-cercle-hilare-violet.svg')
   })
 
   /*
@@ -223,11 +223,11 @@ describe('nom de fichier', () => {
 
   /* Un nom de montage doit rester lisible : « Cycle par défaut », pas « cyclepardfaut ». */
   it('translittere les accents et separe les mots', () => {
-    expect(nomFichier('Cycle par défaut', '', '', 'mp4')).toBe('bloub-cycle-par-defaut.mp4')
-    expect(nomFichier('Été 2026', '', '', 'gif')).toBe('bloub-ete-2026.gif')
+    expect(nomFichier('Cycle par défaut', '', '', 'mp4')).toBe('xingchengq-cycle-par-defaut.mp4')
+    expect(nomFichier('Été 2026', '', '', 'gif')).toBe('xingchengq-ete-2026.gif')
   })
 
   it('survit a des ids vides', () => {
-    expect(nomFichier('', '', '', 'png')).toBe('bloub.png')
+    expect(nomFichier('', '', '', 'png')).toBe('xingchengq.png')
   })
 })

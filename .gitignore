@@ -2,6 +2,8 @@ node_modules
 dist
 .DS_Store
 *.local
+.netlify
+.vercel
 
 # config Claude Code personnelle, non partagee
 CLAUDE.local.md

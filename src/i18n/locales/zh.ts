@@ -12,9 +12,9 @@ import type fr from './fr'
  */
 const zh: typeof fr = {
   app: {
-    name: 'bloub',
-    title: 'bloub — 动画 SVG 头像',
-    botAria: 'bloub 动画头像'
+    name: '星橙Q',
+    title: '星橙Q — 量子星橙动画形象',
+    botAria: '星橙Q 动画形象'
   },
 
   gallery: {
@@ -53,8 +53,8 @@ const zh: typeof fr = {
     gifTitle: '下载 GIF 动图',
     gifDetail: 'GIF 的透明只有全有或全无：不加背景时，球体边缘会略显生硬。',
     gifBackground: '背景',
-    fond_blanc: '白色背景',
-    fond_blanc_aide: '边缘平滑，适合浅色底',
+    fond_blanc: '暖奶油背景',
+    fond_blanc_aide: '品牌默认底色，边缘平滑',
     fond_transparent: '透明背景',
     fond_transparent_aide: '适配任何背景，边缘略硬',
     gifConfirm: '下载',
@@ -147,6 +147,7 @@ const zh: typeof fr = {
   },
 
   colors: {
+    xingcheng: '星橙橙',
     encre: '墨黑',
     creme: '奶油白',
     brun: '棕色',

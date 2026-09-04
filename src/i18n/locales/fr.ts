@@ -19,9 +19,9 @@ export default {
      * Un nom propre ne se traduit pas non plus. `title` sert de `document.title`.
      * Voir aussi le <title> de index.html, qui est statique.
      */
-    name: 'bloub',
-    title: 'bloub — avatar SVG animé',
-    botAria: 'Avatar bloub animé'
+    name: 'Xingcheng Q',
+    title: 'Xingcheng Q — mascotte animée',
+    botAria: 'Mascotte Xingcheng Q animée'
   },
 
   gallery: {
@@ -72,8 +72,8 @@ export default {
     gifDetail:
       "Le GIF ne gère la transparence qu'en tout ou rien : sans fond, le contour de la boule est un peu dur.",
     gifBackground: 'Fond',
-    fond_blanc: 'Fond blanc',
-    fond_blanc_aide: 'Contour lisse, à poser sur du clair',
+    fond_blanc: 'Fond crème chaud',
+    fond_blanc_aide: 'Fond de marque au contour lisse',
     fond_transparent: 'Fond transparent',
     fond_transparent_aide: "S'adapte à tout fond, contour un peu dur",
     gifConfirm: 'Télécharger',
@@ -169,6 +169,7 @@ export default {
   },
 
   colors: {
+    xingcheng: 'Orange étoilé',
     encre: 'Encre',
     creme: 'Crème',
     brun: 'Brun',

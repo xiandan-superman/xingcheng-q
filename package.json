@@ -1,15 +1,16 @@
 {
-  "name": "bloub",
+  "name": "xingcheng-q",
   "private": true,
   "version": "0.1.1",
   "type": "module",
-  "description": "SVG recreation of the x.ai bot avatar. One shape morphing through 14 states, measured off the reference video frame by frame.",
+  "description": "星橙Q：量子星橙的 SVG 动画形象，基于 Bloub 动画引擎改造。",
   "license": "MIT",
   "author": "Jérémy Perret",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremy-prt/bloub.git"
+    "url": "git+https://github.com/xiandan-superman/xingcheng-q.git"
   },
+  "homepage": "https://xiandan-superman.github.io/xingcheng-q/",
   "keywords": [
     "svg",
     "animation",

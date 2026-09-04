@@ -176,7 +176,7 @@ export const FONDS_GIF: FondGif[] = ['blanc', 'transparent']
 export const FOND_GIF_DEFAUT: FondGif = 'blanc'
 
 /** Blanc pur, et non le `--paper` du site : « fond blanc » doit etre blanc. */
-export const BLANC = '#ffffff'
+export const BLANC = '#fff8ee'
 
 /** La couleur a peindre sous la boule, ou `null` pour ne rien peindre. */
 export const couleurDeFond = (fond: FondGif) => (fond === 'blanc' ? BLANC : null)
@@ -227,7 +227,7 @@ export function sansCommentaires(markup: string) {
 }
 
 /**
- * `bloub-goutte-neutre-encre.png`.
+ * `xingchengq-goutte-neutre-xingcheng.png`.
  *
  * Construit sur les **ids** et non sur les libelles traduits : le nom du fichier
  * ne doit pas changer avec la langue de l'interface.
@@ -257,7 +257,7 @@ export function nomFichier(
   const morceaux = [propre(forme), propre(expression), propre(couleur), propre(suffixe)].filter(
     Boolean
   )
-  return `bloub${morceaux.map((m) => `-${m}`).join('')}.${extension}`
+  return `xingchengq${morceaux.map((m) => `-${m}`).join('')}.${extension}`
 }
 
 /**

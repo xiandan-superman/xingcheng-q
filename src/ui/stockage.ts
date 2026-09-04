@@ -8,14 +8,14 @@
  * Aucune migration depuis l'ancien prefixe : le renommage a ete fait avant toute
  * mise en ligne, il n'y a pas d'installation a rattraper.
  */
-const PREFIXE = 'bloub:'
+const PREFIXE = 'xingchengq:'
 
 /** Tout ce que l'application persiste. */
 const NOMS = ['cycles', 'cycle', 'forme', 'couleur', 'expression', 'langue'] as const
 
 export type NomStocke = (typeof NOMS)[number]
 
-/** `cle('cycles')` -> `'bloub:cycles'`. */
+/** `cle('cycles')` -> `'xingchengq:cycles'`. */
 export function cle(nom: NomStocke): string {
   return `${PREFIXE}${nom}`
 }

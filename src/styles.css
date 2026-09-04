@@ -2,16 +2,16 @@
 
 :root {
   /* Fond releve au pixel sur la video de reference. */
-  --paper: #f9f9f9;
+  --paper: #fff8ee;
   /*
    * Couleur principale de l'INTERFACE : un bleu nuit choisi, pas releve. Le
    * noir de la video, lui, n'a pas bouge — c'est celui du bot, dans skins.ts
    * (`encre`, #0a0a0c). Les deux ne doivent pas etre confondus : changer
    * celle-ci retouche le decor, changer l'autre casse la ressemblance.
    */
-  --ink: #17203a;
-  --line: #e3e5ea;
-  --muted: #6e7382;
+  --ink: #25113d;
+  --line: #eadfd3;
+  --muted: #766b78;
   /* Rouge d'interface pour les actions destructrices — choisi, comme --ink. */
   --danger: #d63c34;
 
@@ -177,7 +177,7 @@ body,
    * de « BLOUB » en cadratins a ce poids et cet interlettrage — mesuree, pas
    * estimee — et le reste est la marge qu'on lui laisse a droite.
    */
-  font-size: clamp(80px, calc((100vw - 7rem) / 3.05), 268px);
+  font-size: clamp(80px, calc((100vw - 7rem) / 3.6), 236px);
   font-weight: 900;
   letter-spacing: -0.045em;
   /*
@@ -194,9 +194,9 @@ body,
   padding-right: 0.1em;
   background: linear-gradient(
     180deg,
-    rgb(23 32 58 / 0.22) 0%,
-    rgb(23 32 58 / 0.1) 48%,
-    rgb(23 32 58 / 0) 88%
+    rgb(255 106 26 / 0.26) 0%,
+    rgb(240 68 36 / 0.12) 48%,
+    rgb(240 68 36 / 0) 88%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -240,7 +240,7 @@ body,
     position: static;
     text-align: center;
     padding-right: 0;
-    font-size: clamp(80px, calc((100vw - 2.5rem) / 3.05), 200px);
+    font-size: clamp(72px, calc((100vw - 2.5rem) / 3.6), 180px);
     /*
      * Les lettres touchent le bord bas de la page.
      *
