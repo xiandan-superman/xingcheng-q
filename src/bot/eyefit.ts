@@ -444,6 +444,9 @@ export function decalageDesYeux(
   expr: string | null
 ): { x: number; y: number } {
   if (!radii) return NUL
+  // Le profil circulaire est la reference exacte. Le resoudre avec plusieurs
+  // poses animees peut accumuler un ecart numerique inutile entre les epreuves.
+  if (radii.every((r) => Math.abs(r - 1) < 1e-9)) return NUL
   const par = DECALAGES.get(radii)
   if (!par) return NUL
   // un etat sans visage de repos n'a qu'une entree, quelle que soit l'expression

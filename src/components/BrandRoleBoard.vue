@@ -8,7 +8,7 @@ import { cycleImages, cyclePas, BLANC, type FormatCycle } from '@/ui/export'
 const samples: { id: string; title: string; note: string; cycle: Block[] }[] = [
   { id: 'rest', title: '平静 · 日常陪伴', note: '低频视线漂移与原生眨眼', cycle: [{ state: 'idle', duration: 3 }] },
   { id: 'invite', title: '邀请 · 可以开始', note: '睁大眼睛 → 眨眼 → 回到安静陪伴', cycle: [{ state: 'wide', duration: 1.8 }, { state: 'wink', duration: 1.2 }, { state: 'idle', duration: 1.4 }] },
-  { id: 'loading', title: '加载 · 正在处理', note: '球体连续形变为三点并形成脉冲', cycle: [{ state: 'thinking', duration: 2.6 }, { state: 'idle', duration: 1.2 }] },
+  { id: 'loading', title: '加载 · 正在处理', note: '角色保留本体，三点与星点形成思考脉冲', cycle: [{ state: 'thinking', duration: 2.6 }, { state: 'idle', duration: 1.2 }] },
   { id: 'submitting', title: '提交 · 发送信号', note: '播放形变 → 短暂停驻 → 复原', cycle: [{ state: 'play', duration: 2.1 }, { state: 'idle', duration: 1.4 }] },
   { id: 'correct', title: '正确 · 对准星轨', note: '单次眨眼确认并平滑回正', cycle: [{ state: 'wink', duration: 1.6 }, { state: 'idle', duration: 1.4 }] },
   {
@@ -22,9 +22,9 @@ const samples: { id: string; title: string; note: string; cycle: Block[] }[] = [
     ]
   },
   { id: 'attention', title: '注意 · 重要信息', note: '球体整体形变为原生警示符号并复原', cycle: [{ state: 'alert', duration: 2.4 }, { state: 'idle', duration: 1.4 }] },
-  { id: 'empty', title: '空状态 · 安静等待', note: '收束成小点、保持呼吸后复原', cycle: [{ state: 'sleep', duration: 2.4 }, { state: 'idle', duration: 1.4 }] },
+  { id: 'empty', title: '空状态 · 安静等待', note: '闭眼、慢呼吸与克制睡眠提示', cycle: [{ state: 'sleep', duration: 2.4 }, { state: 'idle', duration: 1.4 }] },
   { id: 'offline', title: '离线 · 信号较远', note: '彗星收束 → 思考确认 → 回到完整角色', cycle: [{ state: 'comet', duration: 2.4 }, { state: 'thinking', duration: 2.6 }, { state: 'idle', duration: 1.4 }] },
-  { id: 'notification', title: '通知 · 收到消息', note: '原生通知凹口、圆点和反向目光', cycle: [{ state: 'notify', duration: 2.2 }, { state: 'idle', duration: 1.4 }] },
+  { id: 'notification', title: '通知 · 收到消息', note: '先瞥向通知点，再睁眼确认', cycle: [{ state: 'notify', duration: 2.2 }, { state: 'idle', duration: 1.4 }] },
   { id: 'transition', title: '转场 · 进入下一站', note: '球体收束成彗星并完整返回', cycle: [{ state: 'comet', duration: 2.4 }, { state: 'idle', duration: 1.4 }] },
   {
     id: 'daily-complete',

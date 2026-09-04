@@ -3,9 +3,8 @@ import { TAU, clamp, createRng, r2 } from './math'
 /* ------------------------------------------------------------------ couleurs */
 
 /**
- * Les anneaux ne sont pas des couleurs plates : la video montre une roue de
- * teintes complete a luminosite constante, avec un degrade le long de chaque
- * trace. Mesure : S 45-62 %, L 50-67 %.
+ * Les traces de marque restent dans le spectre or-orange-corail de Xingcheng Q.
+ * La profondeur vient de la luminosite et de la saturation, pas d'un arc-en-ciel.
  */
 function wheel(hue: number, s = 0.55, l = 0.62): string {
   const h = ((hue % 360) + 360) % 360
@@ -162,18 +161,17 @@ export function arcRender(seed: ArcSeed, t: number, scale: number, id: string, o
 const RING_RNG = createRng(0xa11ce)
 
 /**
- * 6 anneaux, demi-grand axe 1.30-1.40 (donc nettement plus grands que la
- * boule), aplatissement toujours <= 0.45, epaisseur 0.055, ~3.3 tours/s.
+ * Quatre anneaux lisibles, assez lents pour que le corps et les yeux restent le sujet.
  */
-export const RINGS: ArcSeed[] = Array.from({ length: 6 }, (_, i) => ({
+export const RINGS: ArcSeed[] = Array.from({ length: 4 }, (_, i) => ({
   a: 1.3 + RING_RNG() * 0.1,
   k: 0.05 + RING_RNG() * 0.4,
-  tilt: (i / 6) * Math.PI + RING_RNG() * 0.5,
-  speed: 3 + RING_RNG() * 0.7,
+  tilt: (i / 4) * Math.PI + RING_RNG() * 0.42,
+  speed: 1.8 + RING_RNG() * 0.35,
   phase: RING_RNG() * TAU,
   sweep: 0.6 + RING_RNG() * 0.25,
-  hue: (i * 360) / 6 + RING_RNG() * 30,
-  hueSpan: 60 + RING_RNG() * 60,
+  hue: 8 + i * 6 + RING_RNG() * 3,
+  hueSpan: 7 + RING_RNG() * 5,
   width: 0.05 + RING_RNG() * 0.012,
   cx: 0,
   cy: 0.1
@@ -190,8 +188,8 @@ export const SWOOSH: ArcSeed[] = Array.from({ length: 4 }, (_, i) => ({
   speed: 0.3,
   phase: 0.06 * i,
   sweep: 0.4,
-  hue: 95 + i * 62,
-  hueSpan: 100,
+  hue: 10 + i * 5,
+  hueSpan: 9,
   width: 0.05,
   cx: 0,
   cy: -0.12
@@ -208,34 +206,55 @@ export const DOT_PEAK = 1.25
 
 const P_RNG = createRng(0xbeef)
 
-/** 5 particules, une nouvelle toutes les 0.2 s, duree de vie 0.55 s. */
+/** Eclat a quatre pointes, centre sur l'origine, en unites de rayon. */
+export const STAR_SPARK = 'M0-.09L.025-.025L.09 0L.025.025L0 .09L-.025.025L-.09 0L-.025-.025Z'
+
+/** 5 particules, une nouvelle toutes les 0.12 s. */
 const PARTICLES = Array.from({ length: 5 }, (_, i) => ({
-  birth: i * 0.2,
+  birth: i * 0.12,
   angle: P_RNG() * TAU,
   rho: 0.58 + P_RNG() * 0.18
 }))
 
 /**
- * Les particules ne partent pas en ligne droite : elles spiralent vers le
- * centre (rayon x0.75 par frame, angle +100 deg/s) en grossissant, et passent
- * derriere le noyau ou elles sont avalees.
+ * Les fragments etoiles partent du noyau, s'ecartent en spirale et disparaissent.
  */
 export function particles(t: number, scale: number): DotRender[] {
   const out: DotRender[] = []
   for (const p of PARTICLES) {
     const u = t - p.birth
-    if (u < 0 || u > 0.62) continue
-    const rho = p.rho * Math.pow(0.75, u * 10)
-    const a = p.angle + (u * 100 * Math.PI) / 180
+    if (u < 0 || u > 0.82) continue
+    const progress = clamp(u / 0.82)
+    const rho = 0.16 + p.rho * easingsOut(progress)
+    const a = p.angle + (u * 70 * Math.PI) / 180
     out.push({
       x: Math.cos(a) * rho * scale,
       y: Math.sin(a) * rho * scale,
-      r: (0.04 + 0.028 * clamp(u / 0.55)) * scale,
-      depth: clamp(1 - rho / 0.8),
-      opacity: clamp(u / 0.06) * clamp((0.62 - u) / 0.08)
+      r: 0.08 * scale,
+      d: STAR_SPARK,
+      rot: (a * 180) / Math.PI,
+      color: wheel(18 + progress * 24, 0.78, 0.62),
+      opacity: clamp(u / 0.08) * clamp((0.82 - u) / 0.18)
     })
   }
   return out
+}
+
+const easingsOut = (t: number) => 1 - Math.pow(1 - t, 3)
+
+/** Cercle de choc bref utilise par l'eclat de marque. */
+export const BURST_RING: ArcSeed = {
+  a: 0.95,
+  k: 1,
+  tilt: 0,
+  speed: 0,
+  phase: 0,
+  sweep: 0.995,
+  hue: 18,
+  hueSpan: 18,
+  width: 0.035,
+  cx: 0,
+  cy: 0
 }
 
 /* ------------------------------------------------------------------ comete */
@@ -257,8 +276,8 @@ export const COMET_RIBBONS: ArcSeed[] = Array.from({ length: 4 }, (_, i) => {
     // dephasage mesure : 10 a 20 degres entre rubans, pas davantage
     phase: -i * 0.045 + COMET_RNG() * 0.012,
     sweep: 0.34,
-    hue: i * 85 + COMET_RNG() * 20,
-    hueSpan: 80,
+    hue: 8 + i * 6 + COMET_RNG() * 3,
+    hueSpan: 8,
     width: 0.095,
     cx: 0,
     cy: 0

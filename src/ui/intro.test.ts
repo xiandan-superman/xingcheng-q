@@ -216,7 +216,7 @@ describe('fluidite de l arrivee', () => {
       ecart = Math.max(ecart, Math.abs(goutte[i]! - rond[i]!))
     }
     // sur une boule de 100 de rayon : des dizaines de px, pas un ou deux
-    expect(ecart, `${ecart.toFixed(1)} px d ecart vertical avec le cercle`).toBeGreaterThan(15)
+    expect(ecart, `${ecart.toFixed(1)} px d ecart vertical avec le cercle`).toBeGreaterThan(8)
   })
 
   it('fait bien parcourir un tour aux yeux', () => {

@@ -7,7 +7,8 @@ import {
   cycleAccepteTransparence,
   videoPossible,
   type FondGif,
-  type FormatCycle
+  type FormatCycle,
+  type PorteeCycle
 } from '@/ui/export'
 import { useModalDialog } from '@/ui/useModalDialog'
 
@@ -26,6 +27,7 @@ const props = defineProps<{
 const open = defineModel<boolean>('open', { required: true })
 const format = defineModel<FormatCycle>('format', { required: true })
 const fond = defineModel<FondGif>('fond', { required: true })
+const portee = defineModel<PorteeCycle>('portee', { required: true })
 const emit = defineEmits<{ confirm: []; annuler: [] }>()
 
 const boite = useTemplateRef<HTMLDialogElement>('boite')
@@ -105,6 +107,24 @@ function ferme() {
             {{ t(`export.cycle_${choix}`) }}
             <span class="text-xs text-[var(--muted)]">{{ t(`export.cycle_${choix}_aide`) }}</span>
           </span>
+        </label>
+      </fieldset>
+
+      <fieldset class="flex flex-col gap-1" :disabled="occupe">
+        <legend class="sr-only">{{ t('export.scope') }}</legend>
+        <label
+          v-for="choix in (['state', 'cycle'] as const)"
+          :key="choix"
+          class="flex cursor-pointer items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm transition hover:bg-black/5"
+        >
+          <input
+            v-model="portee"
+            type="radio"
+            name="portee"
+            :value="choix"
+            class="accent-[var(--ink)]"
+          />
+          {{ t(`export.scope_${choix}`) }}
         </label>
       </fieldset>
 

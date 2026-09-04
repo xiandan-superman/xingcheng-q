@@ -9,7 +9,7 @@
 - `assets/semantic`：14 个产品语义状态，每个含 GIF、MP4、PNG、WebP。
 - `assets/scene-actions`：执笔填写、招手邀请、托举成果 3 个克制配件动作。
 - `assets/core-motion`：待机眨眼、开心跳跃两套高频核心动态。
-- `assets/stickers`：8 张传播表情图与总览。
+- `assets/stickers`：11 张传播表情图与总览。
 - `assets/share-cards`：4 张 1200×630 分享卡。
 - `assets/posters`：1:1、3:4、9:16、16:9 海报。
 - `assets/guidelines`：主体与配件边界示意。

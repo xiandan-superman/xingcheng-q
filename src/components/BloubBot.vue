@@ -38,6 +38,8 @@ const props = withDefaults(
      * planche d'etats, une vignette de personnalisateur ou un test.
      */
     frozenAt?: number
+    /** Date absolue d'un cycle a rendre sans lancer la boucle, pour les actifs. */
+    cycleAt?: number
     /**
      * Montage joue par le lecteur : une suite d'etats, chacun tenu la duree de
      * son bloc. Par defaut, le cycle releve sur la video.
@@ -63,6 +65,7 @@ const props = withDefaults(
     expression: DEFAULT_EXPRESSION,
     paper: '#f9f9f9',
     frozenAt: undefined,
+    cycleAt: undefined,
     cycle: () => defaultCycle().blocks,
     follow: false,
     gaze: null
@@ -91,8 +94,19 @@ const shapeRadii = computed(() => SHAPE_BY_ID.get(props.shape)?.radii ?? null)
 const ink = computed(() => COLOR_BY_ID.get(props.color)?.hex ?? '#0a0a0c')
 const expression = computed(() => EXPRESSION_BY_ID.get(props.expression) ?? null)
 
-const engine = new BotEngine(R, state.value, shapeRadii.value, expression.value)
-const frame = shallowRef<BotFrame>(engine.sample(props.frozenAt ?? 0))
+const opticalEyeScale = props.size <= 128 ? 1.3 : 1
+const engine = new BotEngine(R, state.value, shapeRadii.value, expression.value, opticalEyeScale)
+function cycleFrame(t: number): BotFrame {
+  const blocs = props.cycle
+  const first = blocs[0]?.state ?? 'idle'
+  const e = new BotEngine(R, first, shapeRadii.value, expression.value, opticalEyeScale)
+  const { index } = blockAt(blocs, t)
+  for (let i = 1; i <= index; i++) e.setState(blocs[i]!.state, offsetOf(blocs, i))
+  return e.sample(t)
+}
+const frame = shallowRef<BotFrame>(
+  props.cycleAt === undefined ? engine.sample(props.frozenAt ?? 0) : cycleFrame(props.cycleAt)
+)
 const uid = Math.random().toString(36).slice(2, 8)
 const maskId = `bot-mask-${uid}`
 const brandGradientId = `xingcheng-gradient-${uid}`
@@ -100,8 +114,23 @@ const brandClipId = `xingcheng-clip-${uid}`
 const isXingcheng = computed(() => props.color === 'xingcheng')
 const bodyFill = computed(() => (isXingcheng.value ? `url(#${brandGradientId})` : ink.value))
 const showBrandStar = computed(
-  () => isXingcheng.value && Boolean(STATE_BY_ID.get(state.value)?.baseBody)
+  () => isXingcheng.value && state.value !== 'burst' && state.value !== 'comet'
 )
+const displayTime = computed(() => props.frozenAt ?? elapsed.value)
+const brandStar = computed(() => {
+  if (state.value === 'thinking') return { x: -30, y: -15, scale: 0.85, opacity: 0.72 }
+  if (state.value === 'alert') {
+    const p = clamp(displayTime.value / 1.5)
+    const travel = easings.easeInOutCubic(p) * 0.82 - 0.087
+    const back = displayTime.value > 1.6 ? clamp((displayTime.value - 1.6) / 0.4) : 0
+    const x = (travel * (1 - back) + 0.1 * back) * 100
+    return { x, y: -51, scale: 0.72, opacity: 0.72 }
+  }
+  if (state.value === 'sleep') {
+    return { x: -58, y: -38, scale: 1.12, opacity: 0.58 + Math.sin(displayTime.value * 4.2) * 0.12 }
+  }
+  return { x: -62, y: -39, scale: props.size <= 128 ? 1.35 : 1, opacity: props.size <= 128 ? 0.75 : 0.58 }
+})
 
 let raf = 0
 let nextAt = Infinity
@@ -613,12 +642,14 @@ function dotAttrs(dot: BotFrame['dots'][number]) {
 
       <path
         v-if="showBrandStar"
-        d="M-62-47C-62-42-59-39-54-39C-59-39-62-36-62-31C-62-36-65-39-70-39C-65-39-62-42-62-47Z"
+        d="M0-8C0-3 3 0 8 0C3 0 0 3 0 8C0 3-3 0-8 0C-3 0 0-3 0-8Z"
         fill="#ffd08a"
-        opacity="0.58"
+        :opacity="brandStar.opacity"
+        :transform="`translate(${brandStar.x} ${brandStar.y}) scale(${brandStar.scale})`"
         :clip-path="`url(#${brandClipId})`"
         aria-hidden="true"
       />
+
     </g>
 
     <g v-if="!frame.dotsBehind">

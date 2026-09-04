@@ -40,7 +40,8 @@ import {
   type ActionId,
   type EtatExport,
   type FondGif,
-  type FormatCycle
+  type FormatCycle,
+  type PorteeCycle
 } from '@/ui/export'
 import { HUMEURS } from '@/ui/gaze'
 import { INTRO, INTRO_GAZE, POSE_AT, introDue } from '@/ui/intro'
@@ -570,6 +571,7 @@ watch(nue, (encore, avant) => {
 const dialogueCycle = ref(false)
 const formatCycle = ref<FormatCycle>(FORMAT_CYCLE_DEFAUT)
 const fondCycle = ref<FondGif>(FOND_GIF_DEFAUT)
+const porteeCycle = ref<PorteeCycle>('cycle')
 /** `null` tant qu'on n'encode pas ; sinon la fraction faite, pour la barre. */
 const avancementCycle = ref<number | null>(null)
 /**
@@ -594,7 +596,8 @@ async function exporteCycle() {
   erreurCycle.value = false
   const controle = new AbortController()
   abandonCycle = controle
-  const blocs = cycle.value.blocks
+  const blocActif = cycle.value.blocks[block.value]
+  const blocs = porteeCycle.value === 'state' && blocActif ? [{ ...blocActif }] : cycle.value.blocks
   const format = formatCycle.value
   const images = cycleImages(totalDuration(blocs), format)
   const pas = cyclePas(format)
@@ -618,7 +621,8 @@ async function exporteCycle() {
           suit,
           controle.signal
         )
-    telecharge(fichier, nomFichier(nomDeCycle(cycle.value), '', '', mp4 ? 'mp4' : 'gif'))
+    const sujet = porteeCycle.value === 'state' && blocActif ? blocActif.state : nomDeCycle(cycle.value)
+    telecharge(fichier, nomFichier(sujet, '', '', mp4 ? 'mp4' : 'gif'))
     dialogueCycle.value = false
   } catch (e) {
     // Un abandon n'est pas un echec : on ne signale pas a quelqu'un qu'il a obtenu ce
@@ -929,6 +933,7 @@ watch(
           v-model:open="dialogueCycle"
           v-model:format="formatCycle"
           v-model:fond="fondCycle"
+          v-model:portee="porteeCycle"
           :avancement="avancementCycle"
           :erreur="erreurCycle"
           @confirm="exporteCycle"

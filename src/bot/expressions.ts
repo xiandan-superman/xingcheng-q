@@ -91,11 +91,11 @@ export const EXPRESSIONS: BotExpression[] = [
     eyes: [eye(0.4, 0.58, -5), eye(0.4, 0.58, -5)]
   },
   {
-    // yeux plissés en arc : les hauts convergent légèrement
+    // sourire doux : meme langage que le rire, avec une courbure contenue
     id: 'heureux',
     gaze: { yaw: 5, pitch: 9, roll: 0 },
     split: 17,
-    eyes: pair(0.27, 0.17, 14)
+    eyes: pair(0.3, 0.24, 10, 1, 0.5)
   },
   {
     id: 'hilare',

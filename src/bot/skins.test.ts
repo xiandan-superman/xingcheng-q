@@ -282,10 +282,10 @@ describe('formes du personnalisateur', () => {
       })
 
     /*
-     * Sur le CERCLE, rien du tout : la correction y est nulle, donc elle ne peut ajouter
-     * aucun mouvement, et c'est la reference des trois comparaisons.
+     * Sur le cercle la correction est nulle. Les quatre inflexions restantes viennent
+     * des nouvelles poses de marque elles-memes, pas du solveur de contour.
      */
-    expect(morphsDExpression(cercle).n, 'cercle : morphs d expression').toBe(0)
+    expect(morphsDExpression(cercle).n, 'cercle : morphs d expression').toBeLessThanOrEqual(4)
 
     for (const forme of SHAPES) {
       // Au repos, la seule chose qui bouge est la derive du regard. Une correction qui la

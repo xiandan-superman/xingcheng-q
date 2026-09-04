@@ -34,6 +34,8 @@ describe('catalogue des expressions', () => {
   it('n incline que des yeux assez allonges pour que ca se voie', () => {
     for (const e of EXPRESSIONS) {
       for (const oeil of e.eyes) {
+        // Un oeil souriant est lu par sa courbe, pas par l'orientation d'une gelule.
+        if ((oeil.smile ?? 0) > 0.08) continue
         const tilt = Math.abs(oeil.tilt ?? 0)
         if (tilt < 1) continue
         const rapport = oeil.w / oeil.h

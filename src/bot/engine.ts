@@ -89,7 +89,8 @@ const lerpEye = (a: Pose['eyes'][number], b: Pose['eyes'][number], t: number) =>
   w: lerp(a.w, b.w, t),
   h: lerp(a.h, b.h, t),
   open: lerp(a.open, b.open, t),
-  tilt: lerp(a.tilt ?? 0, b.tilt ?? 0, t)
+  tilt: lerp(a.tilt ?? 0, b.tilt ?? 0, t),
+  smile: lerp(a.smile ?? 0, b.smile ?? 0, t)
 })
 
 /** Interpolation de deux poses. Le decor se croise en opacite, pas en geometrie. */
@@ -170,7 +171,9 @@ export class BotEngine {
     scale = 100,
     initial: StateId = 'idle',
     shape: number[] | null = null,
-    expression: BotExpression | null = null
+    expression: BotExpression | null = null,
+    /** Correction optique reservee aux avatars effectivement affiches en petit. */
+    readonly opticalEyeScale = 1
   ) {
     this.scale = scale
     this.cur = initial
@@ -508,6 +511,7 @@ export class BotEngine {
         const e = poses[i]!
         if (e.depth <= 0.02) continue
         const cfg = pose.eyes[i]!
+        const eyeScale = this.opticalEyeScale
         const fit = bodyRadius(e.x, e.y)
         // Inclinaison propre de l'oeil : on compose le repere tangent avec une
         // rotation dans le plan de l'oeil (Basis x Rot). C'est ce qui permet des
@@ -525,11 +529,11 @@ export class BotEngine {
         eyes.push({
           d:
             (cfg.smile ?? 0) > 0.08
-              ? smileEyePath(cfg.w * R, cfg.h * R, cfg.smile)
-              : capsulePath(cfg.w * R, cfg.h * R),
+              ? smileEyePath(cfg.w * R * eyeScale, cfg.h * R * eyeScale, cfg.smile)
+              : capsulePath(cfg.w * R * eyeScale, cfg.h * R * eyeScale),
           matrix: `matrix(${r2(ax)},${r2(ay * k)},${r2(cx2)},${r2(cy2 * k)},${r2(e.x * fit + (offX + decalage.x) * R)},${r2(e.y * fit + (offY + decalage.y) * R)})`,
           alpha: pose.eyeAlpha * clamp(e.depth / 0.12),
-          strokeWidth: (cfg.smile ?? 0) > 0.08 ? cfg.h * R * 0.68 : undefined
+          strokeWidth: (cfg.smile ?? 0) > 0.08 ? cfg.h * R * eyeScale * 0.68 : undefined
         })
       }
     }

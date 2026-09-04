@@ -127,6 +127,7 @@ export const GIF_TAILLE = 320
  * pour l'avatar au repos, ou la silhouette est immobile.
  */
 export type FormatCycle = 'mp4' | 'gif'
+export type PorteeCycle = 'cycle' | 'state'
 
 export const FORMATS_CYCLE: FormatCycle[] = ['mp4', 'gif']
 export const FORMAT_CYCLE_DEFAUT: FormatCycle = 'mp4'

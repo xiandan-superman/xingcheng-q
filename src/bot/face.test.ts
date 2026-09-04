@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest'
-import { EYE_H, EYE_SPLIT, EYE_W, REST_GAZE, eyePoses, type HeadGaze } from './face'
+import {
+  EYE_H,
+  EYE_SPLIT,
+  EYE_W,
+  REST_GAZE,
+  eyePoses,
+  type HeadGaze
+} from './bloub-face'
+import { REST_GAZE as BRAND_REST_GAZE } from './face'
 
 /**
  * Valeurs relevees image par image sur la video de reference (unites : rayon de
@@ -54,6 +62,11 @@ const court = (e: ReturnType<typeof eyePoses>[number], w: number) => Math.hypot(
 const long = (e: ReturnType<typeof eyePoses>[number], h: number) => Math.hypot(e.c, e.d) * h
 
 describe('yeux poses sur une sphere', () => {
+  it('la pose de marque regarde le public tout en gardant son inclinaison', () => {
+    expect(Math.abs(BRAND_REST_GAZE.yaw)).toBeLessThanOrEqual(10)
+    expect(Math.abs(BRAND_REST_GAZE.pitch)).toBeLessThanOrEqual(10)
+    expect(BRAND_REST_GAZE.roll).toBe(-13)
+  })
   for (const m of MESURES) {
     it(`reproduit la pose "${m.nom}" mesuree sur la video`, () => {
       const poses = eyePoses(m.gaze, 1, m.split)

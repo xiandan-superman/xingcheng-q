@@ -33,10 +33,10 @@ const EMPREINTES: Array<[StateId, number, number, number, number]> = [
   ['idle', 0.5, 2.0, 2.0, 0.05],
   ['egg', 0.9, 1.653, 2.0, 0.06],
   ['hexagon', 0.9, 1.82, 2.01, 0.07],
-  ['exclaim', 0.9, 0.263, 0.842, 0.03],
+  ['exclaim', 0.9, 2.0, 2.0, 0.05],
   ['alert', 0.8, 0.421, 0.753, 0.04],
-  ['sleep', 0.6, 0.317, 0.317, 0.03],
-  ['comet', 1.0, 0.258, 0.258, 0.03]
+  ['sleep', 0.6, 2.0, 2.0, 0.05],
+  ['comet', 1.0, 0.297, 0.297, 0.03]
 ]
 
 describe('silhouettes', () => {
@@ -135,7 +135,7 @@ describe('forme personnalisee', () => {
   })
 
   it('laisse intacts les etats qui dessinent leur propre forme', () => {
-    for (const id of ['exclaim', 'alert', 'sleep', 'egg', 'hexagon'] as const) {
+    for (const id of ['alert', 'egg', 'hexagon'] as const) {
       const nu = new BotEngine(100, id)
       const habille = new BotEngine(100, id, radii('goutte'))
       expect(habille.sample(1).bodyPath).toBe(nu.sample(1).bodyPath)
@@ -204,8 +204,8 @@ describe('etats', () => {
   })
 
   it('montre le visage sur les etats a visage, le cache sur les autres', () => {
-    const avec: StateId[] = ['idle', 'wink', 'wide', 'notify', 'egg', 'hexagon']
-    const sans: StateId[] = ['thinking', 'alert', 'exclaim', 'sleep']
+    const avec: StateId[] = ['idle', 'thinking', 'wink', 'wide', 'notify', 'exclaim', 'sleep', 'egg', 'hexagon']
+    const sans: StateId[] = ['alert']
     for (const id of avec) expect(new BotEngine(100, id).sample(0.9).eyes.length).toBe(2)
     for (const id of sans) expect(new BotEngine(100, id).sample(0.9).eyes.length).toBe(0)
   })
@@ -227,13 +227,13 @@ describe('etats', () => {
     expect(f.arcs.some((a) => a.front.length > 0)).toBe(true)
   })
 
-  it('fait spiraler les particules vers le centre pendant l eclatement', () => {
+  it('fait jaillir les particules vers l exterieur pendant l eclatement', () => {
     const e = new BotEngine(100, 'burst')
     const rayon = (t: number) => {
       const d = e.sample(t).dots[0]
       return d ? Math.hypot(d.x, d.y) : 0
     }
-    expect(rayon(0.15)).toBeGreaterThan(rayon(0.45))
+    expect(rayon(0.15)).toBeLessThan(rayon(0.45))
     expect(rayon(0.45)).toBeGreaterThan(0)
   })
 })

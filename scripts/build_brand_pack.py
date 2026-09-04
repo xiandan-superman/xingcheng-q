@@ -123,8 +123,10 @@ def semantic_overview():
 
 def standard_assets():
     calm = rgba(PACK / 'assets/emotions/png/xingcheng-q-emotion-calm.png')
+    small = rgba(SRC / 'xingcheng-q-avatar-small.png')
     for n in (32, 64, 128, 256, 512, 1024):
-        fit(calm, (n,n)).save(PACK / f'assets/standard/xingcheng-q-avatar-{n}.png')
+        source = small if n <= 128 else calm
+        fit(source, (n,n)).save(PACK / f'assets/standard/xingcheng-q-avatar-{n}.png')
     base = Image.new('RGBA', (1024,1024), CREAM)
     place(base, calm, (0,0))
     base.convert('RGB').save(PACK / 'assets/standard/xingcheng-q-avatar-cream.jpg', quality=95)

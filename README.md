@@ -50,6 +50,10 @@ Anything on screen can be exported: the avatar as SVG, PNG or an animated GIF, a
 a whole timeline as GIF or MP4. The still formats need no library at all, and the
 video encoder is only fetched the first time you ask for one.
 
+The export dialog can also render only the selected state block. The original
+Bloub motion definitions remain available from `src/bot/libraries.ts`, while the
+default `STATES` catalogue contains the Xingcheng Q brand interpretation.
+
 Two URLs are worth knowing:
 
 - `#planche`: the 14 states side by side, frozen. Quick visual check.

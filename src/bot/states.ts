@@ -1,9 +1,9 @@
 import {
   COMET_DOT,
   COMET_RIBBONS,
+  BURST_RING,
   DOT_PEAK,
   DOT_R,
-  DOT_X,
   NOTIF_ANGLE,
   NOTIF_DIST,
   NOTIF_MARGIN,
@@ -11,6 +11,7 @@ import {
   NOTIF_R,
   RINGS,
   SWOOSH,
+  STAR_SPARK,
   particles,
   type ArcSpec,
   type DotRender
@@ -95,25 +96,8 @@ function base(over: Partial<Pose> = {}): Pose {
  * Mesure : cercle haut (0, -0.505) r 0.132, cercle bas (0, +0.130) r 0.075,
  * flancs rectilignes. Elle est donc tronconique (rapport haut/bas 1.76).
  */
-const BAR_UPRIGHT_CY = -0.1875
-const BAR_UPRIGHT = profileFromPolygon(
-  hullOfCircles(0, -0.505, 0.132, 0, 0.13, 0.075),
-  0,
-  BAR_UPRIGHT_CY
-)
-
 /** Barre du "!" penche : capsule pure (largeur constante 0.269, longueur 0.776). */
 const BAR_ITALIC = profileFromPolygon(hullOfCircles(0, -0.2535, 0.1345, 0, 0.2535, 0.1345), 0, 0)
-
-const barUpright = (pose: Partial<Silhouette> = {}): Silhouette => ({
-  radii: [...BAR_UPRIGHT],
-  rot: 0,
-  cx: 0,
-  cy: BAR_UPRIGHT_CY,
-  sx: 1,
-  sy: 1,
-  ...pose
-})
 
 const barItalic = (pose: Partial<Silhouette> = {}): Silhouette => ({
   radii: [...BAR_ITALIC],
@@ -224,20 +208,19 @@ export const STATES: StateDef[] = [
     baseBody: false,
     blinkIn: true,
     pose: (t) => {
-      const mid = dotPulse(t, 1)
-      // Les points lateraux sortent des flancs de la boule : dans la video ils
-      // restent fusionnes avec elle 1-2 frames avant de se detacher.
-      const emerge = 0.3 + 0.7 * easings.easeOutCubic(clamp(t / 0.3))
+      const squash = Math.sin(clamp(t / 0.22) * Math.PI)
       return base({
-        // la boule DEVIENT le point du milieu : le morph reste continu
-        sil: circle(DOT_R * (1 + (DOT_PEAK - 1) * mid), { cx: DOT_X[1]! }),
-        eyeAlpha: 0,
-        dots: [0, 2].map((i) => {
+        // Le personnage reste reconnaissable ; la reflexion devient un accessoire.
+        sil: circle(0.62, { sx: 1 + squash * 0.12, sy: 1 - squash * 0.1, cy: 0.16 }),
+        gaze: { yaw: 13, pitch: 18, roll: -13 },
+        eyes: pair(0.2, 0.34),
+        dots: [0, 1, 2].map((i) => {
           const k = dotPulse(t, i)
           return {
-            x: DOT_X[i]! * emerge,
-            y: 0,
-            r: DOT_R * (1 + (DOT_PEAK - 1) * k),
+            x: 0.28 + i * 0.24,
+            y: -0.52 - i * 0.12,
+            r: DOT_R * 0.55 * (1 + (DOT_PEAK - 1) * k),
+            ...(i === 1 ? { d: STAR_SPARK, color: '#ffd36a' } : {}),
             opacity: 0.55 + 0.45 * k
           }
         })
@@ -274,9 +257,9 @@ export const STATES: StateDef[] = [
     baseBody: true,
     pose: () =>
       base({
-        gaze: { yaw: 6.92, pitch: -21.96, roll: 11.6 },
+        gaze: { yaw: 6.92, pitch: 8, roll: 5 },
         split: 18.43,
-        eyes: pair(0.356, 0.875)
+        eyes: pair(0.42, 0.62)
       })
   },
 
@@ -329,11 +312,16 @@ export const STATES: StateDef[] = [
       const pop = 1 + (NOTIF_POP - 1) * Math.sin(p * Math.PI) * (1 - p * 0.35)
       const r = NOTIF_R * (p < 1 ? pop : 1)
       const a = (NOTIF_ANGLE * Math.PI) / 180
+      const glance = easings.easeOutQuint(clamp(t / 0.3))
       return base({
-        // le regard part a l'oppose de la pastille
-        gaze: { yaw: -21.94, pitch: -5.82, roll: -12.2 },
+        // D'abord un coup d'oeil, puis l'ouverture confirme la decouverte.
+        gaze: {
+          yaw: REST_GAZE.yaw + (36 - REST_GAZE.yaw) * glance,
+          pitch: REST_GAZE.pitch + (8 - REST_GAZE.pitch) * glance,
+          roll: -12.2
+        },
         split: 18.89,
-        eyes: pair(0.505, 0.498),
+        eyes: pair(0.32 + 0.185 * glance, 0.4 + 0.098 * glance),
         notif: {
           x: Math.cos(a) * NOTIF_DIST,
           y: Math.sin(a) * NOTIF_DIST,
@@ -348,15 +336,34 @@ export const STATES: StateDef[] = [
     id: 'exclaim',
     duration: 2,
     morph: 0.45,
-    baseFace: false,
-    baseBody: false,
+    baseFace: true,
+    baseBody: true,
     blinkIn: false,
-    pose: () =>
-      base({
-        sil: barUpright(),
-        eyeAlpha: 0,
-        dots: [{ x: -0.012, y: 0.526, r: 0.113, opacity: 1 }]
+    pose: (t) => {
+      const pop = easings.easeOutQuint(clamp(t / 0.28))
+      const settle = 1 + Math.sin(clamp(t / 0.48) * Math.PI) * 0.08
+      return base({
+        sil: circle(1, { sx: 1 + (1 - pop) * 0.08, sy: settle - (1 - pop) * 0.12, cy: 0.04 }),
+        dots: [
+          {
+            x: 0.58,
+            y: -1.28 - (1 - pop) * 0.25,
+            r: 0.12,
+            d: 'M-.065-.22L.065-.22L.04.08L-.04.08Z',
+            rot: 8,
+            color: '#f04424',
+            opacity: pop
+          },
+          {
+            x: 0.6,
+            y: -1.1 - (1 - pop) * 0.25,
+            r: 0.065,
+            color: '#f04424',
+            opacity: pop
+          }
+        ]
       })
+    }
   },
 
   {
@@ -364,14 +371,28 @@ export const STATES: StateDef[] = [
     duration: 2.4,
     morph: 0.5,
     baseFace: false,
-    baseBody: false,
+    baseBody: true,
     blinkIn: false,
-    pose: (t) =>
-      base({
-        // Rebond vertical mesure : +-0.19 autour de +0.11, periode 0.6 s.
-        sil: circle(0.1585, { cy: 0.11 + Math.sin(t * (TAU / 0.6)) * 0.19 }),
-        eyeAlpha: 0
+    pose: (t) => {
+      const breath = Math.sin(t * (TAU / 1.5))
+      const z = clamp((t - 0.35) / 0.35) * clamp((2.25 - t) / 0.45)
+      return base({
+        sil: circle(1, { sy: 1 + breath * 0.01, cy: 0.035 + breath * 0.065 }),
+        gaze: { yaw: 5, pitch: -5, roll: -8 },
+        split: 16,
+        eyes: pair(0.31, 0.07),
+        dots: [
+          {
+            x: 0.57,
+            y: -0.57 - 0.04 * breath,
+            r: 0.08,
+            d: 'M-.07-.07L.07-.07L-.07.07L.07.07',
+            rot: 0,
+            opacity: z * 0.72
+          }
+        ]
       })
+    }
   },
 
   {
@@ -440,40 +461,37 @@ export const STATES: StateDef[] = [
     minDuration: 2.5,
     morph: 0.6,
     baseFace: false,
-    baseBody: false,
+    baseBody: true,
     blinkIn: false,
     pose: (t) => {
-      // Rotation mesuree : rampe sur 0.35 s puis 1.25 tour/s (sens antihoraire).
-      const ramp = easings.easeInOutCubic(clamp(t / 0.35))
-      const rot = -TAU * 1.25 * t * ramp
-      // Le corps se relache du triangle vers la boule pendant l'orbite.
-      const back = easings.easeInOutCubic(clamp((t - 1.6) / 0.9))
-      const tri = spinningTriangle(rot)
-      const ball = circle(1, { rot })
-      const sil: Silhouette = {
-        radii: tri.radii.map((r, i) => r + (ball.radii[i]! - r) * back),
-        rot,
-        cx: tri.cx * (1 - back),
-        cy: tri.cy * (1 - back),
-        sx: 1,
-        sy: 1
-      }
-      const fade = clamp(t / 0.8) * clamp((3.6 - t) / 0.9)
+      const intro = easings.easeOutQuint(clamp(t / 0.65))
+      const outro = clamp((3.4 - t) / 0.65)
+      const fade = intro * outro
+      const flourish = 1 - clamp((t - 0.65) / 0.45)
       return base({
-        sil,
-        // les yeux filent autour de la sphere ~3x plus vite que la silhouette
+        sil: circle(1),
         gaze: {
-          yaw: REST_GAZE.yaw + Math.sin(t * 6.5) * 65 * (1 - back),
-          pitch: -4 + back * 32,
+          yaw: REST_GAZE.yaw + Math.sin(t * 4.2) * 35 * flourish,
+          pitch: REST_GAZE.pitch + Math.sin(t * 2.1) * 5,
           roll: -13
         },
-        eyes: pair(0.18, 0.34 + back * 0.07),
-        // les anneaux entrent un par un sur 0.8 s
+        eyes: pair(0.19, 0.4),
+        dots: [
+          {
+            x: Math.cos(t * 2.2) * 1.18,
+            y: 0.1 + Math.sin(t * 2.2) * 0.34,
+            r: 0.075,
+            d: STAR_SPARK,
+            rot: t * 80,
+            color: '#ffd36a',
+            opacity: fade
+          }
+        ],
         arcs: RINGS.map((s, i) => ({
           id: `rg${i}`,
           seed: s,
           t,
-          opacity: fade * clamp((t - i * 0.13) / 0.3)
+          opacity: fade * clamp((t - i * 0.11) / 0.28)
         }))
       })
     }
@@ -535,14 +553,14 @@ export const STATES: StateDef[] = [
     baseBody: false,
     blinkIn: false,
     pose: (t) => {
-      // Effondrement mesure : 1.0 -> 0.166 en 0.7 s, ease-out, sans rebond.
-      const collapse = 1 - 0.834 * easings.easeOutQuint(clamp(t / 0.7))
-      const regrow = easings.easeOutQuint(clamp((t - 1.7) / 0.7))
+      const hit = Math.sin(clamp(t / 0.55) * Math.PI)
+      const ring = clamp((t - 0.08) / 0.55) * clamp((0.9 - t) / 0.25)
       return base({
-        sil: circle(collapse + (1 - collapse) * regrow),
-        eyeAlpha: clamp((t - 1.85) / 0.4),
+        sil: circle(1 + hit * 0.1),
+        eyeAlpha: 1 - hit * 0.7,
         dots: particles(t, 1),
-        dotsBehind: true
+        arcs: ring > 0.01 ? [{ id: 'burst-ring', seed: { ...BURST_RING, a: 0.85 + ring * 0.7 }, t: 0, opacity: ring }] : [],
+        dotsBehind: false
       })
     }
   },
@@ -559,16 +577,20 @@ export const STATES: StateDef[] = [
     baseBody: false,
     blinkIn: false,
     pose: (t) => {
-      const collapse = 1 - (1 - COMET_DOT) * easings.easeOutQuint(clamp(t / 0.55))
-      const regrow = easings.easeOutQuint(clamp((t - 1.85) / 0.6))
-      const fade = clamp((t - 0.15) / 0.25) * clamp((1.95 - t) / 0.3)
+      const travel = easings.easeInOutCubic(clamp(t / 2.25))
+      const x = -1.28 + travel * 2.56
+      const y = 0.28 - Math.sin(travel * Math.PI) * 0.58
+      const fade = clamp(t / 0.22) * clamp((2.35 - t) / 0.28)
       return base({
-        // Le point derive de 0.035 vers le bas puis remonte (wobble mesure).
-        sil: circle(collapse + (1 - collapse) * regrow, {
-          cy: Math.sin(clamp(t / 1.7) * Math.PI) * 0.035
-        }),
-        eyeAlpha: clamp((t - 2) / 0.35),
-        arcs: COMET_RIBBONS.map((s, i) => ({ id: `cm${i}`, seed: s, t, opacity: fade }))
+        sil: circle(COMET_DOT * 1.15, { cx: x, cy: y }),
+        eyeAlpha: 0,
+        dots: [{ x, y, r: 0.095, d: STAR_SPARK, rot: travel * 180, color: '#ffd36a', opacity: fade }],
+        arcs: COMET_RIBBONS.map((s, i) => ({
+          id: `cm${i}`,
+          seed: { ...s, cx: x - 0.28, cy: y + 0.04 },
+          t: 0.12,
+          opacity: fade * (1 - i * 0.1)
+        }))
       })
     }
   }
