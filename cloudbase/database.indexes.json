@@ -1,0 +1,154 @@
+{
+  "knowledge_l1": [
+    {
+      "IndexName": "subjectId_1_order_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": true,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "order", "Direction": "1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "subjectId_1_name_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": true,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "name", "Direction": "1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "subjectId_1_enabled_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "enabled", "Direction": "1" }
+        ]
+      }
+    }
+  ],
+  "knowledge_points": [
+    {
+      "IndexName": "subjectId_1_enabled_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "enabled", "Direction": "1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "l1Id_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "l1Id", "Direction": "1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "subjectId_1_name_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": true,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "name", "Direction": "1" }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "IndexName": "status_1_subjectId_1_l1Order_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "status", "Direction": "1" },
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "l1Order", "Direction": "1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "reviewStatus_1_updatedAt_-1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "reviewStatus", "Direction": "1" },
+          { "Name": "updatedAt", "Direction": "-1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "importJobId_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "importJobId", "Direction": "1" }
+        ]
+      }
+    },
+    {
+      "IndexName": "knowledgePointIds_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "knowledgePointIds", "Direction": "1" }
+        ]
+      }
+    }
+  ],
+  "import_jobs": [
+    {
+      "IndexName": "subjectId_1_status_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "status", "Direction": "1" }
+        ]
+      }
+    }
+  ],
+  "legacy_map_reports": [
+    {
+      "IndexName": "subjectId_1_createdAt_-1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "createdAt", "Direction": "-1" }
+        ]
+      }
+    }
+  ],
+  "l1_recalc_jobs": [
+    {
+      "IndexName": "subjectId_1_createdAt_-1",
+      "MgoKeySchema": {
+        "MgoIsUnique": false,
+        "MgoIndexKeys": [
+          { "Name": "subjectId", "Direction": "1" },
+          { "Name": "createdAt", "Direction": "-1" }
+        ]
+      }
+    }
+  ],
+  "daily_locks": [
+    {
+      "IndexName": "userId_1_dailyDate_1",
+      "MgoKeySchema": {
+        "MgoIsUnique": true,
+        "MgoIndexKeys": [
+          { "Name": "userId", "Direction": "1" },
+          { "Name": "dailyDate", "Direction": "1" }
+        ]
+      }
+    }
+  ]
+}
