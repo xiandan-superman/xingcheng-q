@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const root=path.resolve(dir,'../..');
+const app=path.join(root,'小程序/量子星橙-开工包/06-实现/miniapp');
+const files=['components/xingcheng-q-home/core.js','components/xingcheng-q-home/sleep.js','components/xingcheng-q-home/timeline.js','components/xingcheng-q-motion/appearance.js','components/xingcheng-q-motion/core.js','components/xingcheng-q-motion/eye-contour.js','assets/xingcheng-q/appearance-assets.js'];
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
+let js='/* Frozen current production sources. Review-only; no Aora code or expression data. */\n(function(G){\nconst factories={\n';const hashes={};
+for(const file of files){let source=fs.readFileSync(path.join(app,file),'utf8');hashes[file]=sha(source);if(file.endsWith('/sleep.js'))source=source.replace('return { timeline: tl, draw };','return { timeline: tl, draw, state:s };').replace('function drawCharacter(x, y, rotation, scaleX, scaleY, alpha = 1) {','function drawCharacter(x, y, rotation, scaleX, scaleY, alpha = 1) { if(ctx._qPropsOnly)return;').replace('function drawQuantumDots() {','function drawQuantumDots() { if(ctx._qPropsOnly)return;').replace('function hand(x, y, alpha) {','function hand(x, y, alpha) { if(ctx._qPropsOnly)return;');if(file.endsWith('/home/core.js'))source=source.replace('function orb(c,s,a=1,dx=0,dy=0,k=1){','function orb(c,s,a=1,dx=0,dy=0,k=1){if(c._qPropsOnly)return;').replace('function quantum(c,s){','function quantum(c,s){if(c._qPropsOnly)return;');js+=JSON.stringify('/'+file)+':function(module,exports,require){\n'+source+'\n},\n';}
+const fullTimeline=fs.readFileSync(path.join(app,'components/xingcheng-q-home/timeline.js'),'utf8').replace(/^function easing\(name,t\)\{.*\}$/m,'const easing=(name,t)=>globalThis.QRefinement.easing(name,t);');
+js+='"/review/timeline.js":function(module,exports,require){\n'+fullTimeline+'\n},\n';
+js+='};function normalize(p){const out=[];for(const part of p.split("/")){if(!part||part===".")continue;if(part==="..")out.pop();else out.push(part)}return "/"+out.join("/")}function runtime(overrides={}){const cache={};function load(p,from="/"){let key=normalize(p.startsWith("/")?p:from.slice(0,from.lastIndexOf("/"))+"/"+p);if(!key.endsWith(".js"))key+=".js";if(overrides[key])return overrides[key];if(cache[key])return cache[key].exports;if(!factories[key])throw Error("Missing review module: "+key);const mod={exports:{}};cache[key]=mod;factories[key](mod,mod.exports,p=>load(p,key));return mod.exports;}return {require:load};}G.QSource=runtime();G.QSource.fork=runtime;})(globalThis);\n';
+fs.writeFileSync(path.join(dir,'source-bundle.js'),js);
+for(const file of ['components/xingcheng-q-home/index.js','components/xingcheng-q-home/index.wxml','components/xingcheng-q-home/index.wxss'])hashes[file]=sha(fs.readFileSync(path.join(app,file)));
+const css=fs.readFileSync(path.join(app,'components/xingcheng-q-home/index.wxss'),'utf8');fs.writeFileSync(path.join(dir,'incumbent.css'),css);
+fs.copyFileSync(path.join(app,'assets/xingcheng-q/static/home-body-stage2.png'),path.join(dir,'current-home-body.png'));
+fs.writeFileSync(path.join(dir,'source-manifest.json'),JSON.stringify({date:'2026-11-04',scope:'Independent comparison only. Original production files untouched.',sourceHashes:hashes,bundleSha256:sha(js),instrumentation:'Sleep state exposure plus opt-in props-only drawing guards. Baseline never enables the guards; timeline source stays unchanged.',durations:{idle:8.2,sleep:21.5,snack:15.8,asteroid:15.8}},null,2));
+console.log('Frozen current homepage sources:',files.length);

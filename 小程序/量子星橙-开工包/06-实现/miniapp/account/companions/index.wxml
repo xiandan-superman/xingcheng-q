@@ -1,0 +1,17 @@
+<view class="page companion-settings safe-bottom" style="padding-top:{{topPad}}px">
+  <view class="topbar" style="height:{{navHeight}}px;min-height:{{navHeight}}px"><view class="back-btn" bindtap="back" aria-role="button" aria-label="返回"><image src="/assets/icons/ic-back.png"/></view></view>
+  <view class="page-title mt">首页<text class="h-orange">伙伴</text></view>
+  <view class="page-sub">选几位小伙伴，陪你一起做题。</view>
+  <view wx:if="{{loading}}" class="card mt state-panel"><view class="state-panel-head"><view class="state-panel-actor"><xingcheng-q-scene scene="loading" size="176"/></view><view class="state-panel-title">正在读取伙伴…</view></view></view>
+  <view wx:elif="{{message}}" class="card mt state-panel" aria-role="alert"><view class="state-panel-body">{{message}}</view><view class="state-panel-actions"><button class="btn btn-yellow" bindtap="load">重新加载</button></view></view>
+  <block wx:else>
+    <view class="card card-cream companion-setting-note mt"><view class="companion-count">已选 {{count}} / 5</view><view class="text-secondary">首页最多展示5只，圆团会一直陪伴你。</view><view class="companion-color-link" bindtap="editColors" aria-role="button">配色跟随每个形状已保存的颜色<text>去改配色 ›</text></view></view>
+    <view class="companion-setting-grid">
+      <view wx:for="{{cards}}" wx:key="id" id="companion-option-{{item.id}}" class="card companion-setting-card {{item.selected ? 'is-selected' : ''}} {{!item.unlocked ? 'is-locked' : ''}}" data-id="{{item.id}}" bindtap="choose" aria-role="button" aria-pressed="{{item.selected}}" aria-disabled="{{!item.unlocked}}" aria-label="{{item.name}}，{{item.unlocked ? (item.selected ? '已选择' : '未选择') : item.condition}}">
+        <personal-avatar wx:if="{{item.unlocked}}" shape="{{item.id}}" color="{{item.color}}" size="100"/><view wx:else class="companion-mystery">？</view>
+        <view class="companion-setting-name">{{item.name}}</view><view class="companion-setting-label">{{!item.unlocked ? item.condition : item.id === 'round' ? '常驻' : item.selected ? '已选择 ✓' : '选择展示'}}</view>
+      </view>
+    </view>
+    <view class="companion-setting-footer"><view class="companion-setting-message" aria-role="alert">{{saveMessage}}</view><button id="companion-save" class="btn btn-yellow btn-block" bindtap="save" loading="{{saving}}" disabled="{{saving}}">{{saving ? '保存中' : '保存展示伙伴'}}</button></view>
+  </block>
+</view>

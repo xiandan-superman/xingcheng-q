@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "12段剧情在单只/三只/六只、窄平台下的数值与连续性",
+      "passed": true
+    },
+    {
+      "name": "中途更换剧情，首帧保留当前姿态",
+      "passed": true
+    },
+    {
+      "name": "弹跳的双方接触和承重位置一致",
+      "passed": true
+    },
+    {
+      "name": "欢迎断点恢复、完成和串行下一位",
+      "passed": true
+    },
+    {
+      "name": "减少动态仍交付欢迎完成事件",
+      "passed": true
+    },
+    {
+      "name": "加载循环接缝连续，静态首帧与动态同源",
+      "passed": true
+    },
+    {
+      "name": "三种手机尺寸下跳跃、叠放和小尺寸均不裁切",
+      "passed": true
+    }
+  ],
+  "sampledFrames": 105635,
+  "maxStepAt120fps": 2.7718767507192155,
+  "scope": "Independent preview only. No mini-program/cloud/phone performance acceptance."
+}

@@ -1,0 +1,40 @@
+'use strict'
+// Exercise actual native UI against the isolated, cloud-free acceptance service.
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process')
+const root=path.resolve(__dirname,'..'),qa=path.join(root,'output/avatar-acceptance'),project=path.join(qa,'simulator')
+const app=fs.readFileSync(path.join(project,'app.js'),'utf8')
+assert.ok(app.includes('cloud transport disabled')&&!app.includes('wx.cloud'))
+function cli(tool,...args){const output=execFileSync('wechatide',['-c','Codex',tool,'--project',project,...args],{encoding:'utf8',maxBuffer:1024*1024,timeout:60000}),json=JSON.parse(output.slice(output.indexOf('{')));assert.ok(json.ok,JSON.stringify(json));return json.result}
+const evaluate=source=>cli('automation_evaluate','--fn-source',source).result.result
+const tap=(selector,wait=0)=>cli('automation_element_action','--selector',selector,'--action','tap',...(wait?['--wait',String(wait)]:[]))
+const shot=(name,wait=0)=>cli('simulator_screenshot','--path',path.join(qa,name),'--optimize','false',...(wait?['--wait',String(wait)]:[]))
+const report={date:'2026-11-05',transport:'Isolated local data; actual native wardrobe, avatars and reward dialog copied verbatim; no cloud transport.',checks:[]}
+const pass=(name,evidence)=>{report.checks.push({name,passed:true,evidence});console.log('Passed: '+name)}
+assert.equal(cli('automation_runtime_info','--action','currentPage').currentPage.path,'pages/review/index')
+tap('#open-wardrobe')
+let state=evaluate('function(){const d=getCurrentPages().slice(-1)[0].data;return {loading:d.loading,message:d.message,shape:d.shape,color:d.color,cards:d.cards.length,colors:d.avatarColors}}')
+assert.equal(state.loading,false);assert.equal(state.cards,11);assert.equal(state.shape,'round');assert.equal(state.color,'creme');assert.equal(state.colors.round,'creme');assert.equal(state.colors.heart,'xingcheng');pass('legacy current avatar retains cream; other shapes start orange',state)
+state=evaluate('async function(){const p=getCurrentPages().slice(-1)[0],api=getApp().avatarQA,original=api.growthGet;api.growthGet=async()=>{api.growthGet=original;throw Error("本地模拟读取失败，请重试")};await p.load();return {loading:p.data.loading,message:p.data.message}}')
+assert.match(state.message,/读取失败/);tap('.state-panel-actions button');state=evaluate('function(){const d=getCurrentPages().slice(-1)[0].data;return {loading:d.loading,message:d.message,cards:d.cards.length}}');assert.deepEqual(state,{loading:false,message:'',cards:11});pass('native loading failure retries successfully',state)
+state=evaluate('async function(){const p=getCurrentPages().slice(-1)[0],api=getApp().avatarQA,original=api.growthGet;api.growthGet=async()=>{api.growthGet=original;const r=await original();r.cards=r.cards.map((c,i)=>i?{...c,shape:"",unlocked:false,isNew:false}:c);return r};await p.load();return true}')
+tap('.shape-card[data-key="reward-tip"]');state=evaluate('function(){const d=getCurrentPages().slice(-1)[0].data;return {shape:d.shape,motionBusy:d.motionBusy}}');assert.deepEqual(state,{shape:'round',motionBusy:false});pass('locked shape remains unselectable',state)
+evaluate('async function(){await getCurrentPages().slice(-1)[0].load();return true}')
+tap('.swatch[data-id="bleu"]');tap('.shape-card[data-key="reward-cloud"]')
+shot('native-independent-cloud.png',5)
+state=evaluate('function(){const d=getCurrentPages().slice(-1)[0].data;return {shape:d.shape,color:d.color,colors:d.avatarColors,motionBusy:d.motionBusy}}');assert.equal(state.shape,'cloud');assert.equal(state.color,'xingcheng');assert.equal(state.colors.round,'bleu');pass('switching shapes restores its own color without borrowing blue',state)
+tap('.swatch[data-id="vert"]');tap('.shape-card[data-key="reward-heart"]');shot('native-independent-heart.png',5)
+state=evaluate('function(){const d=getCurrentPages().slice(-1)[0].data;return {shape:d.shape,color:d.color,colors:d.avatarColors}}');assert.equal(state.shape,'heart');assert.equal(state.color,'xingcheng');assert.equal(state.colors.cloud,'vert');assert.equal(state.colors.round,'bleu');pass('multiple unsaved edits remain independent across shape switches',state)
+tap('.swatch[data-id="rose"]');shot('native-independent-draft.png',3)
+state=evaluate('async function(){const p=getCurrentPages().slice(-1)[0],api=getApp().avatarQA,original=api.avatarSave;api.avatarSave=async()=>{api.avatarSave=original;throw Error("本地模拟保存失败，请重试")};await p.save();return {route:p.route,saving:p.data.saving,shape:p.data.shape,color:p.data.color,colors:p.data.avatarColors}}')
+assert.equal(state.saving,false);assert.equal(state.shape,'heart');assert.equal(state.color,'rose');assert.equal(state.colors.round,'bleu');assert.equal(state.colors.cloud,'vert');pass('failed save keeps every per-shape draft for retry',state)
+tap('.btn-block');state=evaluate('function(){const p=getCurrentPages().slice(-1)[0];return {route:p.route,profile:p.data.profile,calls:p.data.calls}}');assert.equal(state.route,'pages/review/index');assert.equal(state.profile.avatarColors.round,'bleu');assert.equal(state.profile.avatarColors.cloud,'vert');assert.equal(state.profile.avatarColors.heart,'rose');assert.deepEqual(state.calls[0],{action:'avatarSave',shape:'heart',color:'rose',avatarColors:{round:'bleu',cloud:'vert',heart:'rose'}});pass('retry persists only changed shapes and returns to the previous page',state)
+tap('#open-wardrobe');tap('.shape-card[data-key="round"]');shot('native-independent-restored.png',2)
+state=evaluate('function(){const d=getCurrentPages().slice(-1)[0].data;return {shape:d.shape,color:d.color,colors:d.avatarColors}}');assert.equal(state.shape,'round');assert.equal(state.color,'bleu');assert.equal(state.colors.heart,'rose');assert.equal(state.colors.cloud,'vert');pass('reopening the actual wardrobe restores independent saved colors',state)
+tap('.back-btn');tap('#open-rewards');state=evaluate('function(){return getCurrentPages().slice(-1)[0].selectComponent("#acceptance-reward").data.reward}');assert.equal(state.shape,'tip');assert.equal(state.color,'xingcheng');pass('reward preview uses its shape color instead of the active pink avatar',state)
+state=evaluate('async function(){const c=getCurrentPages().slice(-1)[0].selectComponent("#acceptance-reward"),api=getApp().avatarQA,original=api.rewardSeen;api.rewardSeen=async()=>{api.rewardSeen=original;throw Error("本地模拟领取失败，请重试")};await c.accept({currentTarget:{dataset:{}}});return {reward:c.data.reward,busy:c.data.busy,message:c.data.message}}');assert.equal(state.reward.shape,'tip');assert.equal(state.busy,false);assert.match(state.message,/领取失败/);pass('reward acknowledgement failure retains the current reward',state)
+for(const [use,expected,color] of [[true,'crescent','xingcheng'],[false,'heart','rose'],[false,null,null]]){
+ state=evaluate('async function(){const c=getCurrentPages().slice(-1)[0].selectComponent("#acceptance-reward");await c.accept({currentTarget:{dataset:{use:'+use+'}}});return {reward:c.data.reward}}');assert.equal(state.reward?state.reward.shape:null,expected);if(state.reward)assert.equal(state.reward.color,color)
+}
+state=evaluate('async function(){const p=getCurrentPages().slice(-1)[0],c=p.selectComponent("#acceptance-reward");await c.check();await p.onShow();return {reward:c.data.reward,profile:p.data.profile,calls:p.data.calls}}');assert.equal(state.reward,null);assert.equal(state.profile.avatarShape,'tip');assert.equal(state.profile.avatarColor,'xingcheng');assert.equal(state.profile.avatarColors.round,'bleu');assert.equal(state.profile.avatarColors.cloud,'vert');assert.equal(state.profile.avatarColors.heart,'rose');assert.equal(state.calls.filter(c=>c.action==='avatarSave').length,2);pass('reward use preserves other colors and completed rewards do not replay',state)
+shot('native-independent-result.png')
+fs.writeFileSync(path.join(qa,'native-flow.json'),JSON.stringify(report,null,2)+'\n');console.log('Native color acceptance passed: '+report.checks.length+' checks.')

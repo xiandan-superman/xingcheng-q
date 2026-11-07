@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "11种轮廓、五官和13种配色与现行小程序数据一致",
+      "passed": true
+    },
+    {
+      "name": "各形状独立配色，奶油白形状用墨黑眼和暖棕星，不影响其他形状",
+      "passed": true
+    },
+    {
+      "name": "接收部分形状的保存结果时，保留其余形状的已存配色",
+      "passed": true
+    },
+    {
+      "name": "首页最多5只，超额和未获得的选择被拦截，原选择保留",
+      "passed": true
+    },
+    {
+      "name": "保存后的阵容与形象页配色可以恢复，旧演示编号映射到新版",
+      "passed": true
+    },
+    {
+      "name": "满5只后新增只进入收藏，不挤掉原阵容，也不增加第6只",
+      "passed": true
+    },
+    {
+      "name": "单个形状配色改变不重建演员、进度和欢迎记录",
+      "passed": true
+    },
+    {
+      "name": "5只时阻止第6位欢迎，欢迎中换阵容待当前欢迎自然收尾",
+      "passed": true
+    },
+    {
+      "name": "不同轮廓在三种尺寸、五只阵容的九段互动中连续且不裁切",
+      "passed": true
+    },
+    {
+      "name": "叠跳使用实际轮廓的承重点，离开承重动作没有高度突跳",
+      "passed": true
+    },
+    {
+      "name": "欢迎中保存新阵容，刷新恢复后仍按保存的阵容收尾",
+      "passed": true
+    }
+  ],
+  "sampledFrames": 190471,
+  "sourceHashes": {
+    "avatar-catalog.js": "fc0cb7b9db2c5cb51407ba6896cef6f0c6a4d8da972b393000340eba148d3a13",
+    "avatar.js": "1f2e48a3d5b363c890aebeeeec85f8f4ba228b90e331cb262be9291aff1f52c3",
+    "avatar-colors.js": "e8038192e324318527bb8d848e63cc9eb4be3e2e8b25d2a7c5dddbfb6da68b15"
+  },
+  "scope": "Independent phone preview, synchronized with the new local native per-shape color module. No cloud data or deployment."
+}

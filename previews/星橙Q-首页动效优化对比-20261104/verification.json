@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04",
+  "status": "passed",
+  "baselinePixelEquivalentFrames": 617,
+  "originalStoryTargetsAndTimingPreserved": 779,
+  "candidateSourcePoseSnapshots": 617,
+  "easing": "Candidate restores named power/expo/circ/sine/back/bounce curves; baseline keeps incumbent simplified curves.",
+  "newComicFrames": 1959,
+  "newComics": 3,
+  "groundContactAndUnclippedSilhouetteFrames": 784,
+  "ballisticJump": "54/72/54 height samples passed",
+  "midPlotInterruptionChecks": 6,
+  "positionAndVelocityContinuousBridgeChecks": 11,
+  "feedback": "pending/failure/success/cancel/late-result passed",
+  "reducedMotionFeedback": "success and failure retain meaningful static expression",
+  "protectedProductionFiles": 189,
+  "productionHashMismatches": 0,
+  "scope": "Browser/Node review; no WeChat integration or phone performance claim.",
+  "sourceManifestSha256": "a87a9fb4e314c32a10baa55f35ca4d2e7dca41253d9b45c4c27b599ce2e6b1b1"
+}

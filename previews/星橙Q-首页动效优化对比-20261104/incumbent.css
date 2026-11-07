@@ -1,0 +1,41 @@
+:host{display:inline-block;line-height:0;pointer-events:none}
+.home-motion{position:relative;display:block}
+.css-idle,.home-canvas{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;transition:opacity 160ms ease}
+.css-idle.is-visible,.home-canvas.is-visible{opacity:1}
+.idle-orb,.idle-face{position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:50% 54.296875%}
+.idle-body{position:absolute;left:0;top:0;width:100%;height:100%}
+.idle-eye{position:absolute;width:4.6875%;height:11.71875%;border-radius:999rpx;background:#fff8ee;transform-origin:center}
+.idle-eye-left{left:41.2109375%;top:46.484375%;transform:rotate(0) scaleY(.9)}
+.idle-eye-right{left:54.1015625%;top:46.484375%;transform:rotate(0) scaleY(.9)}
+.css-idle.is-playing .idle-orb{animation:idleOrb 3.95s linear both}
+.css-idle.is-playing .idle-face{animation:idleFace 3.95s linear both}
+.css-idle.is-playing .idle-eye-left{animation:idleEyeLeft 3.95s linear both}
+.css-idle.is-playing .idle-eye-right{animation:idleEyeRight 3.95s linear both}
+@keyframes idleOrb{
+  0%,2.025%{transform:translateY(0) scale(1,1) rotate(0);animation-timing-function:ease-in-out}
+  20.253%{transform:translateY(-1.3671875%) scale(1.018,.982) rotate(0);animation-timing-function:ease-in-out}
+  38.481%,62.025%{transform:translateY(0) scale(1,1) rotate(0);animation-timing-function:ease-in-out}
+  72.152%,73.924%{transform:translateY(0) scale(1,1) rotate(-2deg);animation-timing-function:ease-in-out}
+  87.848%,88.608%{transform:translateY(0) scale(1,1) rotate(2deg);animation-timing-function:cubic-bezier(.22,.61,.36,1)}
+  97.722%,100%{transform:translateY(0) scale(1,1) rotate(0)}
+}
+@keyframes idleFace{
+  0%,62.025%{transform:translate(0,0);animation-timing-function:ease-in-out}
+  72.152%,73.924%{transform:translate(-1.5625%,.1953125%);animation-timing-function:ease-in-out}
+  87.848%,88.608%{transform:translate(1.5625%,.1953125%);animation-timing-function:cubic-bezier(.22,.61,.36,1)}
+  97.722%,100%{transform:translate(0,.1953125%)}
+}
+@keyframes idleEyeLeft{
+  0%,44.304%{transform:rotate(0) scaleY(.9);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}
+  46.835%,47.089%{transform:rotate(0) scaleY(.08);animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+  51.646%,100%{transform:rotate(0) scaleY(.9)}
+}
+@keyframes idleEyeRight{
+  0%,44.304%{transform:rotate(0) scaleY(.9);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}
+  46.835%,47.089%{transform:rotate(0) scaleY(.08);animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+  51.646%,100%{transform:rotate(0) scaleY(.9)}
+}
+
+.home-fallback{position:absolute;left:0;top:0;width:100%;height:100%;display:block;opacity:0;transition:opacity 160ms ease;background:transparent}.home-fallback.is-visible{opacity:1}
+
+.css-idle.is-paused .idle-orb,.css-idle.is-paused .idle-face,.css-idle.is-paused .idle-eye{animation-play-state:paused}

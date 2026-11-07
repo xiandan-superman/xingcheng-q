@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-05",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "刚进入首页立即走完整入场剧情",
+      "passed": true
+    },
+    {
+      "name": "安静停留60–70秒后，等待小Q自然收尾再开演",
+      "passed": true
+    },
+    {
+      "name": "已有开场逐段轮换，重新创建页面仍接着轮换且不连续重复",
+      "passed": true
+    },
+    {
+      "name": "重新进入避免重复刚演过的停留或手选剧情",
+      "passed": true
+    },
+    {
+      "name": "空状态开场仍轮换，切回正常首页不重复上一段",
+      "passed": true
+    },
+    {
+      "name": "延后的入场在欢迎结束前不提前消耗轮换记录",
+      "passed": true
+    },
+    {
+      "name": "切页回来接续当前剧情，不从头重播",
+      "passed": true
+    },
+    {
+      "name": "作答回应不打断现有道具剧情，收尾后给简短反馈",
+      "passed": true
+    },
+    {
+      "name": "恢复未完成的新伙伴欢迎后，仍补上这次入场剧情",
+      "passed": true
+    },
+    {
+      "name": "大Q开演时，小Q当前追逐继续且完整收尾",
+      "passed": true
+    },
+    {
+      "name": "大Q完整剧情期间，小Q持续有轻缓走动和张望",
+      "passed": true
+    },
+    {
+      "name": "手动验证完整剧情只播一遍，随后回到陪伴",
+      "passed": true
+    },
+    {
+      "name": "减少动态静态入场并收束，不阻塞欢迎或恢复后补演",
+      "passed": true
+    }
+  ],
+  "policy": {
+    "entry": "immediate complete story, persistent rotation without consecutive repeats",
+    "return": "resume or brief answer feedback",
+    "idle": "occasional story after 60–70 visible quiet seconds and a natural pet boundary",
+    "smallPets": "continue current action; subsequent gentle activity, never stop their clock for focus"
+  }
+}

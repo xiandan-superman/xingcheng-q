@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-07",
+  "tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "avatarCatalog": {
+    "shapes": 11,
+    "palettes": 13,
+    "rewards": 10,
+    "consistent": true
+  },
+  "avatarArtwork": {
+    "cases": 165,
+    "failed": 0
+  },
+  "relativeMarkdownLinks": {
+    "broken": 0
+  },
+  "secretMarkerScan": {
+    "matches": 0
+  },
+  "note": "只验证归档可复用性与完整性，不表示已做云端发布或真机验收。"
+}

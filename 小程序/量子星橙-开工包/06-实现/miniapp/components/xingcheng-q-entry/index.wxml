@@ -1,0 +1,2 @@
+<canvas wx:if="{{canvasReady}}" class="xingcheng-q-entry" type="2d" id="qCanvas" style="width:{{size}}rpx;height:{{size}}rpx;" aria-role="img" aria-label="星橙Q角色动画"></canvas>
+<image wx:else class="xingcheng-q-entry" src="{{fallbackSrc}}" mode="aspectFit" style="width:{{size}}rpx;height:{{size}}rpx;" aria-role="img" aria-label="星橙Q"/>

@@ -1,0 +1,18 @@
+(function(){
+const Q=ShapeFamily,$=id=>document.getElementById(id),media=matchMedia('(prefers-reduced-motion: reduce)');let mode='neutral',paused=false,reduced=media.matches,silhouette=false,t=0,last=0,visible=true,raf=null;
+$('reduce').checked=reduced;
+function sized(id,max,pose={}){const b=Q.bounds(Q.shapes.find(s=>s.id===id)),box=max*360/Math.max(b.maxX-b.minX,b.maxY-b.minY);return Q.svg(id,pose).replace('<svg ',`<svg style="width:${box}px;height:${box}px" `)}
+function card(s){const isNew=Q.addedIDs.includes(s.id);return `<article class="specimen"><div class="hero" data-live="${s.id}"></div><h3>${s.label}</h3><div class="tag">${s.id==='base'?'现行母版对照':isNew?'你指定的方向 · 新增画法待确认':'按你的同意保留'}</div><p class="desc">${s.note}</p><div class="sizes"><div class="sample"><div class="slot"><div class="avatar">${sized(s.id,36)}</div></div><span>48px 头像框</span></div><div class="sample"><div class="slot">${sized(s.id,32)}</div><span>32px 伙伴</span></div><div class="sample"><div class="slot">${sized(s.id,48)}</div><span>48px 伙伴</span></div><div class="sample"><div class="slot">${sized(s.id,32,{silhouette:true})}</div><span>32px 剪影</span></div></div><p class="pose-note">${s.id==='d'?'歪尖比下腹晚半拍收住':s.id==='e'?'软角随落地挤压回弹':s.id==='f'?'大凹口在挤压中仍然保留':''}</p></article>`}
+$('new-grid').innerHTML=Q.shapes.filter(s=>Q.addedIDs.includes(s.id)).map(card).join('');$('keep-grid').innerHTML=Q.shapes.filter(s=>!Q.addedIDs.includes(s.id)).map(card).join('');
+$('family-strip').innerHTML=Q.shapes.map(s=>`<div class="mini"><div class="body">${sized(s.id,48)}</div><span>${s.short}</span></div>`).join('');
+const nodes=Array.from(document.querySelectorAll('[data-live]'));
+function pose(){if(mode==='neutral')return {silhouette};let time=reduced?({bounce:2.15,knead:.75,wobble:.85}[mode]):t;return {...Q.motion(time,mode),silhouette}}
+function render(){const p=pose();for(const el of nodes){el.innerHTML=Q.svg(el.dataset.live,p).replace('viewBox="-180 -180 360 360"','viewBox="-215 -270 430 490"')}}
+function ui(){document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));$('pause').disabled=mode==='neutral'||reduced;$('pause').textContent=paused?'继续播放':'暂停观察';$('pause').setAttribute('aria-pressed',String(paused));$('motion-caption').textContent=mode==='neutral'?'先看中性轮廓；可以切换动作，检查身体、眼睛和星芒是否一起自然变形。':reduced?'减少动态已开启：显示这个动作的静态关键姿态。':paused?'已暂停，可以对照身体轮廓、眼睛和星芒。':'这只是形态检查：观察蓄力、落地，以及软角和卷边的收势。'}
+function shouldRun(){return mode!=='neutral'&&!paused&&!reduced&&!document.hidden&&visible}
+function frame(now){raf=null;if(last)t+=Math.min(.05,(now-last)/1000);last=now;render();if(shouldRun())raf=requestAnimationFrame(frame)}
+function schedule(){if(raf!==null){cancelAnimationFrame(raf);raf=null}last=0;if(shouldRun())raf=requestAnimationFrame(frame)}
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;paused=false;t=0;ui();render();schedule()});$('pause').onclick=()=>{paused=!paused;ui();schedule()};$('silhouette').onchange=()=>{silhouette=$('silhouette').checked;render()};$('reduce').onchange=()=>{reduced=$('reduce').checked;paused=false;ui();render();schedule()};
+document.addEventListener('visibilitychange',schedule);const groups=new Map();const observer=new IntersectionObserver(entries=>{for(const e of entries)groups.set(e.target,e.isIntersecting);visible=Array.from(groups.values()).some(Boolean);schedule()},{threshold:0});observer.observe($('new-grid'));observer.observe($('keep-grid'));media.addEventListener('change',e=>{reduced=e.matches;$('reduce').checked=reduced;ui();render();schedule()});
+ui();render();
+})();

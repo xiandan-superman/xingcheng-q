@@ -1,0 +1,2601 @@
+{
+  "version": "20261105-cream-study.1",
+  "checks": [
+    {
+      "name": "base/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "base/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "base/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "base/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "d/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "d/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "d/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "d/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "e/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "e/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "e/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "e/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "f/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "f/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "f/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "f/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "g/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "g/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "g/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "g/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "h/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "h/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "h/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "h/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "i/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "i/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "i/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "i/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "j/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "j/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "j/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "j/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "k/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "k/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "k/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "k/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "l/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "l/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "l/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "l/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/ink-gold原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "m/cocoa原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "m/previous原轮廓、眼形与星芒路径完整保留",
+      "ok": true
+    },
+    {
+      "name": "m/xingcheng非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/rouge非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/ambre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/vert非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/bleu非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/violet非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/rose非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/brun非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/encre非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/orange非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/turquoise非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "m/gris非奶油白配色完整保持原样",
+      "ok": true
+    },
+    {
+      "name": "base/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 2.8406537948827832,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "base/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 2.8406537948827832,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "base/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 2.7283235791478466,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "base/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 2.7283235791478466,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "base/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.073490731898619,
+        "minStarPeak": 1.027487449071565,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "base/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.317867553303232,
+        "minStarPeak": 4.584141395354933,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "base/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.317867553303232,
+        "minStarPeak": 4.584141395354933,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "base/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.836852464650647,
+        "minStarPeak": 4.373864489378843,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "base/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.836852464650647,
+        "minStarPeak": 4.373864489378843,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "base/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "base",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.083115481339068,
+        "minStarPeak": 1.0277860078993548,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "d/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.83446159266925,
+        "minStarPeak": 2.797017217400929,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "d/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.83446159266925,
+        "minStarPeak": 2.797017217400929,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "d/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.47979882252235,
+        "minStarPeak": 2.686412557300861,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "d/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.47979882252235,
+        "minStarPeak": 2.686412557300861,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "d/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.1411457640531373,
+        "minStarPeak": 1.0117396381692276,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "d/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.842356478638104,
+        "minStarPeak": 3.8909442639114498,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "d/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.842356478638104,
+        "minStarPeak": 3.8909442639114498,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "d/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.485630148610408,
+        "minStarPeak": 3.703943370889477,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "d/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.485630148610408,
+        "minStarPeak": 3.703943370889477,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "d/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "d",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1523283485022675,
+        "minStarPeak": 1.0199519656201221,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "e/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.18994990318097,
+        "minStarPeak": 2.8224655829406555,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "e/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.18994990318097,
+        "minStarPeak": 2.8224655829406555,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "e/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.742369842200675,
+        "minStarPeak": 2.7107480620698254,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "e/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.742369842200675,
+        "minStarPeak": 2.7107480620698254,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "e/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.0928599807370774,
+        "minStarPeak": 1.0338983226062852,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "e/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 3.30157951964074,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "e/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 3.30157951964074,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "e/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 3.1639442697484936,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "e/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 3.1639442697484936,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "e/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "e",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1105016528962321,
+        "minStarPeak": 1.041405532413101,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "f/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.524674325760278,
+        "minStarPeak": 3.838286274087406,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.524674325760278,
+        "minStarPeak": 3.838286274087406,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.989604224735992,
+        "minStarPeak": 3.652650493892839,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.989604224735992,
+        "minStarPeak": 3.652650493892839,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.0935208918729329,
+        "minStarPeak": 1.006562855923887,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "f/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.654604874368422,
+        "minStarPeak": 3.8722515588135207,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.654604874368422,
+        "minStarPeak": 3.8722515588135207,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 10.085573615645906,
+        "minStarPeak": 3.6849730735992083,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 10.085573615645906,
+        "minStarPeak": 3.6849730735992083,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "f/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "f",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1105016528962321,
+        "minStarPeak": 1.0082605244460583,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "g/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.163593346834643,
+        "minStarPeak": 5.538461306058302,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "g/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.163593346834643,
+        "minStarPeak": 5.538461306058302,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "g/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.722902344478733,
+        "minStarPeak": 5.180642434990204,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "g/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.722902344478733,
+        "minStarPeak": 5.180642434990204,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "g/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.1105016528962321,
+        "minStarPeak": 1.0295076303915598,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "g/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 5.538461306058302,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "g/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 5.538461306058302,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "g/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 5.180642434990204,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "g/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 5.180642434990204,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "g/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "g",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1205886512278436,
+        "minStarPeak": 1.0362188858994095,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "h/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.952290018058106,
+        "minStarPeak": 2.3616859750181205,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "h/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.952290018058106,
+        "minStarPeak": 2.3616859750181205,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "h/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.566829334881275,
+        "minStarPeak": 2.285917059901237,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "h/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.566829334881275,
+        "minStarPeak": 2.285917059901237,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "h/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.0837684394755769,
+        "minStarPeak": 1.0069067023210578,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "h/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.9602320727781,
+        "minStarPeak": 3.8117315185647187,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "h/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.9602320727781,
+        "minStarPeak": 3.8117315185647187,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "h/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.572695500784643,
+        "minStarPeak": 3.6277287706131403,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "h/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.572695500784643,
+        "minStarPeak": 3.6277287706131403,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "h/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "h",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.0928599807370774,
+        "minStarPeak": 1.0067305858909967,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "i/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.07877506658299,
+        "minStarPeak": 3.9365299962943654,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "i/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.07877506658299,
+        "minStarPeak": 3.9365299962943654,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "i/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.660253808157018,
+        "minStarPeak": 3.744874886139837,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "i/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.660253808157018,
+        "minStarPeak": 3.744874886139837,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "i/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.0907008733141907,
+        "minStarPeak": 1.0362188858994095,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "i/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.18994990318097,
+        "minStarPeak": 5.562197174384762,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "i/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.18994990318097,
+        "minStarPeak": 5.562197174384762,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "i/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.742369842200675,
+        "minStarPeak": 5.227086536640272,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "i/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.742369842200675,
+        "minStarPeak": 5.227086536640272,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "i/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "i",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.0928599807370774,
+        "minStarPeak": 1.043222321354409,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "j/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.717299408279208,
+        "minStarPeak": 2.797043688024941,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "j/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.717299408279208,
+        "minStarPeak": 2.797043688024941,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "j/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.39326040954683,
+        "minStarPeak": 2.68689258069779,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "j/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.39326040954683,
+        "minStarPeak": 2.68689258069779,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "j/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.141845489127928,
+        "minStarPeak": 1.0119033758204499,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "j/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.743225449253933,
+        "minStarPeak": 5.453513632204613,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "j/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.743225449253933,
+        "minStarPeak": 5.453513632204613,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "j/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.412409919709784,
+        "minStarPeak": 5.102060936925162,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "j/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.412409919709784,
+        "minStarPeak": 5.102060936925162,
+        "minStarPixels3": 2
+      }
+    },
+    {
+      "name": "j/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "j",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1523283485022675,
+        "minStarPeak": 1.0196127264928834,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "k/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.717299408279208,
+        "minStarPeak": 2.4121077034944016,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "k/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.717299408279208,
+        "minStarPeak": 2.4121077034944016,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "k/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.39326040954683,
+        "minStarPeak": 2.3283772347408345,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "k/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.39326040954683,
+        "minStarPeak": 2.3283772347408345,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "k/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.1212714255593652,
+        "minStarPeak": 1.0102397222882729,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "k/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.83446159266925,
+        "minStarPeak": 5.4975884754829885,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "k/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.83446159266925,
+        "minStarPeak": 5.4975884754829885,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "k/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.47979882252235,
+        "minStarPeak": 5.142410242181524,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "k/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.47979882252235,
+        "minStarPeak": 5.142410242181524,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "k/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "k",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1235164701097873,
+        "minStarPeak": 1.0199519656201221,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "l/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.600802383772354,
+        "minStarPeak": 2.403740303031305,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "l/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 12.600802383772354,
+        "minStarPeak": 2.403740303031305,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "l/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.307213297420349,
+        "minStarPeak": 2.320137152335462,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "l/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.307213297420349,
+        "minStarPeak": 2.320137152335462,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "l/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.1605785356220162,
+        "minStarPeak": 1.0088617425049229,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "l/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.717299408279208,
+        "minStarPeak": 3.8428874033083025,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "l/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 12.717299408279208,
+        "minStarPeak": 3.8428874033083025,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "l/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.39326040954683,
+        "minStarPeak": 3.6561907855340805,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "l/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.39326040954683,
+        "minStarPeak": 3.6561907855340805,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "l/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "l",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.1629445416192747,
+        "minStarPeak": 1.0184643069165809,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "m/ink-gold/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.070785762935257,
+        "minStarPeak": 3.895172334080195,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/ink-gold/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 24,
+        "profile": "ink-gold",
+        "minEyePeak": 13.070785762935257,
+        "minStarPeak": 3.895172334080195,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/cocoa/24px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.654352743218244,
+        "minStarPeak": 3.707101595525034,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/cocoa/24px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 24,
+        "profile": "cocoa",
+        "minEyePeak": 9.654352743218244,
+        "minStarPeak": 3.707101595525034,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/24px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 24,
+        "profile": "previous",
+        "minEyePeak": 1.083115481339068,
+        "minStarPeak": 1.0288911904304912,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "m/ink-gold/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 3.887829820959501,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/ink-gold/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 32,
+        "profile": "ink-gold",
+        "minEyePeak": 13.19798653572948,
+        "minStarPeak": 3.887829820959501,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/cocoa/32px深色双眼保留足够有效像素对比",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 3.7001136012155813,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/cocoa/32px左上星芒存在",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 32,
+        "profile": "cocoa",
+        "minEyePeak": 9.748305865244598,
+        "minStarPeak": 3.7001136012155813,
+        "minStarPixels3": 1
+      }
+    },
+    {
+      "name": "m/32px原浅色五官的弱对比可检出",
+      "ok": true,
+      "detail": {
+        "shape": "m",
+        "size": 32,
+        "profile": "previous",
+        "minEyePeak": 1.0928599807370774,
+        "minStarPeak": 1.0295076303915598,
+        "minStarPixels3": 0
+      }
+    },
+    {
+      "name": "已接受的形态与配色源未修改",
+      "ok": true
+    },
+    {
+      "name": "13色与8主推/5更多结构保留",
+      "ok": true
+    }
+  ],
+  "pixelMetrics": [
+    {
+      "shape": "base",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 13.19798653572948,
+      "minStarPeak": 2.8406537948827832,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "base",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.748305865244598,
+      "minStarPeak": 2.7283235791478466,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "base",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.073490731898619,
+      "minStarPeak": 1.027487449071565,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "base",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 13.317867553303232,
+      "minStarPeak": 4.584141395354933,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "base",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.836852464650647,
+      "minStarPeak": 4.373864489378843,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "base",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.083115481339068,
+      "minStarPeak": 1.0277860078993548,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "d",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 12.83446159266925,
+      "minStarPeak": 2.797017217400929,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "d",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.47979882252235,
+      "minStarPeak": 2.686412557300861,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "d",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.1411457640531373,
+      "minStarPeak": 1.0117396381692276,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "d",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 12.842356478638104,
+      "minStarPeak": 3.8909442639114498,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "d",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.485630148610408,
+      "minStarPeak": 3.703943370889477,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "d",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1523283485022675,
+      "minStarPeak": 1.0199519656201221,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "e",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 13.18994990318097,
+      "minStarPeak": 2.8224655829406555,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "e",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.742369842200675,
+      "minStarPeak": 2.7107480620698254,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "e",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.0928599807370774,
+      "minStarPeak": 1.0338983226062852,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "e",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 13.19798653572948,
+      "minStarPeak": 3.30157951964074,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "e",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.748305865244598,
+      "minStarPeak": 3.1639442697484936,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "e",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1105016528962321,
+      "minStarPeak": 1.041405532413101,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "f",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 13.524674325760278,
+      "minStarPeak": 3.838286274087406,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "f",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.989604224735992,
+      "minStarPeak": 3.652650493892839,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "f",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.0935208918729329,
+      "minStarPeak": 1.006562855923887,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "f",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 13.654604874368422,
+      "minStarPeak": 3.8722515588135207,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "f",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 10.085573615645906,
+      "minStarPeak": 3.6849730735992083,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "f",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1105016528962321,
+      "minStarPeak": 1.0082605244460583,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "g",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 13.163593346834643,
+      "minStarPeak": 5.538461306058302,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "g",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.722902344478733,
+      "minStarPeak": 5.180642434990204,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "g",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.1105016528962321,
+      "minStarPeak": 1.0295076303915598,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "g",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 13.19798653572948,
+      "minStarPeak": 5.538461306058302,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "g",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.748305865244598,
+      "minStarPeak": 5.180642434990204,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "g",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1205886512278436,
+      "minStarPeak": 1.0362188858994095,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "h",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 12.952290018058106,
+      "minStarPeak": 2.3616859750181205,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "h",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.566829334881275,
+      "minStarPeak": 2.285917059901237,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "h",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.0837684394755769,
+      "minStarPeak": 1.0069067023210578,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "h",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 12.9602320727781,
+      "minStarPeak": 3.8117315185647187,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "h",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.572695500784643,
+      "minStarPeak": 3.6277287706131403,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "h",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.0928599807370774,
+      "minStarPeak": 1.0067305858909967,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "i",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 13.07877506658299,
+      "minStarPeak": 3.9365299962943654,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "i",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.660253808157018,
+      "minStarPeak": 3.744874886139837,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "i",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.0907008733141907,
+      "minStarPeak": 1.0362188858994095,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "i",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 13.18994990318097,
+      "minStarPeak": 5.562197174384762,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "i",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.742369842200675,
+      "minStarPeak": 5.227086536640272,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "i",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.0928599807370774,
+      "minStarPeak": 1.043222321354409,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "j",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 12.717299408279208,
+      "minStarPeak": 2.797043688024941,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "j",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.39326040954683,
+      "minStarPeak": 2.68689258069779,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "j",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.141845489127928,
+      "minStarPeak": 1.0119033758204499,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "j",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 12.743225449253933,
+      "minStarPeak": 5.453513632204613,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "j",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.412409919709784,
+      "minStarPeak": 5.102060936925162,
+      "minStarPixels3": 2
+    },
+    {
+      "shape": "j",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1523283485022675,
+      "minStarPeak": 1.0196127264928834,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "k",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 12.717299408279208,
+      "minStarPeak": 2.4121077034944016,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "k",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.39326040954683,
+      "minStarPeak": 2.3283772347408345,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "k",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.1212714255593652,
+      "minStarPeak": 1.0102397222882729,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "k",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 12.83446159266925,
+      "minStarPeak": 5.4975884754829885,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "k",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.47979882252235,
+      "minStarPeak": 5.142410242181524,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "k",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1235164701097873,
+      "minStarPeak": 1.0199519656201221,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "l",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 12.600802383772354,
+      "minStarPeak": 2.403740303031305,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "l",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.307213297420349,
+      "minStarPeak": 2.320137152335462,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "l",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.1605785356220162,
+      "minStarPeak": 1.0088617425049229,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "l",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 12.717299408279208,
+      "minStarPeak": 3.8428874033083025,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "l",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.39326040954683,
+      "minStarPeak": 3.6561907855340805,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "l",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.1629445416192747,
+      "minStarPeak": 1.0184643069165809,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "m",
+      "size": 24,
+      "profile": "ink-gold",
+      "minEyePeak": 13.070785762935257,
+      "minStarPeak": 3.895172334080195,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "m",
+      "size": 24,
+      "profile": "cocoa",
+      "minEyePeak": 9.654352743218244,
+      "minStarPeak": 3.707101595525034,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "m",
+      "size": 24,
+      "profile": "previous",
+      "minEyePeak": 1.083115481339068,
+      "minStarPeak": 1.0288911904304912,
+      "minStarPixels3": 0
+    },
+    {
+      "shape": "m",
+      "size": 32,
+      "profile": "ink-gold",
+      "minEyePeak": 13.19798653572948,
+      "minStarPeak": 3.887829820959501,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "m",
+      "size": 32,
+      "profile": "cocoa",
+      "minEyePeak": 9.748305865244598,
+      "minStarPeak": 3.7001136012155813,
+      "minStarPixels3": 1
+    },
+    {
+      "shape": "m",
+      "size": 32,
+      "profile": "previous",
+      "minEyePeak": 1.0928599807370774,
+      "minStarPeak": 1.0295076303915598,
+      "minStarPixels3": 0
+    }
+  ],
+  "summary": {
+    "ink-gold": {
+      "min32pxEyePeak": 12.717299408279208,
+      "min32pxStarPeak": 3.30157951964074
+    },
+    "cocoa": {
+      "min32pxEyePeak": 9.39326040954683,
+      "min32pxStarPeak": 3.1639442697484936
+    }
+  },
+  "browser": [
+    {
+      "name": "A/B全部形状同步",
+      "ok": true,
+      "observed": "切B后11种大图与33个头像/伙伴小样均更新为深可可；双眼和星芒fill均为#4E3324"
+    },
+    {
+      "name": "其他颜色保护",
+      "ok": true,
+      "observed": "家族对照中的品牌橙、薄荷绿、天空蓝双眼仍为#FFF8EE"
+    },
+    {
+      "name": "切换方案不重置暂停姿态",
+      "ok": true,
+      "observed": "暂停中B切A，身体transform前后保持一致"
+    },
+    {
+      "name": "实际小尺寸观看",
+      "ok": true,
+      "observed": "桌面和手机实际查看48px头像框、24px、32px与48px伙伴；A/B较原样显著清楚"
+    },
+    {
+      "name": "深底与形变",
+      "ok": true,
+      "observed": "深底、弹跳受压状态下深色眼睛与左上星芒完整；返回中性保留默认A"
+    },
+    {
+      "name": "减少动态",
+      "ok": true,
+      "observed": "弹跳静态受压关键姿态连续读取transform相同"
+    },
+    {
+      "name": "320px窄屏",
+      "ok": true,
+      "observed": "修正家族对照横向拥挤后，内容宽305px等于clientWidth305px，innerWidth320px；没有横向滚动"
+    },
+    {
+      "name": "390px手机",
+      "ok": true,
+      "observed": "内容宽375px等于clientWidth375px，innerWidth390px；查看A/B实际小样无横向溢出"
+    }
+  ],
+  "scope": "源几何保留、非奶油白不变、24/32px一倍像素栅格4种半像素相位的有效对比检查；数值不等于整套无障碍标准合格或最终审美批准",
+  "limits": [
+    "只检查正面及既有受力形变，没有新三维母版",
+    "A已确认；B仅作参考，不代表运行接入或发布",
+    "需要浏览器实际观看；不等于手机真机或运行接入验收",
+    "本轮未独立做跨应用隐藏恢复或手机真机验收",
+    "所附PNG为同源矢量导出的检查板，不是浏览器截图"
+  ],
+  "mechanicalReview": {
+    "findings": [],
+    "scope": "一次机械检测；随后仅修正窄屏家族条换行，并实际重新检查320/390px"
+  },
+  "independentReview": {
+    "disposition": "ship-candidate-preview-only",
+    "findings": "无阻断问题；A小尺寸辨识更直接，B可保留为温暖柔和备选",
+    "repeatedAudit": "独立只读重跑277项通过，失败0",
+    "documentation": "无实质文档阻塞，R2/R3/R4冻结指纹一致",
+    "limit": "24px的星芒细节仍受像素限制，不代表所有尺寸完整细节或整体无障碍合格；A/B待用户选择"
+  },
+  "selectionUpdate": {
+    "quote": "A",
+    "acceptedProfile": "ink-gold",
+    "status": "user-confirmed",
+    "scope": "只更新确认状态、入口默认值与预览标签；原几何、配色填充和两张历史对照PNG保持不变",
+    "deployment": "not-integrated"
+  }
+}

@@ -1,0 +1,5 @@
+<view class="layered-knowledge" style="width:{{size}}rpx;height:{{size}}rpx" aria-role="img" aria-label="星橙Q分层吸收知识点动画">
+  <image class="phase-image intro-image {{phase === 'intro' ? 'is-visible is-playing' : ''}}" src="/assets/xingcheng-q/static/knowledge-snack-star-appears.png" mode="aspectFit" />
+  <canvas wx:if="{{canvasReady}}" class="q-canvas {{phase === 'canvas' ? 'is-visible' : ''}}" type="2d" id="qCanvas" style="width:{{size}}rpx;height:{{size}}rpx"></canvas>
+  <image class="phase-image outro-image {{phase === 'outro' ? 'is-visible' : ''}}" src="/assets/xingcheng-q/static/knowledge-end-stage2.png" mode="aspectFit" />
+</view>

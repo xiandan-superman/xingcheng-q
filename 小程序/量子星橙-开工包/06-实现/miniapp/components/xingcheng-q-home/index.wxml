@@ -1,0 +1,4 @@
+<view class="home-motion" style="width:{{size}}rpx;height:{{size}}rpx" aria-role="img" aria-label="星橙Q首页小剧场">
+  <canvas wx:if="{{canvasReady}}" hidden="{{obscured}}" class="home-canvas {{phase === 'canvas' ? 'is-visible' : ''}}" type="2d" id="homeCanvas" style="width:{{size}}rpx;height:{{size}}rpx"></canvas>
+  <image hidden="{{obscured}}" class="home-fallback {{phase === 'fallback' ? 'is-visible' : ''}}" src="/assets/xingcheng-q/static/home-idle-discover-light.png" mode="aspectFit" style="width:{{size}}rpx;height:{{size}}rpx" aria-hidden="true"/>
+</view>

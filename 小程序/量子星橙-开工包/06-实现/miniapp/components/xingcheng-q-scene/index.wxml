@@ -1,0 +1,4 @@
+<view class="scene-motion" style="width:{{size}}rpx;height:{{size}}rpx" aria-role="img" aria-label="{{label}}">
+  <image wx:if="{{settled || !canvasShown || !canvasReady}}" class="scene-fallback" src="{{fallbackSrc}}" mode="aspectFit" style="width:{{size}}rpx;height:{{size}}rpx" aria-hidden="true"/>
+  <canvas wx:if="{{!settled && canvasReady}}" class="scene-canvas {{canvasShown ? 'is-visible' : ''}}" type="2d" id="sceneCanvas" style="width:{{size}}rpx;height:{{size}}rpx"></canvas>
+</view>

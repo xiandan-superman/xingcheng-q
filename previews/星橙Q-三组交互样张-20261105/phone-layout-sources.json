@@ -1,0 +1,31 @@
+{
+  "status": "read-only source import",
+  "sources": {
+    "styles/uv-kit.wxss": "ff1cabb0879ceadf5de691861de7d3bbf9fed84938066392b97a5c9f9e5c65fa",
+    "app.wxss": "603b6b8868d4f4b0d4967f5f683619c82de4a304fda26b214e0c2e2ea74ed275",
+    "pages/today/index.wxss": "755d6b0eee3f4f3cd515e75c7bb5a9b562e8868a0566e5ec99442f6e96e4e067",
+    "custom-tab-bar/index.wxss": "6623cdb13ad650860c1991f74e153b5a1ab5a4df7346dd66fe217ddf03b04095",
+    "assets/fonts/local-font.js": "1b3fd635d1ea57dd1cf40330894bef2fd57b4194a23fee87221947b443044d13"
+  },
+  "rpx": "device CSS width / 750",
+  "presets": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": 47,
+      "safeBottom": 34
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "status": 20,
+      "safeBottom": 0
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "status": 24,
+      "safeBottom": 24
+    }
+  ]
+}

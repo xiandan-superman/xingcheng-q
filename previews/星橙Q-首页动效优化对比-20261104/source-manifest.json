@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "scope": "Independent comparison only. Original production files untouched.",
+  "sourceHashes": {
+    "components/xingcheng-q-home/core.js": "b513a21791a19b8c9d82ede3dc17a2c2ba85f8276320432a12f61d2fd80f6c61",
+    "components/xingcheng-q-home/sleep.js": "25223762b30397caf59e140787e8fcc0af63fec7ece43bdf309da3a4bbfb49a2",
+    "components/xingcheng-q-home/timeline.js": "c66f55ef402cd9fa0ba7ffb70586e170d201f73835c5ca6801243da910da9439",
+    "components/xingcheng-q-motion/appearance.js": "6d203b1dc66642ba2e636ad4f3b2b769ca6bb3700646f4500e7fcba927e80815",
+    "components/xingcheng-q-motion/core.js": "1dda41765a426d6fead75cd7b22daade5fa115f26d815f096248d2cc602e2a44",
+    "components/xingcheng-q-motion/eye-contour.js": "6aab6b38f084a0595d74e0bf090ab622d019ac346d20ed7a1b9daa21d7bb1be8",
+    "assets/xingcheng-q/appearance-assets.js": "889539a70419fc3535d466ed523c5ee8117b84862fb8084dc35ba91473ccb718",
+    "components/xingcheng-q-home/index.js": "b651bdc906294434adcdc2dbe5f5ae8ec959fecf001090b5df5606bf5ed45e8a",
+    "components/xingcheng-q-home/index.wxml": "4d03c7b453dd71202ce16bb86faadaccf6978eca701162bbde85d1873b2978c5",
+    "components/xingcheng-q-home/index.wxss": "59184be25006bb3c5a7508f2bd2d1709b1711eb740ac52b1a82038c5d6968bd4"
+  },
+  "bundleSha256": "475cab4fd22b32cd243a7fd38b652c24fba7f61c25785fe56ac67961c7f48667",
+  "instrumentation": "Sleep state exposure plus opt-in props-only drawing guards. Baseline never enables the guards; timeline source stays unchanged.",
+  "durations": {
+    "idle": 8.2,
+    "sleep": 21.5,
+    "snack": 15.8,
+    "asteroid": 15.8
+  }
+}

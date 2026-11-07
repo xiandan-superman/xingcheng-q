@@ -1,0 +1,9 @@
+<view wx:if="{{reward && enabled}}" class="reward-mask"><view class="reward-card" aria-role="dialog" aria-label="解锁新形象">
+  <text class="eyebrow">NEW STAR · 新的相遇</text><view class="title">解锁新形象</view>
+  <personal-avatar shape="{{reward.shape}}" color="{{reward.color}}" size="220"/>
+  <view class="name">{{reward.name}}</view><view class="copy">{{reward.condition}}</view><view wx:if="{{message}}" class="error">{{message}}</view>
+  <view class="reward-actions">
+    <button class="use" data-use="true" bindtap="accept" loading="{{busy}}" disabled="{{busy}}">立即使用</button>
+    <button class="later" bindtap="accept" disabled="{{busy}}">稍后再用</button>
+  </view>
+</view></view>

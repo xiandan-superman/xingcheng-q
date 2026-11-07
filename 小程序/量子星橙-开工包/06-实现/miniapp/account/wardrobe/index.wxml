@@ -1,0 +1,28 @@
+<view class="page safe-bottom" style="padding-top:{{topPad}}px">
+  <view class="topbar" style="height:{{navHeight}}px;min-height:{{navHeight}}px"><view class="back-btn" bindtap="back" aria-role="button" aria-label="返回"><image src="/assets/icons/ic-back.png"/></view></view>
+  <view class="page-title mt">我的<text class="h-orange">形象</text></view>
+  <view class="page-sub">每一次学习，都在遇见新的自己</view>
+  <view wx:if="{{loading}}" class="card mt state-panel" aria-role="status" aria-live="polite"><view class="state-panel-head"><view class="state-panel-actor"><xingcheng-q-scene scene="loading" size="176"/></view><view class="state-panel-title">正在读取收藏…</view></view><view class="state-panel-sub">正在读取已解锁的形象与配色。</view></view>
+  <view wx:elif="{{message}}" class="card mt state-panel" aria-role="alert"><view class="state-panel-head"><view class="state-panel-actor"><xingcheng-q-scene scene="failure" size="176"/></view><view class="state-panel-title">收藏暂时没打开</view></view><view class="state-panel-body">{{message}}</view><view class="state-panel-actions"><button class="btn btn-yellow uv-press" bindtap="load" hover-class="uv-press-hover">重新加载</button></view></view>
+  <block wx:else>
+    <view class="avatar-preview card card-cream mt">
+      <view class="avatar-stage {{motionPhase}}">
+        <image class="avatar-layer avatar-main" src="{{preview}}"/>
+        <view class="color-fx {{colorFxActive?'active':''}}"><view class="color-halo"></view><view class="color-mask"><view class="color-sweep"></view></view></view>
+        <view class="shape-fx {{fxActive?'active':''}}"><view class="fx-ring"></view><view class="fx-core"></view><text class="fx-star s1">✦</text><text class="fx-star s2">✦</text><text class="fx-star s3">✦</text><text class="fx-star s4">✦</text></view>
+      </view>
+      <view>{{shapeName}}</view><text class="muted">选择形象与颜色，保存后用于个人头像</text>
+    </view>
+    <view class="sec-title">专属配色</view>
+    <view class="page-sub">只调整当前形状，每个形状分别记住自己的颜色。</view>
+    <view class="colors"><view wx:for="{{primaryColors}}" wx:key="id" class="swatch {{color===item.id?'selected':''}}" style="background:{{item.paint}}" data-id="{{item.id}}" bindtap="chooseColor" aria-role="button" aria-label="{{item.name}}" aria-pressed="{{color===item.id}}"><text wx:if="{{color===item.id}}">✓</text></view></view>
+    <view class="more-colors" bindtap="toggleMoreColors" aria-role="button" aria-expanded="{{showMoreColors}}">{{showMoreColors?'收起更多配色':'更多配色 · 5款'}}<text>{{showMoreColors?'−':'+'}}</text></view>
+    <view wx:if="{{showMoreColors}}" class="colors more-palette"><view wx:for="{{moreColors}}" wx:key="id" class="swatch {{color===item.id?'selected':''}}" style="background:{{item.paint}}" data-id="{{item.id}}" bindtap="chooseColor" aria-role="button" aria-label="{{item.name}}" aria-pressed="{{color===item.id}}"><text wx:if="{{color===item.id}}">✓</text></view></view>
+    <view class="sec-title">星橙收藏 · 成就解锁</view>
+    <view class="collection"><view wx:for="{{cards}}" wx:key="key" class="shape-card card {{item.selected?'selected':''}}" data-key="{{item.key}}" bindtap="chooseShape" aria-role="button" aria-disabled="{{!item.unlocked}}" aria-label="{{item.name}}，{{item.unlocked?'已解锁':item.condition}}">
+      <image wx:if="{{item.unlocked}}" src="{{item.src}}"/><view wx:else class="mystery">？<text>🔒</text></view>
+      <view class="shape-name">{{item.name}}</view><view class="muted">{{item.unlocked?'已解锁':item.condition}}</view><view wx:if="{{!item.unlocked}}" class="progress">{{item.progress}} / {{item.target}}</view>
+    </view></view>
+    <button class="btn btn-orange btn-block mt-l" loading="{{saving}}" disabled="{{saving || motionBusy}}" bindtap="save">保存并使用这个形象</button>
+  </block>
+</view>

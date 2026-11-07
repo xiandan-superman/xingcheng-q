@@ -1,0 +1,342 @@
+{
+  "version": "20261105-fixed-palette.2",
+  "revisionReason": "用户指出上一稿偏浅，没有原始橙色靓丽；提高彩色主体饱和度并减少亮部掺白，品牌橙不变。旧色阶仅留在前后对照，已从当前样张替换。",
+  "brandVersion": "20261105.3",
+  "approvedShapeVersion": "20261105-shape-family.3",
+  "approval": {
+    "shapeQuote": "通过，因为还有配色可选，你需要确定一下，能用户几种固定配色，思考一下，和我沟通",
+    "approvedShapeIDs": [
+      "base",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m"
+    ],
+    "paletteOrganizationQuote": "确定",
+    "paletteOrganization": "固定13套，其中8套主推、5套更多；11种形状通用；保留既有颜色使用权益",
+    "scope": "形状正面样张与配色组织已确认；具体13套新明暗色阶和浅色细边适配待看实样，不包含接入或发布"
+  },
+  "shapeSources": {
+    "../星橙Q-形状扩展-R2-20261105/shapes.js": "15c4f053f18420988f2db23fab9d9db7787504e5b851606711655d4603c07b16",
+    "../星橙Q-形状家族-R3-20261105/family.js": "b30cfdb49da61a32d6810a0351cb4036fb778b0658b8908d3f395418f8d3a62c"
+  },
+  "primaryIDs": [
+    "xingcheng",
+    "rouge",
+    "ambre",
+    "vert",
+    "bleu",
+    "violet",
+    "rose",
+    "brun"
+  ],
+  "moreIDs": [
+    "encre",
+    "orange",
+    "turquoise",
+    "gris",
+    "creme"
+  ],
+  "palettes": [
+    {
+      "id": "xingcheng",
+      "name": "星橙橙",
+      "group": "primary",
+      "oldHex": "#ff6a1a",
+      "ramp": [
+        "#FFB65C",
+        "#FF9B36",
+        "#FF8027",
+        "#EF6B25",
+        "#DC5A24"
+      ],
+      "shade": "#BF4A1B",
+      "note": "沿用已确认的品牌橙色明暗，不以旧头像的纯色替代母版。"
+    },
+    {
+      "id": "rouge",
+      "name": "珊瑚红",
+      "group": "primary",
+      "oldHex": "#e8483f",
+      "ramp": [
+        "#FF8476",
+        "#FF6156",
+        "#F33E3C",
+        "#D92F33",
+        "#B8242D"
+      ],
+      "shade": "#A82029",
+      "previousRamp": [
+        "#FFA18D",
+        "#F37F70",
+        "#E86459",
+        "#D54B43",
+        "#B73C38"
+      ],
+      "previousShade": "#A53A32"
+    },
+    {
+      "id": "ambre",
+      "name": "琥珀黄",
+      "group": "primary",
+      "oldHex": "#f0b429",
+      "ramp": [
+        "#FFE06A",
+        "#FFD03A",
+        "#F5B615",
+        "#D99A0E",
+        "#B98110"
+      ],
+      "shade": "#9D6B0C",
+      "previousRamp": [
+        "#F6D77B",
+        "#EBC154",
+        "#D9A737",
+        "#C38D28",
+        "#A77622"
+      ],
+      "previousShade": "#96641E"
+    },
+    {
+      "id": "vert",
+      "name": "薄荷绿",
+      "group": "primary",
+      "oldHex": "#3ecf8e",
+      "ramp": [
+        "#6CE1A4",
+        "#3BD58B",
+        "#18BF72",
+        "#0EA161",
+        "#0A8550"
+      ],
+      "shade": "#086E43",
+      "previousRamp": [
+        "#A2E0BC",
+        "#79CDA3",
+        "#57B58B",
+        "#3A9976",
+        "#2C7E61"
+      ],
+      "previousShade": "#24694F"
+    },
+    {
+      "id": "bleu",
+      "name": "天空蓝",
+      "group": "primary",
+      "oldHex": "#3b93f0",
+      "ramp": [
+        "#6DBBFF",
+        "#369FFF",
+        "#1686F5",
+        "#0D6ED8",
+        "#0D58B0"
+      ],
+      "shade": "#0B498E",
+      "previousRamp": [
+        "#9BC8F1",
+        "#76B1E7",
+        "#5496D4",
+        "#377BB8",
+        "#2B629A"
+      ],
+      "previousShade": "#24517E"
+    },
+    {
+      "id": "violet",
+      "name": "紫罗兰",
+      "group": "primary",
+      "oldHex": "#8b5cf6",
+      "ramp": [
+        "#B28AFF",
+        "#9B68FF",
+        "#8646EF",
+        "#7134D2",
+        "#5E29AE"
+      ],
+      "shade": "#4D2191",
+      "previousRamp": [
+        "#C3ADEB",
+        "#AA8DDE",
+        "#9472CD",
+        "#7D5BB7",
+        "#654795"
+      ],
+      "previousShade": "#523979"
+    },
+    {
+      "id": "rose",
+      "name": "玫瑰粉",
+      "group": "primary",
+      "oldHex": "#e152b0",
+      "ramp": [
+        "#FF8CCF",
+        "#F968BF",
+        "#EB42A8",
+        "#CE2D8D",
+        "#AD2375"
+      ],
+      "shade": "#8D1C60",
+      "previousRamp": [
+        "#F1B2D1",
+        "#E692BE",
+        "#D872A9",
+        "#BF598F",
+        "#A54879"
+      ],
+      "previousShade": "#8B3965"
+    },
+    {
+      "id": "brun",
+      "name": "栗棕",
+      "group": "primary",
+      "oldHex": "#8b5e3c",
+      "ramp": [
+        "#D9955E",
+        "#C47D43",
+        "#AB622F",
+        "#8F4D24",
+        "#733B1B"
+      ],
+      "shade": "#5E2E15",
+      "previousRamp": [
+        "#C99D7B",
+        "#B58564",
+        "#9D6B4D",
+        "#85563D",
+        "#6E4432"
+      ],
+      "previousShade": "#593425"
+    },
+    {
+      "id": "encre",
+      "name": "墨黑",
+      "group": "more",
+      "oldHex": "#0a0a0c",
+      "ramp": [
+        "#514D5D",
+        "#3C374B",
+        "#292539",
+        "#1D1A2D",
+        "#151223"
+      ],
+      "shade": "#0F0D19",
+      "previousRamp": [
+        "#66616A",
+        "#504D57",
+        "#3A3943",
+        "#2A2932",
+        "#1C1C24"
+      ],
+      "previousShade": "#14141B"
+    },
+    {
+      "id": "orange",
+      "name": "暖橙",
+      "group": "more",
+      "oldHex": "#f08a24",
+      "ramp": [
+        "#FFC25A",
+        "#FFAB2E",
+        "#F69313",
+        "#DB7A0D",
+        "#BB640D"
+      ],
+      "shade": "#9D520A",
+      "previousRamp": [
+        "#FFD08C",
+        "#F2B66B",
+        "#E39A4B",
+        "#CA7F37",
+        "#AD652A"
+      ],
+      "previousShade": "#965223"
+    },
+    {
+      "id": "turquoise",
+      "name": "青绿",
+      "group": "more",
+      "oldHex": "#2fbfa0",
+      "ramp": [
+        "#58DCC9",
+        "#25CEB3",
+        "#0FB799",
+        "#099A82",
+        "#087D6C"
+      ],
+      "shade": "#066657",
+      "previousRamp": [
+        "#9DD9CF",
+        "#74C6B8",
+        "#51AD9D",
+        "#359185",
+        "#28786F"
+      ],
+      "previousShade": "#206259"
+    },
+    {
+      "id": "gris",
+      "name": "雾灰",
+      "group": "more",
+      "oldHex": "#a3a3a3",
+      "ramp": [
+        "#C2BEB7",
+        "#A9A297",
+        "#90887C",
+        "#797165",
+        "#625B51"
+      ],
+      "shade": "#514A41",
+      "previousRamp": [
+        "#C8C5C0",
+        "#B1ADA6",
+        "#9C978F",
+        "#878178",
+        "#706A61"
+      ],
+      "previousShade": "#5D574F"
+    },
+    {
+      "id": "creme",
+      "name": "奶油白",
+      "group": "more",
+      "oldHex": "#f1efe9",
+      "ramp": [
+        "#FFFCF5",
+        "#F7F0E5",
+        "#E9E0D3",
+        "#D5C8B6",
+        "#BDAA91"
+      ],
+      "shade": "#A58F71",
+      "pale": true,
+      "note": "浅色适配另列对照：米白眼星填色保持不变，细边仅为待确认方案。"
+    }
+  ],
+  "features": {
+    "eyes": "#FFF8EE",
+    "star": "#FFF3CE",
+    "paleEdge": "#958068",
+    "paleStroke": 3.6
+  },
+  "lightAdaptation": {
+    "status": "awaiting-user-choice",
+    "plain": "原样米白填色",
+    "edge": "只在奶油白眼星外沿增加极细暖灰边的候选样张，米白填色及几何不变",
+    "readability": "32px原样较弱，细边仅轻度改善，最终适配尚未解决或定稿"
+  },
+  "legacy": "旧13个颜色ID一一保留；oldHex用于追溯而非自动替换真实记录。品牌橙仍沿用确认母版的五阶明暗。",
+  "restrictions": [
+    "不新增颜色奖励档位",
+    "不把143个形色组合当成新宠物名册",
+    "不改真实头像/收集记录",
+    "不改小程序或云端",
+    "不替换正式品牌母版",
+    "不上传部署发布"
+  ]
+}

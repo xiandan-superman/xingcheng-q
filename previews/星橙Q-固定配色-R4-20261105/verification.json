@@ -1,0 +1,827 @@
+{
+  "version": "20261105-fixed-palette.2",
+  "checks": [
+    {
+      "name": "13个旧色ID与原色追溯一一保留",
+      "ok": true
+    },
+    {
+      "name": "8套主推加5套更多完整且不重复",
+      "ok": true
+    },
+    {
+      "name": "共用11种已接受形状",
+      "ok": true
+    },
+    {
+      "name": "base/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "base浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "d/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "d浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "e/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "e浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "f/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "f浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "g/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "g浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "h/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "h浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "i/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "i浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "j/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "j浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "k/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "k浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "l/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "l浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "m/xingcheng仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/rouge仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/ambre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/vert仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/bleu仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/violet仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/rose仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/brun仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/encre仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/orange仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/turquoise仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/gris仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m/creme仅换身体配色，几何与米白眼星不变",
+      "ok": true
+    },
+    {
+      "name": "m浅色细边不改路径或填色",
+      "ok": true
+    },
+    {
+      "name": "品牌橙像素与冻结的已接受绘制完全相同",
+      "ok": true
+    },
+    {
+      "name": "xingcheng明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "rouge明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "rouge亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "ambre明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "ambre亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "vert明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "vert亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "bleu明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "bleu亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "violet明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "violet亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "rose明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "rose亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "brun明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "brun亮部色彩浓度高于偏浅旧稿",
+      "ok": true
+    },
+    {
+      "name": "encre明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "orange明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "turquoise明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "gris明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "creme明暗由浅至深，不反向发亮",
+      "ok": true
+    },
+    {
+      "name": "异常色ID不静默替换已选颜色",
+      "ok": true
+    },
+    {
+      "name": "冻结的已接受形态源未被修改",
+      "ok": true
+    }
+  ],
+  "combinations": 143,
+  "revisionEvidence": [
+    {
+      "id": "rouge",
+      "priorChroma": 0.1450102298893801,
+      "currentChroma": 0.194564787345982
+    },
+    {
+      "id": "ambre",
+      "priorChroma": 0.13441903594667898,
+      "currentChroma": 0.16327158095205804
+    },
+    {
+      "id": "vert",
+      "priorChroma": 0.1026704591838501,
+      "currentChroma": 0.16572714151401186
+    },
+    {
+      "id": "bleu",
+      "priorChroma": 0.0997929773953466,
+      "currentChroma": 0.16972539152365848
+    },
+    {
+      "id": "violet",
+      "priorChroma": 0.11941644025407662,
+      "currentChroma": 0.21471627075557306
+    },
+    {
+      "id": "rose",
+      "priorChroma": 0.11464898353364911,
+      "currentChroma": 0.1993046643852653
+    },
+    {
+      "id": "brun",
+      "priorChroma": 0.07512042597078049,
+      "currentChroma": 0.11504650252178676
+    }
+  ],
+  "browser": [
+    {
+      "name": "8主推和5更多",
+      "ok": true,
+      "observed": "主推DOM8个按钮，更多DOM5个按钮；展开后均可选"
+    },
+    {
+      "name": "换色同步",
+      "ok": true,
+      "observed": "选择天空蓝后11个大图与33个头像/伙伴小样的可读标签全部更新为天空蓝"
+    },
+    {
+      "name": "换色保留暂停姿态",
+      "ok": true,
+      "observed": "暂停中切换配色，身体transform前后完全一致"
+    },
+    {
+      "name": "奶油白候选不改米白填色",
+      "ok": true,
+      "observed": "切至极细边方案，眼睛fill仍为#FFF8EE；仅新增stroke #958068，11种形状同时应用"
+    },
+    {
+      "name": "减少动态",
+      "ok": true,
+      "observed": "弹跳的静态受压关键帧连续读取transform一致"
+    },
+    {
+      "name": "深底检查",
+      "ok": true,
+      "observed": "切换深底后样张背景改变，五官与选色保持；恢复默认时关闭"
+    },
+    {
+      "name": "320px窄屏",
+      "ok": true,
+      "observed": "内容/主体宽305px，视口320px；4列主推与3列更多无横向溢出，独立重新截图复核"
+    },
+    {
+      "name": "390px手机",
+      "ok": true,
+      "observed": "内容宽375px，视口390px；人工查看样张与切换控件"
+    },
+    {
+      "name": "交付状态",
+      "ok": true,
+      "observed": "恢复桌面视口，中性天空蓝便于看修正色；默认加载仍为品牌橙，奶油白默认原样"
+    }
+  ],
+  "limits": [
+    "具体配色色阶及奶油白细边尚待用户看效果",
+    "测试通过不是143只新宠物或小程序发布验收",
+    "明暗/色彩浓度是数值检查，仍需实际小尺寸观看",
+    "截图在CUA实际观看，所附PNG为同源矢量导出的配色样张板",
+    "浏览器隐藏/跨应用恢复未独立验收；代码保留隐藏暂停守卫",
+    "奶油白原样辨识较弱，细边方案仍待用户确认，未声称全色达成统一可读性标准"
+  ],
+  "mechanicalReview": {
+    "findings": [],
+    "scope": "本轮一次机械检测，无发现"
+  },
+  "independentReview": {
+    "visual": "可交付用户进行本轮视觉确认；具体色阶未定稿",
+    "openItem": "奶油白32px眼星辨识仍弱，细边仅有轻度改善",
+    "documentation": "无实质文档阻塞，冻结源及配色登记一致"
+  }
+}

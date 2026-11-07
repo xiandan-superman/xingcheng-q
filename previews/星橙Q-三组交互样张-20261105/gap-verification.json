@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-05",
+  "before": {
+    "gap": 27.91004298727557,
+    "heroHeight": 172,
+    "missionBottom": 247.7931022106505,
+    "petHeight": 52,
+    "platformTop": 275.703145197926,
+    "qHeight": 171.5937622174196,
+    "qTop": 94.75000605514936,
+    "qWidth": 171.5937153097449,
+    "qX": 205.92190088660917,
+    "questionTop": 336.0156495391411,
+    "width": 390
+  },
+  "after": {
+    "gap": 8.066290647529778,
+    "heroHeight": 152,
+    "missionBottom": 247.7931022106505,
+    "petHeight": 52,
+    "platformTop": 255.85939285818023,
+    "qHeight": 171.5937622174196,
+    "qTop": 94.75000605514936,
+    "qWidth": 171.5937153097449,
+    "qX": 205.92190088660917,
+    "questionTop": 316.17189719939535,
+    "width": 390
+  },
+  "checks": [
+    {
+      "name": "空白回收，平台与题卡上移",
+      "passed": true
+    },
+    {
+      "name": "大Q尺寸和位置不变",
+      "passed": true
+    },
+    {
+      "name": "宠物平台保留原有高度",
+      "passed": true
+    },
+    {
+      "name": "小屏与大字体布局可用",
+      "passed": true
+    }
+  ],
+  "change": "只收回固定占位，保留完整的大Q画布、角色大小及宠物平台高度。",
+  "recheckedWithScheduleRevision": "context-aware-hero-and-living-pets-v4"
+}

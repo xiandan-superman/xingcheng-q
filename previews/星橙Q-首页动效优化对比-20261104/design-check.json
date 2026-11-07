@@ -1,0 +1,9 @@
+{
+  "mechanicalPass": "2026-11-04",
+  "corrected": [
+    "Brand badge text darkened for contrast",
+    "Mobile explanatory labels raised to 12px",
+    "Homepage context padded vertically"
+  ],
+  "briefOverride": "Cream background is explicitly inherited from the approved miniapp brand, not a newly selected generic palette."
+}

@@ -1,0 +1,8 @@
+<view class="companion-band">
+  <view class="companion-floor"></view>
+  <canvas wx:if="{{canvasReady}}" hidden="{{obscured}}" type="2d" id="companionCanvas" class="companion-canvas"></canvas>
+  <view wx:if="{{!canvasReady}}" hidden="{{obscured}}" class="companion-fallback">
+    <personal-avatar wx:for="{{displayCards}}" wx:key="id" shape="{{item.id}}" color="{{item.color}}" size="54"/>
+  </view>
+  <view class="companion-touch" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" bindtouchcancel="touchCancel"></view>
+</view>

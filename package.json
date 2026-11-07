@@ -1,47 +1,19 @@
 {
-  "name": "xingcheng-q",
-  "private": true,
+  "name": "xingcheng-q-local-tools",
   "version": "0.1.1",
+  "private": true,
   "type": "module",
-  "description": "星橙Q：量子星橙的 SVG 动画形象，基于 Bloub 动画引擎改造。",
+  "description": "量子星橙现行素材生成、核验与小程序本地测试工具。",
   "license": "MIT",
-  "author": "Jérémy Perret",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiandan-superman/xingcheng-q.git"
-  },
-  "homepage": "https://xiandan-superman.github.io/xingcheng-q/",
-  "keywords": [
-    "svg",
-    "animation",
-    "avatar",
-    "vue",
-    "morphing"
-  ],
   "packageManager": "pnpm@11.17.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "assets:brand": "node scripts/export_brand_assets.mjs && python3 scripts/build_brand_pack.py"
-  },
-  "dependencies": {
-    "mediabunny": "^1.54.0",
-    "vue": "^3.5.41"
+    "test": "node --test \"小程序/量子星橙-开工包/06-实现/tests/home-companion-variety.test.cjs\" \"小程序/量子星橙-开工包/06-实现/tests/xingcheng-q-brand-unification.test.cjs\"",
+    "build:avatars": "node \"小程序/量子星橙-开工包/06-实现/scripts/build-avatar-system.cjs\"",
+    "check:avatars": "node \"小程序/量子星橙-开工包/06-实现/scripts/build-avatar-system.cjs\" --check",
+    "check:avatar-artwork": "node \"小程序/量子星橙-开工包/06-实现/scripts/check-avatar-artwork.cjs\""
   },
   "devDependencies": {
-    "@resvg/resvg-js": "^2.6.2",
-    "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.0.0",
-    "@vitejs/plugin-vue": "^6.0.8",
-    "@vue/server-renderer": "3.5.41",
-    "happy-dom": "^20.11.2",
-    "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.3",
-    "vite": "^8.2.1",
-    "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.9"
+    "@resvg/resvg-js": "2.6.2",
+    "happy-dom": "20.11.2"
   }
 }

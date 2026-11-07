@@ -1,0 +1,116 @@
+{
+  "version": "20261105.1",
+  "defaultShape": "round",
+  "legacyShapeAliases": {
+    "cercle": "round",
+    "galet": "blob",
+    "squircle": "star",
+    "triangle": "rice",
+    "hexagone": "hexagon",
+    "nuage": "cloud",
+    "goutte": "drop"
+  },
+  "shapes": [
+    {
+      "id": "round",
+      "name": "圆团",
+      "studyID": "base"
+    },
+    {
+      "id": "blob",
+      "name": "果冻",
+      "studyID": "g",
+      "reward": {
+        "metric": "answers",
+        "target": 1
+      }
+    },
+    {
+      "id": "tip",
+      "name": "歪尖",
+      "studyID": "d",
+      "reward": {
+        "metric": "answers",
+        "target": 3
+      }
+    },
+    {
+      "id": "capsule",
+      "name": "胶囊",
+      "studyID": "h",
+      "reward": {
+        "metric": "answers",
+        "target": 10
+      }
+    },
+    {
+      "id": "hexagon",
+      "name": "六边",
+      "studyID": "i",
+      "reward": {
+        "metric": "answers",
+        "target": 30
+      }
+    },
+    {
+      "id": "crescent",
+      "name": "卷月",
+      "studyID": "f",
+      "reward": {
+        "metric": "answers",
+        "target": 60
+      }
+    },
+    {
+      "id": "drop",
+      "name": "水滴",
+      "studyID": "l",
+      "reward": {
+        "metric": "answers",
+        "target": 100
+      }
+    },
+    {
+      "id": "star",
+      "name": "胖星",
+      "studyID": "e",
+      "reward": {
+        "metric": "logins",
+        "target": 3
+      }
+    },
+    {
+      "id": "rice",
+      "name": "饭团",
+      "studyID": "j",
+      "reward": {
+        "metric": "logins",
+        "target": 7
+      }
+    },
+    {
+      "id": "heart",
+      "name": "爱心",
+      "studyID": "m",
+      "reward": {
+        "metric": "logins",
+        "target": 14
+      }
+    },
+    {
+      "id": "cloud",
+      "name": "云朵",
+      "studyID": "k",
+      "reward": {
+        "metric": "logins",
+        "target": 30
+      }
+    }
+  ],
+  "approval": {
+    "status": "user-accepted",
+    "date": "2026-11-05",
+    "scope": "mini-program avatars and rewards; related admin names and reward configuration",
+    "upload": "deferred until the user combines later changes"
+  }
+}

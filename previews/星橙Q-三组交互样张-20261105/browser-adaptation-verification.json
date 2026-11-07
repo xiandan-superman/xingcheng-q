@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-05",
+  "revision": "per-shape-color-selection-v6",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "旧账号仅当前圆团保留原蓝色，其余未设置形状默认橙色",
+      "passed": true
+    },
+    {
+      "name": "只选择颜色但未保存时，首页宠物颜色保持原状态",
+      "passed": true
+    },
+    {
+      "name": "保存爱心粉色只更新爱心，其他形状颜色和欢迎记录保留",
+      "passed": true
+    },
+    {
+      "name": "切回爱心时恢复它保存的粉色，没有借用其他形状的配色",
+      "passed": true
+    },
+    {
+      "name": "把未展示的卷月加入首页后，使用它之前保存的紫色",
+      "passed": true
+    },
+    {
+      "name": "刷新后保留5只展示名单及各自不同的配色",
+      "passed": true
+    },
+    {
+      "name": "只有奶油白胶囊采用墨黑眼暖棕星，其余形状保留对应眼星",
+      "passed": true
+    },
+    {
+      "name": "配色与阵容变化不增加首页占高，题目按钮仍在首屏导航上方",
+      "passed": true
+    },
+    {
+      "name": "小屏大字体下多色伙伴选择卡完整，保存按钮可见",
+      "passed": true
+    },
+    {
+      "name": "多色阵容仍严格限制5只，选择第6只会提示并保留原名单",
+      "passed": true
+    }
+  ],
+  "layout": {
+    "answerAboveTabs": true,
+    "gap": 8.066290647529778,
+    "heroHeight": 152,
+    "horizontalOverflow": 0,
+    "large": false,
+    "petHeight": 52.000018763069875,
+    "platformTop": 255.8593657396808,
+    "qHeight": 171.5937622174196,
+    "qTop": 94.74998480010926,
+    "qWidth": 171.5937153097449,
+    "qX": 205.92190088660917,
+    "questionTop": 316.1718935347332,
+    "width": 390
+  },
+  "pickerSmall": {
+    "height": 740,
+    "horizontalOverflow": 0,
+    "manageHeight": 44,
+    "manageWidth": 44,
+    "saveVisible": true,
+    "sheetHeight": 673.9999329727369,
+    "sheetInside": true,
+    "width": 320
+  },
+  "selection": [
+    "round",
+    "capsule",
+    "heart",
+    "cloud",
+    "crescent"
+  ],
+  "profile": {
+    "avatarShape": "crescent",
+    "avatarColor": "violet",
+    "avatarColors": {
+      "round": "bleu",
+      "blob": "xingcheng",
+      "tip": "xingcheng",
+      "capsule": "creme",
+      "hexagon": "xingcheng",
+      "crescent": "violet",
+      "drop": "xingcheng",
+      "star": "xingcheng",
+      "rice": "xingcheng",
+      "heart": "rose",
+      "cloud": "vert"
+    }
+  },
+  "scope": "Actual local native per-shape color module plus isolated home phone preview; no cloud data, deployment or upload."
+}

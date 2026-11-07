@@ -1,0 +1,2058 @@
+{
+  "date": "2026-11-07",
+  "scope": "品牌资源与小程序吉祥物实现，不含完整业务工程",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 84,
+      "sha256": "ad79909592d8b4ae19792b2579a57c8bda69ed532a59019333ac48c79969fb2f",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "d43fe2742faaf4a86210ec33bb155f101f64883e3994be9193099367940736b4",
+      "source": "原文件"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1048,
+      "sha256": "f29d6a13a8ae4ff276a2499ce417aa1ff62035bb791d828637515d028ab557bf",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "package.json",
+      "bytes": 900,
+      "sha256": "23313bd929008ffc8957831c5bf16ad075b5404bd08ec90bc0c68f743141a65a",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 6998,
+      "sha256": "e2021436c0946f00df422b59a38cb3f82bb0f78ff68158207fc3d94dbfc0428c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/README.md",
+      "bytes": 689,
+      "sha256": "3960213c0eff96532be482956f5a51c98e621dfcc7616816fdbd8e4a79d19de9",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/README.md",
+      "bytes": 5360,
+      "sha256": "6c6d5059be8f482278d5c5460a79da174ba2baaeabdf4a868ea49b758c37d25a",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/adaptation-verification.json",
+      "bytes": 1902,
+      "sha256": "dbd7ed8c54c86ce77c5e55f41aa490590dbdd739749f578b0d8548ea5337bb16",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/app.js",
+      "bytes": 30536,
+      "sha256": "3909da2f98cb31a9eb5c44d22b4f58597b84ed3f1a7d9fd5762538d90170ff0d",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/browser-adaptation-verification.json",
+      "bytes": 2591,
+      "sha256": "e106509e18155e36e8fe22d619684cb4346626f712b4fd41352fa9a002214e92",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/build-phone-layout.cjs",
+      "bytes": 2954,
+      "sha256": "c03ba23f44b33efb390a32392b34842f10f3601092e6e4645895312442a6d15a",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/comic.js",
+      "bytes": 9579,
+      "sha256": "af74b2f98df35311d6f3088f58307f89eae84e10a18417c20eeaeed3d73d38a0",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/companion-appearance.js",
+      "bytes": 5373,
+      "sha256": "ce6fd16bef19ce5d5f54580a4488c54656bf87a27224ae1fc4f233d016116a34",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/companion-assets.js",
+      "bytes": 12565,
+      "sha256": "e6f679a76ee49aefdc67ec994a177af305720c3e01475a1b4bf5dd3e6177d385",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/coordination-verification.json",
+      "bytes": 1877,
+      "sha256": "7fb4b424f465a7a439c8aacdd99a976bde745c7125df0fcc77b1c676a5004d4f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/gap-verification.json",
+      "bytes": 1262,
+      "sha256": "2ca65fb53f801662dac4b038df4b916a53c6765e892fa97a1df6fc1948fbe87c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/hero-director.js",
+      "bytes": 3662,
+      "sha256": "c17eb47b4c77a1f2444d6a6c0dc9ccca521866f4d390505ec35024146ffa7aac",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/home-companions.js",
+      "bytes": 2163,
+      "sha256": "3dd95d5ad9d9152180aaeb1ce43f922624e0ed61137807f96735fc2f5d415e06",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/index.html",
+      "bytes": 14443,
+      "sha256": "eaee705bb24a13a3e7118c8896167906c91287479bd4e7509e1de2b8d5a463e1",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/isolation-verification.json",
+      "bytes": 2873,
+      "sha256": "ba2a4130d87e41060c3042d3747806dbbbfafc78a50f62029db789aec27407f3",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/loading-first.png",
+      "bytes": 44740,
+      "sha256": "9161ea032744db4ba54bdec7d179dc75e0d89198786ecdb3f27e4f675c52d38f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/loading-story.js",
+      "bytes": 1612,
+      "sha256": "0c13f5e877d114a23786b86465a97ee7d0676f471c2112c415a24da1460bcc98",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/motion-verification.json",
+      "bytes": 921,
+      "sha256": "13bcdc67e3e797bc688dee3d8f336050e2dda76ed17e346608be56be0e430867",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/pet-behavior.js",
+      "bytes": 32881,
+      "sha256": "24666d9dad5795d4ff0f19aa06c7741c8763e21c165ea8b6badbc925c438aa22",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/pet-scheduler.js",
+      "bytes": 5493,
+      "sha256": "9b301cbf76e98ca3c707250a966262f693c243ad6ea8a42671a524eb02e4183f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/phone-frame.css",
+      "bytes": 9253,
+      "sha256": "7385e344513fac2ce21faff95ef18c1a05367fbef328c1cc15e6fd94fd83524e",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/phone-layout-sources.json",
+      "bytes": 883,
+      "sha256": "e396092dec174bb1e142a3e936e64d93aa52e0d2fd14216da5c490bdb9351753",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/phone-native.css",
+      "bytes": 75317,
+      "sha256": "29579248522bd87bafff6fa554acd0b85b594391cd16a1c27f3a3823fba16a2a",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/refinement.js",
+      "bytes": 6181,
+      "sha256": "f87dcb5ff33174c467dd5ae0a13b0c44c165178967c1f2642826986ecbbc31bf",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/render-core.js",
+      "bytes": 6919,
+      "sha256": "944d0f002af63e8eced86dc3f7ed2568697b8b00c742ae9ae4c6b9859ca63aba",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/source-bundle.js",
+      "bytes": 62413,
+      "sha256": "475cab4fd22b32cd243a7fd38b652c24fba7f61c25785fe56ac67961c7f48667",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/style.css",
+      "bytes": 9981,
+      "sha256": "7d40660c4fdd60cefb2a027be4e5cb30d13fc777094c9a258efee230998c3aa7",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/sync-companion-assets.cjs",
+      "bytes": 1698,
+      "sha256": "283c2d50336d26868b0aeec9dfd204bdb0a0bb7c0e990b3dbc939e1a40ab6234",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/display.ttf",
+      "bytes": 81116,
+      "sha256": "0bac80d76f407b5717781fa8ce5c22fac00cc1333a9530fe2f56df8d862fce0c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/ic-clock.png",
+      "bytes": 2611,
+      "sha256": "a167da67a9b3b62b1649838f9da70fe31cf8dde4061e32f72897d0235f4f64d8",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/logo-q.png",
+      "bytes": 5972,
+      "sha256": "f7bdaa1e6f111f97c495b191347640a064ca1e070a576821b25e97cd6b50c893",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-me-on.png",
+      "bytes": 8871,
+      "sha256": "99fd5b010d7024fdb2b95628cf9456776e8fce0e31700e9bae7ce741ca905494",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-me.png",
+      "bytes": 7429,
+      "sha256": "ec9677d45b4da2695eb111f71f7ad11b2f74e6c5bb21354e9275e7a4d6b070d6",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-practice-on.png",
+      "bytes": 7708,
+      "sha256": "39cdef066520bd0348714aea6c33f6326c329b017058fbc77c23e205a1d336c5",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-practice.png",
+      "bytes": 6347,
+      "sha256": "a459777851204021ef83ece1705129f1d81e3958e0e505db29ae4c1bf251f157",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-today-on.png",
+      "bytes": 6801,
+      "sha256": "bab19558448607bf51bbb2b5d43deba07215d14cdd0c66d706b01298acb30e92",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-today.png",
+      "bytes": 6397,
+      "sha256": "d77fe5e496b15dc1f383772abe9353953249c72eb8ed7a02028add563e70f40f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-wrong-on.png",
+      "bytes": 4476,
+      "sha256": "ae2c4d3eccdbc578537d117b4699a8e5286bdd80030a8431917ef35efcd96b1b",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/ui-assets/tab-wrong.png",
+      "bytes": 3797,
+      "sha256": "eadaa4a2cc0bf5f256cfe43de41ea18788f80b3bebf72342d00c79418e5ed713",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/verify-adaptation.cjs",
+      "bytes": 6847,
+      "sha256": "db17fd03e12d099dd3b59f8811e244814ca44630587dec94ef2aa09168c2fcd5",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/verify-coordination.cjs",
+      "bytes": 5661,
+      "sha256": "091d3718878d519f98e746f0a9221eb0153b0168bcc675722fdd54e52bead4be",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-三组交互样张-20261105/verify-motion.cjs",
+      "bytes": 5717,
+      "sha256": "4da3de9abfd357b3951627e1c8aea0cb481146bfb1bec2172bb218d8689851ae",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/13套固定配色-鲜亮修正版.png",
+      "bytes": 417031,
+      "sha256": "99141fb43689411a5f419032f8990778ffa16057c894484c810bcdc00b692f3b",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/README.md",
+      "bytes": 3832,
+      "sha256": "93f4a5a966fefd517175d6d380b8739ee80c77332e94e93ae225c926ff9d2fa0",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/app.js",
+      "bytes": 4552,
+      "sha256": "a39d73772c3170809bbc75b485a36f8df9608ece81aeb0e27c5767dd13a09838",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/export.mjs",
+      "bytes": 7136,
+      "sha256": "31d242ab1af3c809744e533252f13df5f84737022df631b208d774759666c361",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/index.html",
+      "bytes": 3064,
+      "sha256": "21527f6fbd566d450e5a4c759513134099a40a678143d7cf69455ca9859feecc",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/palette-register.json",
+      "bytes": 7612,
+      "sha256": "1ba790fe7a445f7d5476774fa93cb92101817c190f5fceb89f72c03f0a1e6de5",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/palette.js",
+      "bytes": 4625,
+      "sha256": "aa7f1d638bfcd15856d793271b776240c1a1d7755f75d976d441cf587add11dd",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/style.css",
+      "bytes": 5490,
+      "sha256": "a0f4f74719748546822027f97114bc81bdb5cd359e79155ebe4c48acf775c746",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/verification.json",
+      "bytes": 21362,
+      "sha256": "1521e32c64cb859eb185d5f0435a92568d0fa55800972aac32fb8a5a732f8086",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/verify.mjs",
+      "bytes": 3951,
+      "sha256": "adb9d3966e32dd8c10b7b370d3567178897ac703baed82c9153f9fd5b26e9161",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/主推八色-修正前后对照.png",
+      "bytes": 323012,
+      "sha256": "7135709d4f5f7d7231cbde37dfab101fe0f2613e5993a6c6da7042a0cf0061e3",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-固定配色-R4-20261105/奶油白-两种适配对照.png",
+      "bytes": 135755,
+      "sha256": "f46d33c8f9c28a0223b4436ae5c3096a1394dfb60385214c449f751bdeb8ced4",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/README.md",
+      "bytes": 4014,
+      "sha256": "c505504c56be3685cfc388313d50ab0f506bb0c81aff73bcc8069c2c7941b3c6",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/app.js",
+      "bytes": 3972,
+      "sha256": "330252468f240c321c77d10b4abfe0e7708773bea68f0a65fccb9cc5bad2a607",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/cream-register.json",
+      "bytes": 3142,
+      "sha256": "daccdb5ac2485030f65bf367c4584e5495a0dbb0e94cf21badc3c4387e7c0a1b",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/cream.js",
+      "bytes": 1800,
+      "sha256": "83e5d9f1696a39e567dea72f473671349f9312970b52b1c29664eb44f9ebe7c5",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/export.mjs",
+      "bytes": 5672,
+      "sha256": "05310680b4fc64e9fcc743dd5a2848a4383267236d36e6195c1ec9dd890251f9",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/index.html",
+      "bytes": 2539,
+      "sha256": "f5d752cd165b3dd3c1ed8e4f43a11a728dc55ab1ed87f93e3edb01840e4961a6",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/style.css",
+      "bytes": 4718,
+      "sha256": "91cd1b1f8669b38c9b31af331418b6c97e80653e275eb17a9684df45b3083ffe",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/verification.json",
+      "bytes": 64278,
+      "sha256": "59eee3fc6b7f90146c2c63621692cf9c44223530cf3de33561313a62b69d4ab2",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/verify.mjs",
+      "bytes": 5156,
+      "sha256": "e0016899b43b62368d0e6e3b058f947480bb93c5e7c603ba08149ffa83ce7004",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/奶油白-A候选全形状检查.png",
+      "bytes": 237655,
+      "sha256": "3e452673bd07ae5d18cb9d0d8df7e9ecd45cb3066a9b59444a65dabd404ee62f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-奶油白适配-R5-20261105/奶油白-深色五官效果对照.png",
+      "bytes": 182953,
+      "sha256": "51a209aa6f299e5f6a904a1735a45bc429f9a81d9b534592cc665c5e9ba89bf7",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/README.md",
+      "bytes": 4371,
+      "sha256": "784d46289c40f3ec90b8bc40f9fefad364577fdd3cec32d49674f1e7449ccf7c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/app.js",
+      "bytes": 3958,
+      "sha256": "a81475942daac6a96e1f70fc70bb717817cde28138d4f84ccfa36f30743e0d98",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/export.mjs",
+      "bytes": 4150,
+      "sha256": "52bf943c489b128d1d073e38b339bba4039757a0673e5096be151d8dfbcc57fb",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/family-register.json",
+      "bytes": 15286,
+      "sha256": "d30994d700b9fd6fd690f39095e392dca22e732fe7e5521a4b9063544d8c6958",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/family.js",
+      "bytes": 3196,
+      "sha256": "b30cfdb49da61a32d6810a0351cb4036fb778b0658b8908d3f395418f8d3a62c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/g-front.svg",
+      "bytes": 23079,
+      "sha256": "02edcddc780d429659a8bdfb00538687a187773d6c7705c10bef6d915e37962c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/h-front.svg",
+      "bytes": 22678,
+      "sha256": "ad3e316698030bc40e6365c3e39082ed9cade70c158f84542a48973c628bef15",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/i-front.svg",
+      "bytes": 43441,
+      "sha256": "91682e5994ea5961700685c3dcda63c8e444c55726a0ab3dacb45a7783010f29",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/index.html",
+      "bytes": 2693,
+      "sha256": "f068dec3dd0d9744be47380ea2f1c2a52715210e2b1558ee8b96aa31123e6484",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/j-front.svg",
+      "bytes": 22984,
+      "sha256": "4fc684e4d83383a4e5df6f322a19034085853ca8fdd928a2eadd2b8fed590fcf",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/k-front.svg",
+      "bytes": 29837,
+      "sha256": "dc2c8a61d76d6957f9afd2b2ab694eddb7cad99f26a50b7846c42eda4f1d4140",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/l-front.svg",
+      "bytes": 26283,
+      "sha256": "8fd82e6a14ae47bdf3ae4851348f472b1603a63c00204b07602da2698d182366",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/m-front.svg",
+      "bytes": 19651,
+      "sha256": "b0b0b953fb5a99f3c6b6466965875e27766244f2ce74fe289ea52424155c31fb",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/style.css",
+      "bytes": 4265,
+      "sha256": "609cb0425ba0fb95ba9095e68e7d87dea80fbccb212c48ddabb1bd4325eb761a",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/verification.json",
+      "bytes": 8291,
+      "sha256": "fa3977f8a1c6a864229f7c9673288d8d79f69a3eb05bd42523aecd5eb341ae62",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/verify.mjs",
+      "bytes": 2749,
+      "sha256": "8598d5711bc4446568e7268dc27d206d5c46d1c27fd5a253ab0f2c3bb97ac370",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状家族-R3-20261105/新增七种-轮廓与尺寸.png",
+      "bytes": 291370,
+      "sha256": "4869553c7c70d66cfabbe4afb8342961f441ec816004a7226650e8c93dba9b8c",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/candidate-register.json",
+      "bytes": 6058,
+      "sha256": "5d053846f1c4369c0dc6b1f73de9b4c900639b6fdb8d4aebf8e3f629f95cdbe6",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/d-front.svg",
+      "bytes": 29658,
+      "sha256": "042f92b0b1d2a0d226c92f51f527cce1e3303c738842ac76f4f7cac180d532b4",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/e-front.svg",
+      "bytes": 49695,
+      "sha256": "10ce2c50b242b53040e65e61f732083280d6b13d1fc9526bf119042d337b8c0f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/export.mjs",
+      "bytes": 4485,
+      "sha256": "8e0a9eb37f72cdab1c7ae3fd85af337ccb680a0aa6885f3761cd16af0af08e3b",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/f-front.svg",
+      "bytes": 25986,
+      "sha256": "da85bd377eb226443a86c6f5e75ae743dd701d443496c35d8ebf70e38c575a7f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/shapes.js",
+      "bytes": 6492,
+      "sha256": "15c4f053f18420988f2db23fab9d9db7787504e5b851606711655d4603c07b16",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-形状扩展-R2-20261105/第二轮-轮廓效果.png",
+      "bytes": 253526,
+      "sha256": "b4bb09a353d129a8f47738cca75d9f28c26dea418f15b506981780206fceedeb",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/README.md",
+      "bytes": 2746,
+      "sha256": "caa82b9d1d82126216987abaebe239b1d0cdd6596b50b45f0b4f0b655a74820f",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/artifact-hashes.json",
+      "bytes": 2100,
+      "sha256": "b679b2bb0424cc89a81e6dfbd6688f0bd4df2d14cc05ba976823d8d4427f55a9",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/browser-checks.json",
+      "bytes": 521,
+      "sha256": "2a3056991683b05ec1493517bb6d42ab858e9d14b843f4123840c8347b26b146",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/build.mjs",
+      "bytes": 3752,
+      "sha256": "6ec13e4683d037b8a6af8940fb507dd48a0e06c0b003dacef4873145160b230a",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/comic.js",
+      "bytes": 9579,
+      "sha256": "af74b2f98df35311d6f3088f58307f89eae84e10a18417c20eeaeed3d73d38a0",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/current-home-body.png",
+      "bytes": 36060,
+      "sha256": "a4a270824e4297b42cdd47ea40dcfdc9bc6e08c6e4de7c33025d2244bcbca654",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/design-check.json",
+      "bytes": 327,
+      "sha256": "ed943d31cd4f835c67d61937235556735dd0870752aca721af8558100f9c9b63",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/incumbent.css",
+      "bytes": 2880,
+      "sha256": "59184be25006bb3c5a7508f2bd2d1709b1711eb740ac52b1a82038c5d6968bd4",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/index.html",
+      "bytes": 4801,
+      "sha256": "39fa9ea952041014c003fc922ed419afa4219ec1a400a5a5716fac02c0277d7d",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/lab.js",
+      "bytes": 9137,
+      "sha256": "5606207938031c94c0e6cf0ba8215d90122a63141c90b8532bdf1b0dccc488f5",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/refinement.js",
+      "bytes": 6181,
+      "sha256": "f87dcb5ff33174c467dd5ae0a13b0c44c165178967c1f2642826986ecbbc31bf",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/render-core.js",
+      "bytes": 6919,
+      "sha256": "944d0f002af63e8eced86dc3f7ed2568697b8b00c742ae9ae4c6b9859ca63aba",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/render-showcase.cjs",
+      "bytes": 2076,
+      "sha256": "5b9e729625252aae964322fba59f423b21c7397b39d9751ad9e915d2529a1cfa",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/source-bundle.js",
+      "bytes": 62413,
+      "sha256": "475cab4fd22b32cd243a7fd38b652c24fba7f61c25785fe56ac67961c7f48667",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/source-manifest.json",
+      "bytes": 1611,
+      "sha256": "a87a9fb4e314c32a10baa55f35ca4d2e7dca41253d9b45c4c27b599ce2e6b1b1",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/style.css",
+      "bytes": 7304,
+      "sha256": "85ad9d38e6278db25d9e241e3b51a0b6439346461962ecdcd70017698e86f60a",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/verification.json",
+      "bytes": 935,
+      "sha256": "41d74200f469b1a46d3c52cc99e2ca8b086d1652a49fc790c223a9ec95cebe49",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/verify-render.cjs",
+      "bytes": 10494,
+      "sha256": "cf72ab3f7dae40d9d89c75b844a760fcac19c84c1f2046b7bdf3be828b9e88d2",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/三段新剧情预览.png",
+      "bytes": 79162,
+      "sha256": "f56b56cc76de8a7c26b394ec494783b1a9531a740290ab8f58091e50bd6c59c9",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/五官比例对比.png",
+      "bytes": 63270,
+      "sha256": "3b6a831894932429ab84a99c491014f7455d716313d51bdfcbd0d53da3da0609",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/星橙Q-三段新剧情.gif",
+      "bytes": 2178874,
+      "sha256": "4359e997d90f84a5f343798383bf803cdcb18caa92cca5d405f69bfafeb11cde",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/星橙Q-三段新剧情.mp4",
+      "bytes": 262378,
+      "sha256": "c60e0783445c771f2f81ee6000b7c6aaa39f264a1ef8e36ea26a5d2ec0820aca",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/星橙Q-首页完整动作对比.mp4",
+      "bytes": 2347381,
+      "sha256": "48dde9ca12a0c46e5e2d8600048d6445dbd6009525915cbd54f92e28b205224d",
+      "source": "原文件"
+    },
+    {
+      "path": "previews/星橙Q-首页动效优化对比-20261104/桌面对比预览.jpg",
+      "bytes": 139827,
+      "sha256": "508162d77875b65d4227cd958754222ed13830bf408d7bf3a504e361d7d2223c",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/01-星橙Q通用角色基础.docx",
+      "bytes": 143359,
+      "sha256": "eedd619ffa0507edbcdeac34d761402179e82c5f02a0f0e710e5c01045c9cd78",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/01-星橙Q通用角色基础.md",
+      "bytes": 8366,
+      "sha256": "04bb29aa79ca1dfbdf950471e0546adca21e18e5cedea2417e12bb81eda30c57",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/01-星橙Q通用角色基础.pdf",
+      "bytes": 490499,
+      "sha256": "83497d483a648e42ab01ad6e63151ecc6b931cda6c9a9ae97adeceeac36e9f8f",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/02-星橙Q待确认事项.docx",
+      "bytes": 38302,
+      "sha256": "c1a299b7dcd94a8ec6991a4da4e552b7ad759e69363c3ec407ca518f0799e6bb",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/02-星橙Q待确认事项.md",
+      "bytes": 3653,
+      "sha256": "90f4de6aec9b68c4d07adfa3e7fe7484b18f5973f960f4a4dd66def5a66214b0",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/02-星橙Q待确认事项.pdf",
+      "bytes": 246446,
+      "sha256": "6e7f355011843a4ea0ed9c08ea79828dbab534f8ff9c1964e049fe951d211872",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/README.md",
+      "bytes": 2585,
+      "sha256": "2dc1fddab182ad33d9044670342d786e36bfd45728c358ce429a8f9a712f0bd9",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "品牌资源/星橙Q/参考样张/01-标准主形象中性正面参考.png",
+      "bytes": 26005,
+      "sha256": "6f641611b49da6dfe724f3abc8bf9a17afe50b5e1eda9e7a326b6e17a0e154b9",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/参考样张/02-剧情参考憋喷嚏成方团子.png",
+      "bytes": 26578,
+      "sha256": "3a6a3ab3d583b9ac4dda9c69b696b4b01f81e431b52addf001e59b9d9e9485be",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/参考样张/03-剧情参考落地成饼.png",
+      "bytes": 24269,
+      "sha256": "adefab73837d9c2cca8c004966b594f7e59cbf7c4f426247e65ba1528ca3667c",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/参考样张/04-剧情参考小分身偷看.png",
+      "bytes": 28946,
+      "sha256": "f83f9d95d9a06ed374ee3bee1b0797d1da2146d51bb6625c0a3903e2d89f1ddc",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/参考样张/05-三段已确认默剧.mp4",
+      "bytes": 262378,
+      "sha256": "c60e0783445c771f2f81ee6000b7c6aaa39f264a1ef8e36ea26a5d2ec0820aca",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/小程序扩展/星橙Q-头像形状与配色.png",
+      "bytes": 439811,
+      "sha256": "adc069bcc3783c3475b58735217b311f57fb4e64614d87f5a5834dd6f48c7095",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/标准母版/使用说明.md",
+      "bytes": 1813,
+      "sha256": "18de8ed70bb07616ff62b4eddff4fb5c0c09a66b56adab5aca1a758f73547449",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/标准母版/星橙Q-标准正面母版.svg",
+      "bytes": 4694,
+      "sha256": "a81995ea764c245121b1f43a6c7908b17f002532cd115533f49dcc80bb2640ef",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/标准母版/星橙Q-标准正面预览.png",
+      "bytes": 64571,
+      "sha256": "0041bedb145b89e21410a2556f2514d3c4179a81348aadd7c25209296568663a",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/转面关系/使用说明.md",
+      "bytes": 1474,
+      "sha256": "2e5985b2592fd646836a11af45bc8bdc383b37cb05af254f951987c88240e709",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/转面关系/星橙Q-正侧背与底部关系图.png",
+      "bytes": 272256,
+      "sha256": "442a5fcb8d7688c7eb52fe2d170e2c0dc31718119a39d02111f522494d82a062",
+      "source": "原文件"
+    },
+    {
+      "path": "品牌资源/星橙Q/转面关系/星橙Q-正侧背与底部关系图.svg",
+      "bytes": 53833,
+      "sha256": "6cea73d9db2fdbdd02b89ed5d68d37f89d8936142954a96b92ae0b4679f27643",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/admin-web/src/avatar-catalog.js",
+      "bytes": 1941,
+      "sha256": "739e7885cfdee455ec7d172ce339d586619c66668cf5e68e1658ec960f3deb99",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/admin/avatar-catalog.json",
+      "bytes": 3078,
+      "sha256": "f41fe76a38e58f0e53e75ef3d35f83aa67908368f363da539ab14abeb0e05e2e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/admin/avatar-colors.js",
+      "bytes": 1742,
+      "sha256": "e8038192e324318527bb8d848e63cc9eb4be3e2e8b25d2a7c5dddbfb6da68b15",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/admin/identity.js",
+      "bytes": 4235,
+      "sha256": "9be18bd30128086acd0b76a5233ab559a541d83a8527dc88f782aeab714716ee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/student/achievement-counter.js",
+      "bytes": 1526,
+      "sha256": "57b45a644131459c944b4377e27d2dcd80cb8dc1fb62d19c1e49fbb8915a2a08",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/student/avatar-catalog.json",
+      "bytes": 3078,
+      "sha256": "f41fe76a38e58f0e53e75ef3d35f83aa67908368f363da539ab14abeb0e05e2e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/student/avatar-colors.js",
+      "bytes": 1742,
+      "sha256": "e8038192e324318527bb8d848e63cc9eb4be3e2e8b25d2a7c5dddbfb6da68b15",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/student/identity.js",
+      "bytes": 4235,
+      "sha256": "9be18bd30128086acd0b76a5233ab559a541d83a8527dc88f782aeab714716ee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/cloudfunctions/student/mascot-features.reference.cjs",
+      "bytes": 7682,
+      "sha256": "deda6b9dada56e060e37b01e295771082cc12b757bd39d1f7e978455fe72c571",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/config/avatar-colors.js",
+      "bytes": 1742,
+      "sha256": "e8038192e324318527bb8d848e63cc9eb4be3e2e8b25d2a7c5dddbfb6da68b15",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/config/avatar-system.json",
+      "bytes": 2140,
+      "sha256": "fa933670dd8432cba8aa5119ecd41332941a0fc498100830cd527c08bac7ae5f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/companions/index.js",
+      "bytes": 3793,
+      "sha256": "6c83b108f38f8203ea9a6ea27b4ca58b07591ec695f615c75bfd14f2ef1d8c02",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/companions/index.json",
+      "bytes": 174,
+      "sha256": "d514bd996d06078b1f41edc50cad2cac03b785c6e18e85c96f7e5e156c2c568c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/companions/index.wxml",
+      "bytes": 2532,
+      "sha256": "1e9f3405f75c20fde9c88b2205e529f4159ce6d61f63d2aabf6a99786e416c36",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/companions/index.wxss",
+      "bytes": 1637,
+      "sha256": "62f6c8193e1c7dacb6d1c2ddf2e0c4df5589c2549118bdd047dc1f8c60389fe0",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/wardrobe/index.js",
+      "bytes": 8866,
+      "sha256": "fec10bea711d662bccccdd787289c48795c5f77236edd89babec7655a7809179",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/wardrobe/index.json",
+      "bytes": 80,
+      "sha256": "39fe45163ba32a1ca071e99699b496a300806d6de169d7ec3ae3bafd2b1e2e8d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/wardrobe/index.wxml",
+      "bytes": 3988,
+      "sha256": "c0ab378bbe62d26857ea41f516d8d81d5c147cfd12ae6707591e96fca7422274",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/account/wardrobe/index.wxss",
+      "bytes": 5232,
+      "sha256": "6cadcb557786c0b6e25c5ff4243ebea1e0042cd0a7aba2925cf1a64142ace71e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/01-peek.png",
+      "bytes": 1119197,
+      "sha256": "fb76a1449a496a269d833b050c3a04fc997ddd2da64b481566f07f0bbfb12987",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/02-launch.png",
+      "bytes": 1676948,
+      "sha256": "dda684649fae5e8621731ddaf374c7dcc8bac5f666d12c3883f75aa977f48194",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/03-snap.png",
+      "bytes": 1874756,
+      "sha256": "9222b4663cb1e8358ea0e3a89f21c9bac899fadeb5fd2a636e00654680f6d440",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/04-ponder.png",
+      "bytes": 1309083,
+      "sha256": "64a203d59a6c1756a0e70318e96e8f35c435debcbf60cdc4f20767367229c537",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/05-confirm.png",
+      "bytes": 2446569,
+      "sha256": "7c8139f22dd983a7cf92f8d57be2063c2a26ba208ed3d767286e31a42786de2c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/06-calibrate.png",
+      "bytes": 2168967,
+      "sha256": "c094db70edd2275653a773d8f80cefc2582ec11173e7fe5ba8a9569c6429aa95",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/07-seal.png",
+      "bytes": 2628661,
+      "sha256": "63ec7abd97387e0196259e867515e80f65aff95fb2a398c09a5cd829b7178ccf",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/apng/08-recharge.png",
+      "bytes": 4332923,
+      "sha256": "b7ccb5f700fd4e63e6d510aca0241eac6b557e1c7534fc0f629240c4f51b1777",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/appearance-assets.js",
+      "bytes": 5524,
+      "sha256": "889539a70419fc3535d466ed523c5ee8117b84862fb8084dc35ba91473ccb718",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/01-加载-量子点扫描-V1-结束静态图.png",
+      "bytes": 53702,
+      "sha256": "4200eb29052c8d8500b35dc12ed2250bfff0847fdd556c9b18cb3222280585be",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/01-星轨报告-分享静态图-V2.png",
+      "bytes": 68957,
+      "sha256": "9c9958bf6fe3351edb1c63680dedb7f057676b08991ef527c8b61bee1e692548",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/02-回溯补能-倒转打捞-V1-静态终帧.png",
+      "bytes": 37577,
+      "sha256": "596dc16514ccd97bfee64f9c2a833ea5d49a7cb370ca289b92ce1015a08f87ca",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/02-空数据-Q寻找后摊手-V1-结束静态图.png",
+      "bytes": 32431,
+      "sha256": "c62dad3b723822e1350fe81c8717cabefafd6db9e576b98202a236aeea6f8b12",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/03-断网-天线打结-V1-结束静态图.png",
+      "bytes": 41583,
+      "sha256": "af1794d47ce2522af061ddc9ff04dc7e67ef0d9a2d8a2485adc178c9d527d0a5",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/03-校准反馈-靶心确认-V2-静态终帧.png",
+      "bytes": 51916,
+      "sha256": "c8bce4c6ce718ef3cf5e5f04f699c1fd1c981d47a7cdf221c45f3c681c01abda",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/04-提交失败-信号舱熄火-V2-结束静态图.png",
+      "bytes": 46948,
+      "sha256": "29fff6a1e36a869a0b92050440b3daf4f557983bed5ba700770cd936f7d243fa",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/04-等待邀请-邀请卡等待-V2-静态终帧.png",
+      "bytes": 49020,
+      "sha256": "1ff5d9afc3cd900195e60e8effb6510419690e91fd147471dcf30a28e4cac840",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/05-网络恢复-青色信号接入-V1-结束静态图.png",
+      "bytes": 38771,
+      "sha256": "f4e33520e752e09e07d28218c60aa22369027aabdb017fed1115a3e33f1ccfa9",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/06-继续练习-进度接续-V2-结束静态图.png",
+      "bytes": 40249,
+      "sha256": "8f2c9ee01c60d66ec2a0e54f9b621009c6e877d29c78e3abecc64f10ab586230",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/07-提醒成功-提醒确认-V2-结束静态图.png",
+      "bytes": 51046,
+      "sha256": "627db28b25b69edc284e66f1810320c4a9fb004f0c40b683196e7588cf08fdda",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/01-加载-量子点扫描-V1-结束静态图.png",
+      "bytes": 33683,
+      "sha256": "faac875f862831de38df458f26573462708b7eefdc29683b8a69957e88b0369b",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/01-星轨报告-分享静态图-V2.png",
+      "bytes": 43319,
+      "sha256": "161755f366a4407e65b763683887c221785241c83aecb7ab569365a6fe22d3d3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/02-回溯补能-倒转打捞-V1-静态终帧.png",
+      "bytes": 22227,
+      "sha256": "545f5ed94ce3957f40f47be0c01a0845f3f1171956040d0efca3ae89ae98b8ec",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/02-空数据-Q寻找后摊手-V1-结束静态图.png",
+      "bytes": 18296,
+      "sha256": "eee3cf5bbe6d1a87978cf5dd6d2d4c3b35f8fb9031fb74d7ca2ec046dd4a5095",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/03-断网-天线打结-V1-结束静态图.png",
+      "bytes": 25900,
+      "sha256": "5e421922d1f0a21d10370ef296dacf43a8f17639493f256c9aab57320eaded30",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/03-校准反馈-靶心确认-V2-静态终帧.png",
+      "bytes": 34306,
+      "sha256": "f98d26159bd363fdbe42f3c20b0a1f9ac576359b95c02b559f56fff2d9a08423",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/04-提交失败-信号舱熄火-V2-结束静态图.png",
+      "bytes": 29752,
+      "sha256": "d764c84aec5a6b0d27d9ce155955c6dd5ef2ddf67e7cdfc474c5791863fec9a8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/04-等待邀请-邀请卡等待-V2-静态终帧.png",
+      "bytes": 30027,
+      "sha256": "0662075a153d714983d6472ee751db3d3444db2429fd710ed075dbb2c43676b9",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/05-网络恢复-青色信号接入-V1-结束静态图.png",
+      "bytes": 24621,
+      "sha256": "d83ce6907c1cd5eac0fc72840e5f33178ac4b9d02f3f7db489079748d976549f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/06-继续练习-进度接续-V2-结束静态图.png",
+      "bytes": 25296,
+      "sha256": "93ee8689a8b7be369a981f453a6ce06c9b41afd2dfbc896b12439bbb16a6d1ff",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal/small/07-提醒成功-提醒确认-V2-结束静态图.png",
+      "bytes": 31474,
+      "sha256": "6ac5b44aca09e8901a93931f71cb17b11bdfe672eac5f5c7ca2093f8ff42ac3a",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/00-通用待机与衔接静态帧.png",
+      "bytes": 32664,
+      "sha256": "d5fc121960a163da1bc2cfa603ba6537827800351fcc55ba97bc03b217de8e5d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/01-peek.png",
+      "bytes": 39491,
+      "sha256": "8ed8198a299b89e8ea83bc67fe40a38f82b115531583a3a6f573074697ad8687",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/01-加载-量子点扫描-V1-结束静态图.png",
+      "bytes": 120057,
+      "sha256": "205aca947db4e8c978018369e24189496da0e6b5fd9276237b7a3f20b5c91ba4",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/01-星轨报告-展开测绘-V1-静态终帧.png",
+      "bytes": 56603,
+      "sha256": "43366238e24028bfdef4b1fa74902fc9b97697758086cbaa855b2ba4b771194e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/01-练习页-想法冒泡-V1-静态终帧.png",
+      "bytes": 31825,
+      "sha256": "8297811baee5a69721d158e236e6cb8bca933dd1d47ab57c93b4e1e1875a1d8d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/01-错题页-分身校准-V1-静态终帧.png",
+      "bytes": 27490,
+      "sha256": "c8a7da7dec846d0a350cd1ac9362ffb80b66dee83c6bca0fdd69c93cba2957dc",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/02-launch.png",
+      "bytes": 49495,
+      "sha256": "aac84778abdcbbb988faef7a80db96069c60f2b8ad11cd0a05842dbdc0fd1bf8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/02-今日完成-软胶星印-V1-静态终帧.png",
+      "bytes": 39642,
+      "sha256": "0be7c303c2ad5f3ab509a9604f39199e7acb9195ea30b861b3903c4704fbb8fe",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/02-回溯补能-倒转打捞-V1-静态终帧.png",
+      "bytes": 23243,
+      "sha256": "1a4110d0dba02ee59ec09aabacc44076e0cb7938dded06a27469d93726690e76",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/02-空数据-Q寻找后摊手-V1-结束静态图.png",
+      "bytes": 90809,
+      "sha256": "d5da8da95a17f7a3e8f0f9e901122eb077d0f4d5261b549a0fd41497790dc0b7",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/02-结果页-捕星确认-V1-静态终帧.png",
+      "bytes": 35435,
+      "sha256": "3862b9829aba7327dd74a9b8d1818bb0702939f8de048601891e0aa9f931df86",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/03-snap.png",
+      "bytes": 54589,
+      "sha256": "fa0ff3093b21f8ccc5632c8142e87ff8147588ccb4be98ef5de9953bdc112a64",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/03-我的页-月湾充能-V1-静态终帧.png",
+      "bytes": 32882,
+      "sha256": "c845780a72df01080159ea5f927bc8a7836731382d8e3cc61ae3be901d7144be",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/03-断网-天线打结-V1-结束静态图.png",
+      "bytes": 91771,
+      "sha256": "680291c157670aaaeba147ffda7bf4e29edd16f50ec6c3ecf2f5824aee930f31",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/03-校准反馈-信号发射-V1-静态终帧.png",
+      "bytes": 22996,
+      "sha256": "73e96b9edb506e48324af2eaf4e204d9f116ec3fb509c9291e3c120495a6f0c8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/04-ponder.png",
+      "bytes": 39165,
+      "sha256": "915181c4ca6c74e6bebf8f3494489461b442ddfff6a1c6ab5f482049cb111d0f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/04-提交失败-信号舱熄火-V1-结束静态图.png",
+      "bytes": 67105,
+      "sha256": "865db7b7b5d1a49dc716ac71edf937b861ad47d50583d96f4546e6bf34d5f13b",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/04-等待邀请-星门监听-V1-静态终帧.png",
+      "bytes": 27422,
+      "sha256": "b573407ad5627f22def76f9697012094e40845c3c622ed53f61d9f195e13ad96",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/05-confirm.png",
+      "bytes": 71130,
+      "sha256": "b9f091b7cf57e619e9883fa7a4eed0c7d0183914a735c8f861bc8949e29b840c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/05-网络恢复-青色信号接入-V1-结束静态图.png",
+      "bytes": 92244,
+      "sha256": "2634fa14498c75f78205b990dfc3b0f8d3721782df1abda45173230ae1828893",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/06-calibrate.png",
+      "bytes": 41588,
+      "sha256": "9c1a8bda55bd6e9e7adfb327b3c36f2fb05289ce6d4bcadf212aa13cee521947",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/06-继续练习-接续星轨-V1-结束静态图.png",
+      "bytes": 113624,
+      "sha256": "75bb2d63b00fac14e2dfbbba33c409d8a324329b7b69d26b28ab514b6f0d5894",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/07-seal.png",
+      "bytes": 71921,
+      "sha256": "59516f528a45858808a746ba7a5ff9aa0d3d7cb1f4de31a2271998efc5aeca85",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/07-提醒成功-提醒停靠-V1-结束静态图.png",
+      "bytes": 93775,
+      "sha256": "bc1176649aaf17d51a6cc2122ee3ee1e519166e8b46d0ff75f4ab14c4a3ed422",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/08-recharge.png",
+      "bytes": 55392,
+      "sha256": "bcbfdfbcb7b61f91b2308bfeda716f4242a10a54c9e95b8b97ffc30730290a28",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/欢迎返航-结尾分镜.png",
+      "bytes": 256676,
+      "sha256": "ab600524dd8e1cf0b8f637f725dea277fd2e28f0adfd1db09c7a78307498a9ec",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/formal-source/答题页-吸入知识点-V1-关键帧.png",
+      "bytes": 224388,
+      "sha256": "c546a67b81b4c64e3b625b2ac737c9f29eabc9e845721306f35e3fcb2ab14c73",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-alert.png",
+      "bytes": 14127,
+      "sha256": "ca124c2b775ce94ca973646df79cb02b03ddfc914b0e64365ed27fd0671908f1",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-curious-idle.png",
+      "bytes": 17997,
+      "sha256": "a85f1e18f96b669610ec9511e263b5dcc99be253b2cabf75a61f5b8d9b96d911",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-happy-jump.png",
+      "bytes": 19269,
+      "sha256": "f5c5da2989a082d5cd4177706b293b6a1ecec635335b1b70f0d3afaf4f450455",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-idle-blink.png",
+      "bytes": 20994,
+      "sha256": "86207d6c0f4fda8ac29d97b2f8695851d42bdf9a59230525d7fb434346382d32",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-orbit-lite.png",
+      "bytes": 35217,
+      "sha256": "d2fb9feab73d585bce597455abeb6c9a0f4b223b5bfbc0c63c034c5736a9c4ad",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-proud-idle.png",
+      "bytes": 22935,
+      "sha256": "bcb9dca66a7222355d06a2a34dd29367211a411c231de7e834170ea9c1765dee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-quiz-thinking.png",
+      "bytes": 16348,
+      "sha256": "b087fb4a9c9534ed9878461231520c61ba48e411441f184cca59356855c951b4",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-result-celebrate.png",
+      "bytes": 19269,
+      "sha256": "f5c5da2989a082d5cd4177706b293b6a1ecec635335b1b70f0d3afaf4f450455",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-thinking-micro.png",
+      "bytes": 16348,
+      "sha256": "b087fb4a9c9534ed9878461231520c61ba48e411441f184cca59356855c951b4",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-today-curious.png",
+      "bytes": 17997,
+      "sha256": "a85f1e18f96b669610ec9511e263b5dcc99be253b2cabf75a61f5b8d9b96d911",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-today-proud.png",
+      "bytes": 22935,
+      "sha256": "bcb9dca66a7222355d06a2a34dd29367211a411c231de7e834170ea9c1765dee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/motion/xingcheng-q-wink.png",
+      "bytes": 24612,
+      "sha256": "15b95186afb424f5722206e5250a4f44ba85115696f7637e9a00fd3ff789900b",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/scene-actions/xingcheng-q-answer-writing.png",
+      "bytes": 43911,
+      "sha256": "8704ac0dc7723c483bbff0cb89db348c5d4d6ab41e4f5542f8b5ba2c58537a6c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/scene-actions/xingcheng-q-present-result.png",
+      "bytes": 40243,
+      "sha256": "70bd9d508f49a276c7952162340a31287a984a7f8a8b8351999e0eff19a81b0d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/scene-actions/xingcheng-q-wave-invite.png",
+      "bytes": 42533,
+      "sha256": "97379aa95e5c5c75bfe63fb1c75646d2f5a583979f5d8eaf31dc38537c694516",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/01-peek.png",
+      "bytes": 34034,
+      "sha256": "88e3e8fdbf5b0c2852bb8d317f7bf99d124a2d30c15a810fa400843df6c1ffc3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/02-launch.png",
+      "bytes": 36337,
+      "sha256": "723d556806195d7063f61fcc21934b5c41f6e25717c92400f49aeb5eb353806c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/03-snap.png",
+      "bytes": 36565,
+      "sha256": "e15b3bafd0c60d728200666b4426a9fc781b55e7390bea310fe8f00c0b4dd6f0",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/04-ponder.png",
+      "bytes": 32070,
+      "sha256": "aeb3fd23c27159ca3dcfa20f3357f154020c59b3194134a3a083e30b7ee59d5d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/05-confirm.png",
+      "bytes": 45178,
+      "sha256": "443e2db846bbd389a1cf2e30d58fbf7bff7774c6ae798ce2e12abb7390c85ecd",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/06-calibrate.png",
+      "bytes": 36591,
+      "sha256": "550ed0e1d0c0899d2c71f49f3aa99f51083433a73419909705c82283e0e0b97d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/07-seal.png",
+      "bytes": 42830,
+      "sha256": "1c96c845f7bde1c1f3f02595146aaadc8b90764fb7dd5b458c7ec1466e030cf8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/08-recharge.png",
+      "bytes": 36823,
+      "sha256": "9672926315d81f1aa09d3471abbcaa377a71090ac9cbe06026ba4e4198ff0e6f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/home-body-stage2.png",
+      "bytes": 36060,
+      "sha256": "a4a270824e4297b42cdd47ea40dcfdc9bc6e08c6e4de7c33025d2244bcbca654",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/home-idle-discover-light.png",
+      "bytes": 39711,
+      "sha256": "08099288b65375de018eab6e87aed46d90c8f48c4aaa2ad4f21e815caad5340d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/knowledge-end-stage2.png",
+      "bytes": 47132,
+      "sha256": "18fc0ce3918cea291aa77dcdd48f582c7246237c6063c1b5cf359d581871ff99",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/knowledge-snack-star-appears.png",
+      "bytes": 51492,
+      "sha256": "3904d4f3bb8ee5fee631471a1aa1a9f09a1bbaaa72b305bc9549783f5b167abc",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/01-peek.png",
+      "bytes": 16808,
+      "sha256": "6e214dd3ababec49d9461d4ad79c2e4a4be81ac79d4a5f32cca58ea01b9c3a9f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/02-launch.png",
+      "bytes": 19437,
+      "sha256": "8afccd757446f7f5b96bc3c6fc86816266103fe978c6b0011df76005660f0981",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/03-snap.png",
+      "bytes": 18974,
+      "sha256": "8419388ad3258e7f4ac2c11dba5a6ca5dec88510f0c91b5e9c34bfb9deaa26a7",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/04-ponder.png",
+      "bytes": 16036,
+      "sha256": "5cd8b6ee92fd41be64028f89e2034d6fb7e6d091a5147bfba143f3a4c755a59e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/05-confirm.png",
+      "bytes": 24704,
+      "sha256": "24f59e13cbaf4fa672e9b2fe27d7230506b8a01ac5ddbb260196ba39f7c52f5c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/06-calibrate.png",
+      "bytes": 19414,
+      "sha256": "25dd86a4b7dd8b60e84d68a1664856a25dadff644a18334ff0719f893ea9a1ff",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/07-seal.png",
+      "bytes": 23455,
+      "sha256": "1a3702d76b7496b00398818ac6fb0dbb6c129502b036feebe8c1f950d86be801",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/static/small/08-recharge.png",
+      "bytes": 19201,
+      "sha256": "bbabbd5da78ad7cb193ddf1be93adb0141cef868d7988f10f845be23347916db",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/appearance.js",
+      "bytes": 5402,
+      "sha256": "cf21dcbf6d9db23d01132d71f7b85769010270557f24664f240567f0532767ec",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/behavior.js",
+      "bytes": 32768,
+      "sha256": "e967e5b6fcf251fe4d06f58d95831851227cefd18e57a4b7d208d9f5599ac743",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/collection.js",
+      "bytes": 2144,
+      "sha256": "086aea6ef5ed7d0866e8e4f6bfde905b59ef87f40d67483dcb5ec181125c18f5",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/index.js",
+      "bytes": 10857,
+      "sha256": "a4a535d19295617d3f737cd7934ca544fbc9d48921702fb92c6680ae40d487f9",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/index.json",
+      "bytes": 93,
+      "sha256": "c5aedb52b03fdd9b3198ffef1278136b892310f40b7e508f24156bb2dc6e394f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/index.wxml",
+      "bytes": 555,
+      "sha256": "699c6a763c918306497fd2656c1ca3872d973f65d21eda8651d0a522ad14069f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/index.wxss",
+      "bytes": 619,
+      "sha256": "cec91b3789520feb6fefd306f6047a1c3c4711776436623e5c5d5f91c13cb092",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/home-companions/scheduler.js",
+      "bytes": 5402,
+      "sha256": "b6ec907384644fc003041af1003c8a37a984740bdf6a95507bd594b104950188",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/personal-avatar/index.js",
+      "bytes": 371,
+      "sha256": "cd37ee285eeb7d6b2521ab97e23259e1955ba5c9ea88656b26c98ab7ba8f863a",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/personal-avatar/index.json",
+      "bytes": 19,
+      "sha256": "6bcc2e9e536384851fcfbdd823aee8ae4331243636adc4a656a64a44d9cf9318",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/personal-avatar/index.wxml",
+      "bytes": 117,
+      "sha256": "f316bdbb0cd324dbd8a13c1c080ed44250c53c35e53c20ae84e1663ec9f56a2e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/personal-avatar/index.wxss",
+      "bytes": 89,
+      "sha256": "6297043aa0b9c56533f557b9e7696c84bcabf73e42bfd98008b8e06041197ca1",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/reward-dialog/index.js",
+      "bytes": 2485,
+      "sha256": "5ce5587121e8174b8957e56a4dd8e606bdcc5df2ee6b5a06234fa9f4c76adc88",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/reward-dialog/index.json",
+      "bytes": 93,
+      "sha256": "c5aedb52b03fdd9b3198ffef1278136b892310f40b7e508f24156bb2dc6e394f",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/reward-dialog/index.wxml",
+      "bytes": 719,
+      "sha256": "a1c5bfa70432e97536a5209e9645c18a9c12076eb483e6ed8bda5ce79c1cf4af",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/reward-dialog/index.wxss",
+      "bytes": 1076,
+      "sha256": "b26017f12bd9dc047655b3d6c727d93e0a765d98a690c7a1fc293ac12b0482ff",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q/index.js",
+      "bytes": 3137,
+      "sha256": "f1009edb76a43865f2994d5276e7ceb9e4dd39a0b46dea7e17dd770f8281402a",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q/index.json",
+      "bytes": 24,
+      "sha256": "3cac147888c7f1804ca5c8fd5aeca071cc29e1a776c6c7c6d52d823c4f568ef3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q/index.wxml",
+      "bytes": 330,
+      "sha256": "43163d8181ac7d3d88b9486fe258172d487ec44e42185a5dac92eabdfe3fa4f1",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q/index.wxss",
+      "bytes": 163,
+      "sha256": "f4facf935fc80e1108efccc0a4e4245b22394edaa4777ac31a3025ecc536eb50",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-entry/draw.js",
+      "bytes": 14436,
+      "sha256": "0ba549a146aa929771fae117efdd85eca061fe8439645fa0102101a7cba5b5ee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-entry/index.js",
+      "bytes": 12395,
+      "sha256": "3119265e3b2fe2bb5e96ee97d6a8471517aaf3e33aa3b68516695771fca890aa",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-entry/index.json",
+      "bytes": 24,
+      "sha256": "3cac147888c7f1804ca5c8fd5aeca071cc29e1a776c6c7c6d52d823c4f568ef3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-entry/index.wxml",
+      "bytes": 351,
+      "sha256": "ff303740d6700bfe7fcb7525a4e8470167a72edceff8fa0c9a5e403d6efaffd5",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-entry/index.wxss",
+      "bytes": 141,
+      "sha256": "79e34f4a75aef0ff467e7d6e06cc92bcad5be783f1701608cb65ff3e8a7798ad",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/comics.js",
+      "bytes": 9611,
+      "sha256": "d1cd1039c98efd930f33d97d1441136443021bc97a3df4c079fa3ab6d5601abf",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/core.js",
+      "bytes": 19272,
+      "sha256": "343b55db59434da700374a9959ddc5793578570d493736a61ec1a9706ba3b721",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/director.js",
+      "bytes": 3633,
+      "sha256": "f422e3a7abe9ff35733a88077019139b0ad8619365f3ceb1741717579c5adef6",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/index.js",
+      "bytes": 6327,
+      "sha256": "b9535eee8219e11e0f523247be433206d41aad59de3b5abbfa7c2121f9a0ccf4",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/index.json",
+      "bytes": 22,
+      "sha256": "e7b657f5a4b032a68e9e084639b3a5564ce552896d269c3f8c4463bf7a7fa3b5",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/index.wxml",
+      "bytes": 575,
+      "sha256": "c67d35540462c4b90cbff59a1769e23a2e0c6dae07789ad6ead05fe8e3d5b23a",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/index.wxss",
+      "bytes": 329,
+      "sha256": "e42eee02b6570e83252beb3323a99a2a534fd6f5dbb434594757f8d9a71eabba",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/performance.js",
+      "bytes": 3813,
+      "sha256": "cee4e23c7569e35715b81bb2f07328c2bdaf5eb42350eb0267deffd75bd7c191",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/player.js",
+      "bytes": 5728,
+      "sha256": "b3f1d73d4201e09b503b978c6bb80cbf14e9097e0b5a66d1cf5d0f9537862df8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/sleep.js",
+      "bytes": 18927,
+      "sha256": "78e9134e565ff92a386396e94a482f822ac4427200cdb483008eefd315b81ae8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/timeline.js",
+      "bytes": 2266,
+      "sha256": "9d82c6b61afdb2c950233cd15a2d613d3b62a8357cdef6b474ebd99367850612",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-knowledge/index.js",
+      "bytes": 12513,
+      "sha256": "3ee341105622aa69f6963111914c1a8572cbf06a11c4808b42f2691faabca21e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-knowledge/index.json",
+      "bytes": 24,
+      "sha256": "3cac147888c7f1804ca5c8fd5aeca071cc29e1a776c6c7c6d52d823c4f568ef3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-knowledge/index.wxml",
+      "bytes": 663,
+      "sha256": "96e61efe54f1ac6c86f23a1ad1bfa3587912b679f0191e3ab672984e27106a36",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-knowledge/index.wxss",
+      "bytes": 619,
+      "sha256": "b51849547ad221bb9eca1f712c863f38da5e8a7136b9973973d87e9845a2a7a9",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/appearance.js",
+      "bytes": 4465,
+      "sha256": "733b2d96c5bf4879cca968636b95cadbeb3708161f5776620c0d8f8078f8e021",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/core.js",
+      "bytes": 4595,
+      "sha256": "67271df903d18a8fae1735acdb333be02395c9c0c31870cb640cdfd5aa62370b",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/emotions.js",
+      "bytes": 7549,
+      "sha256": "b99df6830ca58223c9109536f23ef3692c92bd538bc170cbbee1440796a7fcaa",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/expressions.js",
+      "bytes": 3638,
+      "sha256": "381f5acd4bbde6133134affd284a94961a412694bfb7dbc573006fdd9ef1994d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/eye-contour.js",
+      "bytes": 2167,
+      "sha256": "3d0a5ff7ff092f14bd0856a9543dacca3e583d377d467da2bc08b8022af28f4d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/face.js",
+      "bytes": 2298,
+      "sha256": "0b1a75225ca675b6c8aa40bbb0eaf6f76bdbef2d9e083bb1055b21fc151d0f21",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-motion/followup.js",
+      "bytes": 6851,
+      "sha256": "d86a827b6c4bc4ff0f92343729f84f9a2e62f2f017292dcbf1e8cc02b4fb53aa",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/index.js",
+      "bytes": 8516,
+      "sha256": "cf4064c4cd7ad7ec80ff3246cd29ed81ff10c59f7b80da2ff2846898fbcba80d",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/index.json",
+      "bytes": 22,
+      "sha256": "e7b657f5a4b032a68e9e084639b3a5564ce552896d269c3f8c4463bf7a7fa3b5",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/index.wxml",
+      "bytes": 494,
+      "sha256": "6882489f98e13bbb4dab27b5647a3798a2c8edcf4babfedbae65b894abedf2ee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/index.wxss",
+      "bytes": 311,
+      "sha256": "4301f362ff255a157a0dd77645a7896a242acac8023f5c72f869dc43e76cbda4",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/loading-motion.js",
+      "bytes": 688,
+      "sha256": "8195517df8341636b49cb91f7ca29ef80c37048e6d889d00503f3d21d1a63798",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/next-core.js",
+      "bytes": 11889,
+      "sha256": "69ff3d30929615940cbb573f38d00ba580bc8ecc056d55ad1ec17f609c1c20fd",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/empty.js",
+      "bytes": 3435,
+      "sha256": "b422bc520662a0ddcf186f5f39626d8c9bebb32ff7315823f4cf3a414d480881",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/failure.js",
+      "bytes": 1353,
+      "sha256": "62f39a0d38ad91a20c718e6be289545b527a47c6256ff9fd5c56c1b20befd76c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/loading.js",
+      "bytes": 1904,
+      "sha256": "f590e7b94ca35f16ab321d82e31d6d279ba10bdd607d60fc02e07f708ddfcc64",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/makeup.js",
+      "bytes": 1934,
+      "sha256": "cd7804dc71d9406a08d395b0c7a7761fed4d4aa525a48cde7cc17796b0f8f704",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/offline.js",
+      "bytes": 3466,
+      "sha256": "74d06d060442576518f0622efc3a85e93ade182f6a65041293ec2ae2b42d3e24",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/recovered.js",
+      "bytes": 1665,
+      "sha256": "3bdf5ee5316d1a8b0f12c689e53c757c211264ec460b6c51d45be00a2019d3e2",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/reminder.js",
+      "bytes": 1398,
+      "sha256": "4e5ab12ca819ccc5d2903d8acd906f2ef14370f5a59255552ea1b7431be3b9e0",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/report.js",
+      "bytes": 2101,
+      "sha256": "3fefc218a673ba11acecc236fc033e71b7f2d8cad587fd73d140561eaa5bceb4",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/resume.js",
+      "bytes": 1329,
+      "sha256": "5e1d334125aeeb091a8df55ead584e176f18f1e88deea44d1d654882ebf7c88e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/signal.js",
+      "bytes": 1642,
+      "sha256": "ca5a52e51336be9d9d4c43a00c1b2037cb169e96dc81dd59dcbc31746767ab6a",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/scenes/waiting.js",
+      "bytes": 1379,
+      "sha256": "58413ff8e970191767e1bb33c05742ec72abfe0b32375509a91a110755f85aee",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/system-core.js",
+      "bytes": 18920,
+      "sha256": "0a1868fab02225d50fadcdf3254331c27c02994f6cb4f40f7fcb19ef4af93a08",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/timeline.js",
+      "bytes": 2726,
+      "sha256": "c66f55ef402cd9fa0ba7ffb70586e170d201f73835c5ca6801243da910da9439",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-story/draw.js",
+      "bytes": 15684,
+      "sha256": "fcef49c3b7d0e09e59f11ed56a08066d112f20ba0231297a15d0a17a31ae6d58",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-story/index.js",
+      "bytes": 12698,
+      "sha256": "f7ef2bc8adf0dc35d34fc195f37128b0d6f42e794bbc3ebeb538848851055f9e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-story/index.json",
+      "bytes": 24,
+      "sha256": "3cac147888c7f1804ca5c8fd5aeca071cc29e1a776c6c7c6d52d823c4f568ef3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-story/index.wxml",
+      "bytes": 395,
+      "sha256": "1235b2eb3ff4d2524241a7d93b8b2db674ef6364e890341ae06f27e94f12f487",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-story/index.wxss",
+      "bytes": 141,
+      "sha256": "5aa7c44fa60ee00ae24502fe3bf5f7159daa799e472195eef907c28eba3cb7e7",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-variety/draw.js",
+      "bytes": 6267,
+      "sha256": "b4a5b6629a7799f5021f8ff40a28b0adc48123a1ce40626560dbd6496c8d7ee5",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-variety/index.js",
+      "bytes": 11517,
+      "sha256": "4e3ea0bf37ddb757caeb8818a0dace1ac40d33f6e8800b529d62ce58dbfa6ded",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-variety/index.json",
+      "bytes": 24,
+      "sha256": "3cac147888c7f1804ca5c8fd5aeca071cc29e1a776c6c7c6d52d823c4f568ef3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-variety/index.wxml",
+      "bytes": 399,
+      "sha256": "744a8ef41f6493ec64a0a6f6376be722c3b46f79423025da0648aeaec8ddea77",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-variety/index.wxss",
+      "bytes": 143,
+      "sha256": "46814e42ce9847c67db5755431abfb636b8cdb4f634382b43e92e01de42447e8",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/package.json",
+      "bytes": 83,
+      "sha256": "9cc4d883760666b2db07d70f95a59a1831b4f53a9a83e9263cb6aa0007bda3f9",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/utils/animation-visibility.js",
+      "bytes": 1578,
+      "sha256": "69d5c9b938d4d78aca7bec46a6c01d160cda71f7347f14e16b113350db6f5a61",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/utils/avatar-catalog.js",
+      "bytes": 6201,
+      "sha256": "fc0cb7b9db2c5cb51407ba6896cef6f0c6a4d8da972b393000340eba148d3a13",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/utils/avatar-colors.js",
+      "bytes": 1742,
+      "sha256": "e8038192e324318527bb8d848e63cc9eb4be3e2e8b25d2a7c5dddbfb6da68b15",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/utils/avatar.js",
+      "bytes": 3987,
+      "sha256": "1f2e48a3d5b363c890aebeeeec85f8f4ba228b90e331cb262be9291aff1f52c3",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/utils/nav-layout.js",
+      "bytes": 1280,
+      "sha256": "35346079de82dcead423c1ea473300ab3df3106e4bd9ee21785898216e165cbc",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/package.json",
+      "bytes": 147,
+      "sha256": "cf5dbaf046e48af6d7ea87f891dbd09656704d482bc095c861cfc736de75ba7a",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/scripts/build-avatar-acceptance.cjs",
+      "bytes": 11083,
+      "sha256": "a9669bb15b0a2e7e13ee5e500513a5a640e325286d6f1bdf9bb4b0931255b9f9",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/scripts/build-avatar-system.cjs",
+      "bytes": 3532,
+      "sha256": "53fbd62fd89a9b78c56168b153db816a85f99800d98881c32d80dc2d27c7f675",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/scripts/check-avatar-artwork.cjs",
+      "bytes": 5189,
+      "sha256": "642a6cedcccb8ef37d8d7d4ea768987f46b8fb18db6dde8a750e0accc6c83f4c",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/scripts/check-avatar-colors-native.cjs",
+      "bytes": 8109,
+      "sha256": "fb13699e57fee72dc3dfdaf12e848da84cc9c7d9bdfbf5408c08cec9e1584c38",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/scripts/check-avatar-native.cjs",
+      "bytes": 119,
+      "sha256": "621d5989a5dc2a92df07035bbc95ded92ae85eace0479c715bef7767f4ca77e6",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/tests/helpers/mascot-canvas.cjs",
+      "bytes": 6200,
+      "sha256": "78d73ef6c1b4d4794fb7890a73338317ec64723f829ee39e13ce94032420b075",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/tests/home-companion-variety.test.cjs",
+      "bytes": 6692,
+      "sha256": "1b5a264e2cd6ccedd532da3177122dd982655d1085a648d3b0312e8c9280ce0e",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/tests/xingcheng-q-brand-unification.test.cjs",
+      "bytes": 13963,
+      "sha256": "0af14cf6bcef37823ead96f9237759065f134cd270d6b8ff77bc7a8d940f4827",
+      "source": "原文件"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/吉祥物实现归档.md",
+      "bytes": 3279,
+      "sha256": "ae56ec183cdaee234e04dccc25d49b02afa293c54117c1e2027232c1d6b63a2b",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    },
+    {
+      "path": "归档验证.json",
+      "bytes": 442,
+      "sha256": "790a3d0a333a47a8d0eff44fdf7be32cf97c466d368ed6d92958af3119b7a3fa",
+      "source": "归档说明、入口更新或明确命名的源文件摘录"
+    }
+  ]
+}

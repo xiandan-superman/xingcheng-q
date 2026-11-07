@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" viewBox="0 0 512 512" version="1.1" role="img" aria-labelledby="master-title master-desc">
+  <title id="master-title">星橙Q标准正面母版</title>
+  <desc id="master-desc">依据已确认的中性正面制作。身体底色、体积明暗、左上四角星及双眼独立分层。全部为可编辑矢量，没有嵌入位图或新增造型。其他角度另见转面关系图。</desc>
+  <metadata>{"version": "20261105.2", "basis": "最新确认快照的idle中性静止帧", "reference": "R01", "view": "front-neutral", "bodyDiameter": 252, "units": "相对绘图单位，不是实体毫米尺寸", "sourcePixelMatch": true}</metadata>
+  <defs>
+    <radialGradient id="gradient_0" gradientUnits="userSpaceOnUse" cx="-45.360001" cy="-63" r="211.67999">
+      <stop offset="0" stop-color="#FFB65C"/>
+      <stop offset="0.30000001" stop-color="#FF9B36"/>
+      <stop offset="0.64999998" stop-color="#FF8027"/>
+      <stop offset="0.88" stop-color="#EF6B25"/>
+      <stop offset="1" stop-color="#DC5A24"/>
+    </radialGradient>
+    <radialGradient id="gradient_1" gradientUnits="userSpaceOnUse" cx="-2.52" cy="-25.200001" r="168.84">
+      <stop offset="0" stop-color="#C44D1D" stop-opacity="0"/>
+      <stop offset="0.57999998" stop-color="#C44D1D" stop-opacity="0"/>
+      <stop offset="1" stop-color="#BF4A1B" stop-opacity="0.11764706"/>
+    </radialGradient>
+  </defs>
+  <g id="body-color" inkscape:groupmode="layer" inkscape:label="01 身体底色渐变">
+    <circle cx="0" cy="0" r="126" transform="translate(256 278)" fill="url(#gradient_0)"/>
+  </g>
+  <g id="body-depth" inkscape:groupmode="layer" inkscape:label="02 身体柔和体积明暗">
+    <circle cx="0" cy="0" r="126" transform="translate(256 278)" fill="url(#gradient_1)"/>
+  </g>
+  <g id="identity-star" inkscape:groupmode="layer" inkscape:label="03 左上身份四角星">
+    <path fill="#FFF3CE" transform="translate(256 278)" d="M-68 -83.5 L-64.8180194846605 -70.1819805153395 L-51.5 -67 L-64.8180194846605 -63.8180194846605 L-68 -50.5 L-71.1819805153395 -63.8180194846605 L-84.5 -67 L-71.1819805153395 -70.1819805153395 Z"/>
+  </g>
+  <g id="eye-left" inkscape:groupmode="layer" inkscape:label="04 画面左眼">
+    <path fill="#FFF8EE" transform="matrix(1.145833333333333 0 0 0.8625 222 264)" d="M-12 -18L-11.897338 -19.566315L-11.59111 -21.105829L-11.086555 -22.592201L-10.392304 -24L-9.5202398 -25.305138L-8.485281 -26.485281L-7.3051372 -27.520241L-6 -28.392305L-4.5922012 -29.086554L-3.1058285 -29.59111L-1.5663143 -29.897339L-7.3478806e-16 -30L1.5663143 -29.897339L3.1058285 -29.59111L4.5922012 -29.086554L6 -28.392305L7.3051372 -27.520241L8.485281 -26.485281L9.5202398 -25.305138L10.392304 -24L11.086555 -22.592201L11.59111 -21.105829L11.897338 -19.566315L12 -18L12 -13.5L12 -9L12 -4.5L12 0L12 4.5L12 9L12 13.5L12 18L11.897338 19.566315L11.59111 21.105829L11.086555 22.592201L10.392304 24L9.5202398 25.305138L8.485281 26.485281L7.3051372 27.520241L6 28.392305L4.5922012 29.086554L3.1058285 29.59111L1.5663143 29.897339L7.3478806e-16 30L-1.5663143 29.897339L-3.1058285 29.59111L-4.5922012 29.086554L-6 28.392305L-7.3051372 27.520241L-8.485281 26.485281L-9.5202398 25.305138L-10.392304 24L-11.086555 22.592201L-11.59111 21.105829L-11.897338 19.566315L-12 18L-12 13.5L-12 9L-12 4.5L-12 0L-12 -4.5L-12 -9L-12 -13.5L-12 -18Z"/>
+  </g>
+  <g id="eye-right" inkscape:groupmode="layer" inkscape:label="05 画面右眼">
+    <path fill="#FFF8EE" transform="matrix(1.145833333333333 0 0 0.8625 290 264)" d="M-12 -18L-11.897338 -19.566315L-11.59111 -21.105829L-11.086555 -22.592201L-10.392304 -24L-9.5202398 -25.305138L-8.485281 -26.485281L-7.3051372 -27.520241L-6 -28.392305L-4.5922012 -29.086554L-3.1058285 -29.59111L-1.5663143 -29.897339L-7.3478806e-16 -30L1.5663143 -29.897339L3.1058285 -29.59111L4.5922012 -29.086554L6 -28.392305L7.3051372 -27.520241L8.485281 -26.485281L9.5202398 -25.305138L10.392304 -24L11.086555 -22.592201L11.59111 -21.105829L11.897338 -19.566315L12 -18L12 -13.5L12 -9L12 -4.5L12 0L12 4.5L12 9L12 13.5L12 18L11.897338 19.566315L11.59111 21.105829L11.086555 22.592201L10.392304 24L9.5202398 25.305138L8.485281 26.485281L7.3051372 27.520241L6 28.392305L4.5922012 29.086554L3.1058285 29.59111L1.5663143 29.897339L7.3478806e-16 30L-1.5663143 29.897339L-3.1058285 29.59111L-4.5922012 29.086554L-6 28.392305L-7.3051372 27.520241L-8.485281 26.485281L-9.5202398 25.305138L-10.392304 24L-11.086555 22.592201L-11.59111 21.105829L-11.897338 19.566315L-12 18L-12 13.5L-12 9L-12 4.5L-12 0L-12 -4.5L-12 -9L-12 -13.5L-12 -18Z"/>
+  </g>
+</svg>

@@ -1,0 +1,188 @@
+{
+  "version": "20261105.1",
+  "defaultShape": "round",
+  "legacyShapeAliases": {
+    "cercle": "round",
+    "galet": "blob",
+    "squircle": "star",
+    "triangle": "rice",
+    "hexagone": "hexagon",
+    "nuage": "cloud",
+    "goutte": "drop"
+  },
+  "shapes": [
+    {
+      "id": "round",
+      "name": "圆团"
+    },
+    {
+      "id": "blob",
+      "name": "果冻"
+    },
+    {
+      "id": "tip",
+      "name": "歪尖"
+    },
+    {
+      "id": "capsule",
+      "name": "胶囊"
+    },
+    {
+      "id": "hexagon",
+      "name": "六边"
+    },
+    {
+      "id": "crescent",
+      "name": "卷月"
+    },
+    {
+      "id": "drop",
+      "name": "水滴"
+    },
+    {
+      "id": "star",
+      "name": "胖星"
+    },
+    {
+      "id": "rice",
+      "name": "饭团"
+    },
+    {
+      "id": "heart",
+      "name": "爱心"
+    },
+    {
+      "id": "cloud",
+      "name": "云朵"
+    }
+  ],
+  "colors": [
+    {
+      "id": "xingcheng",
+      "name": "星橙橙",
+      "group": "primary"
+    },
+    {
+      "id": "rouge",
+      "name": "珊瑚红",
+      "group": "primary"
+    },
+    {
+      "id": "ambre",
+      "name": "琥珀黄",
+      "group": "primary"
+    },
+    {
+      "id": "vert",
+      "name": "薄荷绿",
+      "group": "primary"
+    },
+    {
+      "id": "bleu",
+      "name": "天空蓝",
+      "group": "primary"
+    },
+    {
+      "id": "violet",
+      "name": "紫罗兰",
+      "group": "primary"
+    },
+    {
+      "id": "rose",
+      "name": "玫瑰粉",
+      "group": "primary"
+    },
+    {
+      "id": "brun",
+      "name": "栗棕",
+      "group": "primary"
+    },
+    {
+      "id": "encre",
+      "name": "墨黑",
+      "group": "more"
+    },
+    {
+      "id": "orange",
+      "name": "暖橙",
+      "group": "more"
+    },
+    {
+      "id": "turquoise",
+      "name": "青绿",
+      "group": "more"
+    },
+    {
+      "id": "gris",
+      "name": "雾灰",
+      "group": "more"
+    },
+    {
+      "id": "creme",
+      "name": "奶油白",
+      "group": "more"
+    }
+  ],
+  "rules": [
+    {
+      "shape": "blob",
+      "metric": "answers",
+      "target": 1,
+      "enabled": true
+    },
+    {
+      "shape": "tip",
+      "metric": "answers",
+      "target": 3,
+      "enabled": true
+    },
+    {
+      "shape": "capsule",
+      "metric": "answers",
+      "target": 10,
+      "enabled": true
+    },
+    {
+      "shape": "hexagon",
+      "metric": "answers",
+      "target": 30,
+      "enabled": true
+    },
+    {
+      "shape": "crescent",
+      "metric": "answers",
+      "target": 60,
+      "enabled": true
+    },
+    {
+      "shape": "drop",
+      "metric": "answers",
+      "target": 100,
+      "enabled": true
+    },
+    {
+      "shape": "star",
+      "metric": "logins",
+      "target": 3,
+      "enabled": true
+    },
+    {
+      "shape": "rice",
+      "metric": "logins",
+      "target": 7,
+      "enabled": true
+    },
+    {
+      "shape": "heart",
+      "metric": "logins",
+      "target": 14,
+      "enabled": true
+    },
+    {
+      "shape": "cloud",
+      "metric": "logins",
+      "target": 30,
+      "enabled": true
+    }
+  ]
+}

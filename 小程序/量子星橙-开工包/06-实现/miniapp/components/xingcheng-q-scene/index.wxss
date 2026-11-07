@@ -1,0 +1,1 @@
+:host{display:inline-block;line-height:0;pointer-events:none}.scene-motion{position:relative;display:block}.scene-canvas,.scene-fallback{position:absolute;left:0;top:0;display:block;background:transparent}.scene-fallback{z-index:1;opacity:1}.scene-canvas{z-index:2;opacity:0}.scene-canvas.is-visible{opacity:1}

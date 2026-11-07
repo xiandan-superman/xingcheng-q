@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "revision": "accepted-family-selection-v5",
+  "protected_files": 729,
+  "changed": [],
+  "scope": "Only the independent preview and current visual proof were edited. Approved masters, accepted shape/palette studies and native miniapp sources were read-only. No cloud/upload/deployment actions.",
+  "browser_report": "browser-adaptation-verification.json",
+  "source_avatar_sync": "sync-companion-assets.cjs --check",
+  "non_runtime_deltas_observed": [
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/.DS_Store",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/design-qa.md",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/.DS_Store",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/_review-shots/wrong-layout-aligned.png",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/_review-shots/wrong-layout-implementation.png",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/_review-shots/me-layout-implementation.png",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/_review-shots/layout-qa-composite.jpg",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/_review-shots/practice-layout-aligned.png",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/_review-shots/practice-layout-implementation.png",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/.DS_Store",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/pages/.DS_Store",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/assets/xingcheng-q/.DS_Store",
+      "status": "removed"
+    },
+    {
+      "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-scene/.DS_Store",
+      "status": "removed"
+    }
+  ],
+  "note": "The adaptation left native runtime source and accepted artwork unchanged. Concurrent changes to OS metadata and earlier review artifacts were not reverted. The next explicitly requested per-shape color feature is a separate native-code change.",
+  "currentRevision": "per-shape-color-selection-v6",
+  "subsequentAuthorizedChange": "User explicitly requested native per-shape color persistence after the independent preview audit. The native change is audited separately in 06-实现/qa/2026-11-05/per-shape-colors/scope-and-review.json; accepted artwork and reward rules unchanged."
+}

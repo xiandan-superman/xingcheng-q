@@ -1,0 +1,4 @@
+:host { display:inline-block; line-height:0; }
+.xingcheng-q-entry { display:block; background:transparent; }
+
+:host { pointer-events:none; }

@@ -1,0 +1,16 @@
+<view class="q-wrap" style="width: {{size}}rpx; height: {{size}}rpx;">
+  <image
+    wx:if="{{showMotion}}"
+    class="q-image"
+    src="{{motionSrc}}"
+    mode="aspectFit"
+    aria-label="{{label}}"
+  />
+  <image
+    wx:else
+    class="q-image"
+    src="{{staticSrc}}"
+    mode="aspectFit"
+    aria-label="{{label}}"
+  />
+</view>

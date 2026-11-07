@@ -1,0 +1,96 @@
+{
+  "version": "20261105-cream-study.1",
+  "brandVersion": "20261105.3",
+  "shapeVersion": "20261105-shape-family.3",
+  "acceptedPaletteVersion": "20261105-fixed-palette.2",
+  "userApproval": {
+    "quote": "这版颜色可以，继续优化奶油白，保留眼睛和左上四角星，可以适当换个颜色来适配身体颜色，比如眼睛换成黑色。小尺寸也要能看清，先给我看效果。",
+    "accepted": "鲜亮修正配色通过；原形态保留。允许奶油白五官改色以提高小尺寸辨识。",
+    "scope": "奶油白A视觉适配已确认；B未采用，不授权运行接入或发布",
+    "selectionQuote": "A",
+    "selectedProfile": "ink-gold",
+    "selectionStatus": "user-confirmed"
+  },
+  "profiles": [
+    {
+      "id": "ink-gold",
+      "label": "A · 墨黑眼 / 暖棕星",
+      "short": "墨黑眼＋暖棕星",
+      "eyes": "#27231F",
+      "star": "#5B280A",
+      "role": "accepted",
+      "note": "已确认方案：墨黑双眼，暖棕星芒。"
+    },
+    {
+      "id": "cocoa",
+      "label": "B · 深可可眼 / 深可可星",
+      "short": "深可可眼＋深可可星",
+      "eyes": "#4E3324",
+      "star": "#4E3324",
+      "role": "unselected-reference",
+      "note": "未采用，仅保留为方案对照。"
+    },
+    {
+      "id": "previous",
+      "label": "原样参照 · 米白五官",
+      "short": "原样参照",
+      "eyes": "#FFF8EE",
+      "star": "#FFF3CE",
+      "role": "reference",
+      "note": "仅用于比较上轮小尺寸辨识问题。"
+    }
+  ],
+  "defaultStudyProfile": "ink-gold",
+  "referenceOnly": [
+    "previous",
+    "cocoa"
+  ],
+  "bodyPaint": {
+    "id": "creme",
+    "ramp": [
+      "#FFFCF5",
+      "#F7F0E5",
+      "#E9E0D3",
+      "#D5C8B6",
+      "#BDAA91"
+    ],
+    "shade": "#A58F71",
+    "status": "accepted-body-paint-unchanged"
+  },
+  "frozenSources": {
+    "../星橙Q-形状扩展-R2-20261105/shapes.js": "15c4f053f18420988f2db23fab9d9db7787504e5b851606711655d4603c07b16",
+    "../星橙Q-形状家族-R3-20261105/family.js": "b30cfdb49da61a32d6810a0351cb4036fb778b0658b8908d3f395418f8d3a62c",
+    "../星橙Q-固定配色-R4-20261105/palette.js": "aa7f1d638bfcd15856d793271b776240c1a1d7755f75d976d441cf587add11dd"
+  },
+  "preserved": [
+    "13色与8主推/5更多结构",
+    "11种身体轮廓",
+    "眼形眼距、星芒几何与位置",
+    "头像与伙伴同源",
+    "已通过的其他12套配色与品牌橙"
+  ],
+  "restrictions": [
+    "只针对奶油白适配，其他配色的五官不跟着变深",
+    "不新增独立人格或永久结构",
+    "不改小程序/云端/真实记录",
+    "不上传/部署/发布"
+  ],
+  "selection": {
+    "id": "ink-gold",
+    "status": "user-confirmed",
+    "quote": "A",
+    "date": "2026-11-05",
+    "scope": "奶油白A视觉适配确认；不授权运行接入或发布"
+  },
+  "acceptedProfile": "ink-gold",
+  "handoff": {
+    "entry": "cream.js",
+    "renderer": "QCreamStudy.paletteSVG",
+    "shapeCount": 11,
+    "paletteCount": 13,
+    "mainPaletteCount": 8,
+    "morePaletteCount": 5,
+    "creamProfile": "ink-gold",
+    "deployment": "not-integrated"
+  }
+}

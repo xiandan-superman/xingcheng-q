@@ -1,15 +1,8 @@
-node_modules
-dist
+node_modules/
 .DS_Store
-*.local
-.netlify
-.vercel
-.playwright-cli
-
-# config Claude Code personnelle, non partagee
-CLAUDE.local.md
-.claude/settings.local.json
-
-# carnet de travail interne, en francais et decrivant des bugs non corriges :
-# il vit sur le disque, rien n'en sort
-tasks/
+dist/
+output/
+.env*
+*.pem
+*.key
+project.private.config.json
