@@ -6,3 +6,5 @@ output/
 *.pem
 *.key
 project.private.config.json
+
+_site/

@@ -1,0 +1,7 @@
+:root {
+ --color-paper:#faf6ee;--color-paper-2:#f1ebdf;--color-paper-3:#fffcf6;--color-ink:#342b23;--color-ink-2:#514638;--color-muted:#786b5c;--color-rule:#dfd6c8;--color-white:#fffcf6;--color-accent:#ffb65c;--color-accent-deep:#f39b3b;--color-accent-ink:#342b23;--color-focus:#b34c1c;--color-soft:#f8e5cc;--color-dark:#292b33;--color-dark-ink:#f8f0e1;--color-clear:transparent;--color-shadow:#342b2314;--color-success:#38654d;--color-error:#9b3424;
+ --font-display:"QHappy","PingFang SC",sans-serif;--font-body:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+ --text-display:36px;--text-section:24px;--text-title:20px;--text-md:16px;--text-sm:14px;--text-xs:12px;
+ --space-2xs:4px;--space-xs:8px;--space-sm:12px;--space-md:16px;--space-lg:24px;--space-xl:32px;--space-2xl:48px;--space-3xl:64px;
+ --container:1400px;--gutter:40px;--radius-card:24px;--radius-input:12px;--radius-pill:999px;--dur-micro:120ms;--dur-short:180ms;--ease-out:cubic-bezier(.2,.8,.2,1);
+}

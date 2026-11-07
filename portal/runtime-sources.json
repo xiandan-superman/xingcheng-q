@@ -1,0 +1,11 @@
+{
+  "utils/avatar-catalog.js": "fc0cb7b9db2c5cb51407ba6896cef6f0c6a4d8da972b393000340eba148d3a13",
+  "utils/avatar.js": "1f2e48a3d5b363c890aebeeeec85f8f4ba228b90e331cb262be9291aff1f52c3",
+  "utils/avatar-colors.js": "e8038192e324318527bb8d848e63cc9eb4be3e2e8b25d2a7c5dddbfb6da68b15",
+  "components/home-companions/appearance.js": "cf21dcbf6d9db23d01132d71f7b85769010270557f24664f240567f0532767ec",
+  "components/xingcheng-q-motion/eye-contour.js": "3d0a5ff7ff092f14bd0856a9543dacca3e583d377d467da2bc08b8022af28f4d",
+  "components/xingcheng-q-motion/appearance.js": "733b2d96c5bf4879cca968636b95cadbeb3708161f5776620c0d8f8078f8e021",
+  "assets/xingcheng-q/appearance-assets.js": "889539a70419fc3535d466ed523c5ee8117b84862fb8084dc35ba91473ccb718",
+  "components/home-companions/behavior.js": "e967e5b6fcf251fe4d06f58d95831851227cefd18e57a4b7d208d9f5599ac743",
+  "components/home-companions/scheduler.js": "b6ec907384644fc003041af1003c8a37a984740bdf6a95507bd594b104950188"
+}
