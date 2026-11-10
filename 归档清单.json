@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1519,
-      "sha256": "3037f097d1953869cefd346bf9712b48db93104c9c07da07ae4f310ea76deced"
+      "bytes": 1632,
+      "sha256": "454b78605d600ec1152efa857551a569fbb4de8665f0816de598cb5f979d5dc6"
     },
     {
       "path": "index.html",
@@ -1794,8 +1794,8 @@
     },
     {
       "path": "归档验证.json",
-      "bytes": 1558,
-      "sha256": "038b36d50bf230b5695146a0ccc07101ed03c0939cfe032d91d87d5c8a3b93af"
+      "bytes": 1676,
+      "sha256": "326b4516e8649ba94b20ac50f2882256135882a7813420bafbb0cc8dca98bc0d"
     }
   ]
 }

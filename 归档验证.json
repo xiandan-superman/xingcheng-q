@@ -55,6 +55,14 @@
       "取消生成"
     ],
     "native": "已编译并检查入口截图；完整原生页面与真机尚未验收",
-    "miniappUpload": "等待微信开发者工具确认，尚未确认成功"
+    "miniappUpload": {
+      "status": "success",
+      "version": "0.1.20261110.1",
+      "bytes": {
+        "total": 2020078,
+        "main": 1796031
+      },
+      "formalRelease": false
+    }
   }
 }
