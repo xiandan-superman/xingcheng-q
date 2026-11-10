@@ -29,7 +29,7 @@ class Renderer{
    const from=this.pose&&{...this.pose},v={...this.velocity};
    if(this.variant==='candidate'&&from&&!cut&&!still){const old=this.scene(this.name),restore={...old.state};Object.assign(old.state,from);if(R.GESTURES[this.name])R.drawComic(this.sctx,from,{propsOnly:true});else{this.sctx._qPropsOnly=true;old.draw();this.sctx._qPropsOnly=false;}const image=this.makeCanvas(512,512);image.getContext('2d').drawImage(this.scratch,0,0);this.exitProps={image,at:sampleTime};Object.assign(old.state,restore);}else this.exitProps=null;
    this.name=effective;
-   const target0=this.sample(effective,0),target1=this.sample(effective,1/120);
+   const target0=this.sample(effective,sampleTime),target1=this.sample(effective,sampleTime+1/120);
    this.record=this.variant==='candidate'&&!cut&&from?{from,velocity:v,target0,targetVelocity:velocity(target0,target1,1/120),at:sampleTime}:null;
   }
   if(cut||still)this.record=null;

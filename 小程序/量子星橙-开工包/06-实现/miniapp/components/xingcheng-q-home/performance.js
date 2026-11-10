@@ -42,6 +42,16 @@ function feedback(base,phase,t){
  }else if(phase==='cancelled'){
   s.eyeOpenL=.9-.77*pulse(.1,.18,.25,.42);s.eyeOpenR=s.eyeOpenL;
  }
+ // Long-lived feedback stays attentive after its authored opening. The
+ // envelope starts with zero slope and never touches full-story choreography.
+ if((phase==='pending'||phase==='failure')&&t>2.4){
+  const enter=ease((t-2.4)/.8),cycle=(t-2.4)%6.8;
+  const glance=ease((cycle-.8)/.6)*(1-ease((cycle-2.6)/.8));
+  const blink=ease((cycle-4.1)/.08)*(1-ease((cycle-4.26)/.16));
+  const weight=phase==='failure'?.55:1;
+  s.eyeX+=enter*weight*4*glance;s.eyeY-=enter*weight*2*glance;
+  s.eyeOpenL*=1-.9*enter*blink;s.eyeOpenR*=1-.9*enter*blink;
+ }
  return s;
 }
 module.exports={bridge,BRIDGE_KEYS,BRIDGE_SECONDS,GESTURES,makeGesture,feedback,clamp,easing};

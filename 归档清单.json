@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-07",
-  "scope": "品牌资源、小程序吉祥物实现与形象体验馆，不含完整业务工程",
+  "date": "2026-11-10",
+  "scope": "品牌、吉祥物实现和体验馆",
   "files": [
     {
       "path": ".github/workflows/pages.yml",
@@ -19,13 +19,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1261,
-      "sha256": "44a53f0fb949b6abc951b0507908762364ff12022a4b4245dd3a6e529fa19465"
+      "bytes": 1519,
+      "sha256": "3037f097d1953869cefd346bf9712b48db93104c9c07da07ae4f310ea76deced"
     },
     {
       "path": "index.html",
-      "bytes": 7783,
-      "sha256": "2cbc69d6025a55e851924391b94d6caaf67e4457803f8ed1433b6e69e8fb1aa8"
+      "bytes": 8051,
+      "sha256": "9e82f761600f0a7139a2cc600764ddfb1a298ba8683e3947afa6d3b29a79bda1"
     },
     {
       "path": "package.json",
@@ -39,8 +39,8 @@
     },
     {
       "path": "portal/app.js",
-      "bytes": 15425,
-      "sha256": "f14071af01caac66a00390560e18fe77bec39a857ae2e097e4227b5a99df1597"
+      "bytes": 15443,
+      "sha256": "34fb798098fc3ed050ad35ec80a85ae7f5b039ead4d5afe778cc8bc623b4c4bc"
     },
     {
       "path": "portal/base.css",
@@ -59,8 +59,8 @@
     },
     {
       "path": "portal/runtime-sources.json",
-      "bytes": 972,
-      "sha256": "d1c1f4aa9d4768287ef30547bcaec32cf7fb1d795877fb960f82ecc15731157d"
+      "bytes": 1864,
+      "sha256": "98fea2e93497ccbda5045f120e505b6f4f4ddf7324358bccabb33fdcd76553c3"
     },
     {
       "path": "portal/runtime.js",
@@ -533,6 +533,21 @@
       "sha256": "b4bb09a353d129a8f47738cca75d9f28c26dea418f15b506981780206fceedeb"
     },
     {
+      "path": "previews/星橙Q-状态衔接-20261110/app.js",
+      "bytes": 3687,
+      "sha256": "e1af1d1ff6d3ec4ba7a42f8fd6298955edb5235f888733b76a5eb4665476f477"
+    },
+    {
+      "path": "previews/星橙Q-状态衔接-20261110/index.html",
+      "bytes": 1282,
+      "sha256": "50cd9c7eb7cece00e304c7f6669abb5c646906082197457d7cf6a961246be2b6"
+    },
+    {
+      "path": "previews/星橙Q-状态衔接-20261110/runtime.js",
+      "bytes": 136539,
+      "sha256": "d8d6b2df99dfa50b4602bfc7568e64a8e8379f717ad3027931107516180c2587"
+    },
+    {
       "path": "previews/星橙Q-首页动效优化对比-20261104/README.md",
       "bytes": 2746,
       "sha256": "caa82b9d1d82126216987abaebe239b1d0cdd6596b50b45f0b4f0b655a74820f"
@@ -654,8 +669,8 @@
     },
     {
       "path": "scripts/build-resource-hub.py",
-      "bytes": 2690,
-      "sha256": "74d82bdd1d9a21d628c1583ee3b1f70a91bcf1ba61bf55d7f1f4e4a37511da51"
+      "bytes": 3257,
+      "sha256": "330cde0a565c64109e13de55c277c06babbf692bb60d9369e52b38c35b8329e9"
     },
     {
       "path": "品牌资源/星橙Q/01-星橙Q通用角色基础.docx",
@@ -1474,13 +1489,13 @@
     },
     {
       "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/performance.js",
-      "bytes": 3813,
-      "sha256": "cee4e23c7569e35715b81bb2f07328c2bdaf5eb42350eb0267deffd75bd7c191"
+      "bytes": 4358,
+      "sha256": "41f1f1f2ddb23706b7debe0848fe8f833d6c7c42ac4b78439324b297fdebf64a"
     },
     {
       "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/player.js",
-      "bytes": 5728,
-      "sha256": "b3f1d73d4201e09b503b978c6bb80cbf14e9097e0b5a66d1cf5d0f9537862df8"
+      "bytes": 5748,
+      "sha256": "86325dd5f819c34c531d0b688e2a8123a865acf76c4a68a35b6bf3d744ab33eb"
     },
     {
       "path": "小程序/量子星橙-开工包/06-实现/miniapp/components/xingcheng-q-home/sleep.js",
@@ -1763,19 +1778,24 @@
       "sha256": "1b5a264e2cd6ccedd532da3177122dd982655d1085a648d3b0312e8c9280ce0e"
     },
     {
+      "path": "小程序/量子星橙-开工包/06-实现/tests/home-state-handoff.test.cjs",
+      "bytes": 2250,
+      "sha256": "82f5ff20b5e0a1161bb3b07592957afa05874988fddac0ebaa48c737cdaf2859"
+    },
+    {
       "path": "小程序/量子星橙-开工包/06-实现/tests/xingcheng-q-brand-unification.test.cjs",
       "bytes": 13963,
       "sha256": "0af14cf6bcef37823ead96f9237759065f134cd270d6b8ff77bc7a8d940f4827"
     },
     {
       "path": "小程序/量子星橙-开工包/06-实现/吉祥物实现归档.md",
-      "bytes": 3535,
-      "sha256": "1d640153c0d3f59f5957d6b40a773f65a92f685534137641e3bdb316bff39abd"
+      "bytes": 4074,
+      "sha256": "791672ac7da74eb24a45f31d4a8501352ba56da489da7a6579b83c9d6619718e"
     },
     {
       "path": "归档验证.json",
-      "bytes": 1194,
-      "sha256": "df3b579b7507dd7845b23966160ef27f78f7848f0bf8a3350c2ed05b3d79d16a"
+      "bytes": 1558,
+      "sha256": "038b36d50bf230b5695146a0ccc07101ed03c0939cfe032d91d87d5c8a3b93af"
     }
   ]
 }

@@ -7,5 +7,13 @@
   "components/xingcheng-q-motion/appearance.js": "733b2d96c5bf4879cca968636b95cadbeb3708161f5776620c0d8f8078f8e021",
   "assets/xingcheng-q/appearance-assets.js": "889539a70419fc3535d466ed523c5ee8117b84862fb8084dc35ba91473ccb718",
   "components/home-companions/behavior.js": "e967e5b6fcf251fe4d06f58d95831851227cefd18e57a4b7d208d9f5599ac743",
-  "components/home-companions/scheduler.js": "b6ec907384644fc003041af1003c8a37a984740bdf6a95507bd594b104950188"
+  "components/home-companions/scheduler.js": "b6ec907384644fc003041af1003c8a37a984740bdf6a95507bd594b104950188",
+  "components/xingcheng-q-home/player.js": "86325dd5f819c34c531d0b688e2a8123a865acf76c4a68a35b6bf3d744ab33eb",
+  "components/xingcheng-q-home/performance.js": "41f1f1f2ddb23706b7debe0848fe8f833d6c7c42ac4b78439324b297fdebf64a",
+  "components/xingcheng-q-home/comics.js": "d1cd1039c98efd930f33d97d1441136443021bc97a3df4c079fa3ab6d5601abf",
+  "components/xingcheng-q-motion/face.js": "0b1a75225ca675b6c8aa40bbb0eaf6f76bdbef2d9e083bb1055b21fc151d0f21",
+  "components/xingcheng-q-home/core.js": "343b55db59434da700374a9959ddc5793578570d493736a61ec1a9706ba3b721",
+  "components/xingcheng-q-motion/core.js": "67271df903d18a8fae1735acdb333be02395c9c0c31870cb640cdfd5aa62370b",
+  "components/xingcheng-q-home/timeline.js": "9d82c6b61afdb2c950233cd15a2d613d3b62a8357cdef6b474ebd99367850612",
+  "components/xingcheng-q-home/sleep.js": "78e9134e565ff92a386396e94a482f822ac4427200cdb483008eefd315b81ae8"
 }

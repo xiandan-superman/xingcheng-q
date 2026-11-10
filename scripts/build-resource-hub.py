@@ -21,6 +21,15 @@ script+='''const cache={};function load(id){if(cache[id])return cache[id].export
 '''
 script+='G.QHub={'+','.join(k+':load('+json.dumps(v)+')' for k,v in entries.items())+'};\n})(globalThis);\n'
 (PORTAL/'runtime.js').write_text(script)
+state_entry='components/xingcheng-q-home/player.js'
+collect(state_entry)
+state_dir=ROOT/'previews/星橙Q-状态衔接-20261110'
+state_dir.mkdir(parents=True,exist_ok=True)
+state_script='(function(G){const modules={'+','.join(json.dumps(k)+':function(module,exports,require){\n'+v+'\n}' for k,v in modules.items())+'};\n'
+state_script+=script[script.index('const cache='):script.index('G.QHub=')]
+state_script+='G.QPlayer=load('+json.dumps(state_entry)+');})(globalThis);\n'
+(state_dir/'runtime.js').write_text(state_script)
+
 references=[]
 for p in sorted((ROOT/'品牌资源/星橙Q/参考样张').glob('*.png')):
  references.append({'name':p.stem[3:],'path':str(p.relative_to(ROOT))})
@@ -31,7 +40,7 @@ if '--site' in sys.argv:
  out=ROOT/'_site'
  if out.exists():shutil.rmtree(out)
  out.mkdir()
- for rel in ['index.html','portal','品牌资源/星橙Q','previews/星橙Q-三组交互样张-20261105/ui-assets/display.ttf']:
+ for rel in ['index.html','portal','previews/星橙Q-状态衔接-20261110','品牌资源/星橙Q','previews/星橙Q-三组交互样张-20261105/ui-assets/display.ttf']:
   source=ROOT/rel;target=out/rel;target.parent.mkdir(parents=True,exist_ok=True)
   if source.is_dir():shutil.copytree(source,target,ignore=shutil.ignore_patterns('.DS_Store'))
   else:shutil.copy2(source,target)
