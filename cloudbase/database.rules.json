@@ -1,0 +1,18 @@
+{
+  "subjects": { "read": false, "write": false },
+  "knowledge_l1": { "read": false, "write": false },
+  "knowledge_points": { "read": false, "write": false },
+  "knowledge_aliases": { "read": false, "write": false },
+  "knowledge_candidates": { "read": false, "write": false },
+  "questions": { "read": false, "write": false },
+  "users": { "read": false, "write": false },
+  "admins": { "read": false, "write": false },
+  "import_jobs": { "read": false, "write": false },
+  "legacy_map_reports": { "read": false, "write": false },
+  "l1_recalc_jobs": { "read": false, "write": false },
+  "attempts": { "read": false, "write": false },
+  "wrong_items": { "read": false, "write": false },
+  "practice_sessions": { "read": false, "write": false },
+  "daily_locks": { "read": false, "write": false },
+  "gen_tasks": { "read": false, "write": false }
+}

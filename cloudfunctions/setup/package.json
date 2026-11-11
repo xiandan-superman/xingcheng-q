@@ -1,0 +1,8 @@
+{
+  "name": "setup",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "wx-server-sdk": "~3.0.1"
+  }
+}
