@@ -1,0 +1,15 @@
+const assert = require('assert')
+const { isTermExplain, looksLikeBareTerm, withTaskPrefix } = require('./stem')
+
+assert.strictEqual(isTermExplain({ type: 'short', subtype: '名词解释' }), true)
+assert.strictEqual(isTermExplain({ type: 'short' }), false)
+assert.strictEqual(looksLikeBareTerm('固溶度'), true)
+assert.strictEqual(looksLikeBareTerm('请简述固溶体的定义'), false)
+assert.strictEqual(withTaskPrefix('固溶度', { type: 'short' }), '名词解释：固溶度')
+assert.strictEqual(withTaskPrefix('名词解释：固溶度', { type: 'short' }), '名词解释：固溶度')
+assert.strictEqual(withTaskPrefix('请简述杠杆定律的应用', { type: 'short' }), '请简述杠杆定律的应用')
+assert.strictEqual(withTaskPrefix('杠杆定律的应用', { type: 'short' }), '杠杆定律的应用')
+assert.strictEqual(withTaskPrefix('共析转变发生的温度是？', { type: 'single' }), '共析转变发生的温度是？')
+assert.strictEqual(withTaskPrefix('过冷度', { type: 'definition' }), '名词解释：过冷度')
+
+console.log('stem ok')

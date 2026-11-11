@@ -1,0 +1,201 @@
+/* ============ 今日页（顶部间距由 JS 精确注入） ============ */
+
+.streak-row { position:absolute;right:4rpx;top:0;z-index:3;display:flex;flex-direction:row;justify-content:flex-end;margin:0; }
+.streak-sticker { flex: none; font-size: 20rpx; padding: 7rpx 14rpx; }
+
+/* 标题区：文字与角色分区，互不重叠 */
+.hero {
+  position:relative;
+  display: flex; flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0;
+  margin: 8rpx 0 18rpx;
+}
+.hero-with-q { min-height:330rpx; }
+.hero-compact { min-height:0; margin-bottom:10rpx; }
+.hero-copy { flex:none; width:350rpx; min-width:0; padding-top:24rpx; box-sizing:border-box; }
+.hero-title { width:286rpx; margin:0 auto 16rpx; font-size:52rpx; line-height:1.08; }
+.hero-title-line { display:block; white-space:nowrap; }
+.hero-title-line + .hero-title-line { margin-top:10rpx; }
+.hero-sub { width:286rpx; margin:0 auto; font-size:24rpx; line-height:1.5; white-space:nowrap; }
+.hero-mission { width:286rpx; margin:24rpx auto 0; padding:14rpx 18rpx 15rpx; box-sizing:border-box; border:3rpx solid var(--ink); border-radius:18rpx; background:rgba(255,255,255,.66); box-shadow:4rpx 5rpx 0 rgba(53,199,216,.28); transform:rotate(-1deg); }
+.hero-mission-kicker { font-size:15rpx; line-height:1.2; letter-spacing:2rpx; color:var(--orange); font-weight:900; }
+.hero-mission-main { display:flex; align-items:center; gap:8rpx; margin-top:7rpx; font-size:24rpx; line-height:1.25; font-weight:900; white-space:nowrap; }
+.mission-star { color:var(--cyan); font-size:25rpx; }
+.hero-mission-sub { margin:5rpx 0 0 34rpx; font-size:19rpx; color:var(--muted); line-height:1.25; }
+.hero-q { flex: none; width: 150rpx; display: flex; flex-direction: row; justify-content: flex-end;  background: transparent; }
+
+/* 今日星题卡 */
+.question-card { padding: 34rpx 30rpx 30rpx; }
+.question-card.is-done { background: var(--ok-bg); box-shadow: 6rpx 8rpx 0 rgba(61,218,140,.3); }
+.q-badge {
+  position: absolute;
+  top: 22rpx; right: 24rpx;
+  transform: rotate(8deg);
+  font-size: 24rpx;
+}
+.tags { margin-bottom: 18rpx; padding-right: 90rpx; }
+.question-label {
+  display: inline-block;
+  font-family: "ZCOOL KuaiLe Local", sans-serif;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.question-summary {
+  font-size: 29rpx;
+  line-height: 1.62;
+  color: var(--ink);
+  font-weight: 600;
+  border-left: 6rpx solid var(--orange);
+  padding-left: 20rpx;
+  margin-bottom: 18rpx;
+}
+.estimate {
+  font-size: 23rpx;
+  color: var(--muted);
+  background: rgba(53,216,240,.1);
+  border-radius: 12rpx;
+  padding: 10rpx 16rpx;
+}
+
+/* 星能轨迹卡 */
+.track { padding: 26rpx 26rpx 20rpx; background: var(--cream); box-shadow: 6rpx 8rpx 0 rgba(240,200,80,.35); }
+.track-stats { gap: 26rpx; margin-bottom: 26rpx; }
+.track-stat { display: flex; flex-direction: column; }
+.energy-num { font-size: 48rpx; line-height: 1; }
+.track-label { font-size: 21rpx; color: var(--muted); margin-top: 6rpx; }
+
+/* 星轨 */
+.orbit { position: relative; padding-top: 10rpx; }
+.orbit-line {
+  position: absolute;
+  top: 52rpx;
+  left: 8%;
+  right: 8%;
+  height: 0;
+  border-top: 4rpx dashed rgba(255,138,42,.55);
+}
+.orbit-days { position: relative; display: flex; flex-direction: row; justify-content: space-between; }
+.orbit-day { display: flex; flex-direction: column; align-items: center; width: 13%; }
+.orbit-star {
+  width: 62rpx; height: 62rpx;
+  display: flex; flex-direction: row; align-items: center; justify-content: center;
+  font-size: 40rpx;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.star-done { color: var(--orange); text-shadow: 0 0 10rpx rgba(255,138,42,.7); }
+.star-today {
+  color: var(--ink);
+  font-size: 50rpx;
+  background: var(--yellow);
+  border: 3rpx solid var(--ink);
+  box-shadow: 0 0 14rpx rgba(248,255,99,.8);
+}
+.star-missed { color: var(--disabled); }
+.star-picked { background: var(--yellow); border: 3rpx solid var(--ink); border-radius: 50%; }
+.orbit-date { font-size: 23rpx; font-weight: 800; margin-top: 8rpx; }
+.orbit-label { font-size: 19rpx; color: var(--muted); }
+.orbit-q { display: flex; flex-direction: row; justify-content: flex-end; margin-top: -6rpx; padding-right: 6rpx; }
+
+/* 补卡弹层 */
+.ticket {
+  background: var(--data-bg);
+  border: 3rpx solid var(--ink);
+  border-radius: 18rpx;
+  padding: 18rpx 24rpx;
+  font-size: 27rpx;
+  font-weight: 700;
+}
+.home-theater { flex:none; width:330rpx; height:330rpx; display:flex; justify-content:center; align-items:center; margin:0 -12rpx 0 0; }
+.load-inline { min-height:116rpx; display:flex; align-items:center; justify-content:center; gap:20rpx; padding:20rpx 28rpx; }
+.load-orbit { position:relative; width:54rpx; height:54rpx; flex:none; border:3rpx dashed var(--orange); border-radius:50%; animation:load-orbit-spin 1.25s linear infinite; }
+.load-orbit-core { position:absolute; left:50%; top:50%; width:18rpx; height:18rpx; margin:-9rpx 0 0 -9rpx; border-radius:50%; background:var(--orange); box-shadow:0 0 0 7rpx rgba(255,138,42,.12); }
+@keyframes load-orbit-spin { to { transform:rotate(360deg); } }
+.reduce-motion .load-orbit { animation:none; }
+.question-card { position:relative; overflow:hidden; }
+.completion-q { display:flex; justify-content:center; height:200rpx; margin:-8rpx 0 4rpx; }
+.system-card { display:flex; flex-direction:column; align-items:center; text-align:center; gap:8rpx; padding:24rpx; }
+.makeup-success { text-align:center; display:flex; flex-direction:column; align-items:center; }
+.status-title { font-size:28rpx; font-weight:800; margin-bottom:6rpx; }
+.status-sub { font-size:22rpx; color:var(--muted); line-height:1.45; }
+.network-recovered { position:fixed; left:32rpx; right:32rpx; top:180rpx; z-index:90; display:flex; align-items:center; gap:16rpx; padding:10rpx 20rpx; }
+/* 真机393：弹层定高 + 内层 scroll-view 给明确 px 高度。
+   不用 flex-wrap 估高（微信 scroll-view 会把换行内容裁在可视区外）。 */
+.makeup-overlay { z-index: 1000; }
+.page > .overlay.makeup-overlay { z-index: 1000; }
+.makeup-sheet {
+  height: 78vh;
+  max-height: calc(100vh - 88rpx - env(safe-area-inset-top)) !important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden !important;
+  padding-bottom: calc(12rpx + env(safe-area-inset-bottom)) !important;
+  box-sizing: border-box;
+}
+.makeup-head { flex: none; }
+.makeup-scroll {
+  flex: none;
+  width: 100%;
+  min-height: 200rpx;
+}
+.makeup-foot {
+  flex: none;
+  padding-top: 12rpx;
+  padding-bottom: 8rpx;
+  background: var(--paper);
+}
+.makeup-strip {
+  display: block;
+  font-size: 0;
+  padding: 4rpx 0 96rpx;
+  box-sizing: border-box;
+}
+.mk-day {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  gap: 4rpx;
+  padding: 14rpx 4rpx;
+  margin: 0 6rpx 12rpx 0;
+  border: 3rpx solid var(--ink);
+  border-radius: 18rpx;
+  background: var(--card);
+  min-width: 0;
+  width: calc(20% - 8rpx);
+  box-sizing: border-box;
+  font-size: 26rpx;
+}
+.mk-locked { opacity: .55; }
+.mk-star { font-size: 34rpx; line-height: 1; }
+.mk-date { font-size: 26rpx; font-weight: 800; }
+.mk-label { font-size: 18rpx; color: var(--muted); }
+.mk-done { background: var(--data-bg); }
+.mk-done .mk-star { color: var(--orange); }
+.mk-missed { border-style: dashed; border-color: var(--orange); background: rgba(255,138,42,.08); }
+.mk-missed .mk-star { color: var(--orange); }
+.mk-today { background: var(--yellow); }
+.mk-today .mk-star { color: var(--ink); }
+.mk-picked { background: var(--yellow); border-style: solid; box-shadow: 3rpx 4rpx 0 rgba(23,25,31,.85); transform: translateY(-4rpx); }
+.mk-legend { flex-wrap: wrap; }
+.lg { display: inline-flex; align-items: center; font-size: 21rpx; color: var(--muted); }
+.lg-dot { width: 18rpx; height: 18rpx; border-radius: 50%; margin-right: 8rpx; display: inline-block; }
+
+
+/* 开始跃迁：轻呼吸，增加仪式感（减少动态时由页面 still 控制角色；按钮微动可保留） */
+.btn-pulse {
+  animation: btn-pulse 1.8s ease-in-out infinite;
+}
+@keyframes btn-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 3rpx 4rpx 0 rgba(23,25,31,.85); }
+  50% { transform: scale(1.03); box-shadow: 5rpx 7rpx 0 rgba(23,25,31,.75); }
+}
+
+/* 已确认的页面细节优化：不修改角色选择器 */
+.question-label { font-size:24rpx; letter-spacing:1rpx; }
+.question-summary { line-height:1.75; overflow-wrap:break-word; }
+.estimate { line-height:1.6; }

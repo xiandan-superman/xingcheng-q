@@ -1,0 +1,198 @@
+<view class="page result safe-bottom has-navbar {{reduceMotion ? 'reduce-motion' : ''}}" style="padding-top:{{topPad}}px">
+  <!-- 自绘通知（替代 wx.showToast 系统样式） -->
+  <view wx:if="{{uvToast.show}}" class="uv-toast {{uvToast.type === 'err' ? 'uv-toast-err' : uvToast.type === 'star' ? '' : 'uv-toast-info'}}">
+    <text class="uv-toast-star">{{uvToast.type === 'err' ? '✗' : uvToast.type === 'star' ? '★' : '✦'}}</text>
+    <text class="uv-toast-txt">{{uvToast.text}}</text>
+    <view class="uv-toast-bar"></view>
+  </view>
+  <view class="topbar">
+    <view class="back-btn uv-press" bindtap="goBack" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120"><image src="/assets/icons/ic-back.png" mode="aspectFit"/></view>
+    <view class="nav-title">{{practiceReview ? '整套解析与自评' : '信号已返回'}}</view>
+    <view class="nav-right"></view>
+  </view>
+
+  <view wx:if="{{loading}}" class="card mt load-inline">
+  <xingcheng-q-scene scene="loading" motion="{{reduceMotion ? 'still' : 'auto'}}" size="220"/>
+  <view class="load-txt">正在读取结果…</view>
+</view>
+<view wx:elif="{{message}}" class="card mt load-inline"><view class="load-txt">{{message}}</view><button class="btn btn-yellow mt-s uv-press" bindtap="retryResult" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">重试</button></view>
+  <block wx:if="{{!loading && !message}}">
+  <view wx:if="{{practiceReview}}" class="notice notice-warm mt mb">整套已答完 · 第 {{reviewIndex + 1}} / {{reviewTotal}} 题</view>
+  <view class="card mt mb">
+    <rich-text nodes="{{resultStemNodes}}"/>
+    <image wx:for="{{images}}" wx:key="*this" class="review-diagram mt-s" src="{{item}}" mode="widthFix" data-url="{{item}}" bindtap="previewDiagram" binderror="imageFailed"/>
+    <view wx:if="{{imageMessage}}" class="notice notice-err mt-s">{{imageMessage}}</view>
+    <button wx:if="{{imageMessage}}" class="btn btn-ghost mt-s uv-press" loading="{{imagesLoading}}" disabled="{{imagesLoading}}" bindtap="loadQuestionImages" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">重新加载题图</button>
+    <view wx:for="{{resultOptions}}" wx:key="key" class="row gap-s mt-s">
+      <text>{{item.mark}}.</text><rich-text class="flex1" nodes="{{item.nodes}}"/>
+    </view>
+  </view>
+  <!-- 结果英雄区 -->
+  <view class="result-hero">
+    <view class="hero-q">
+      <xingcheng-q-variety wx:if="{{scene === 'wrong'}}" scene="orbit-repair" motion="{{resultMotion}}" size="144"/>
+      <xingcheng-q-story wx:else scene="star-catch" motion="{{resultMotion}}" size="184"/>
+    </view>
+    <view wx:if="{{verdict}}" class="verdict sticker sticker-{{verdictState === 'ok' ? 'green' : 'red'}} verdict-{{verdictState}}">
+      {{verdict}}
+    </view>
+    <view wx:else class="verdict-pill sticker sticker-yellow">逐小问自评中</view>
+    <view class="verdict-text text-secondary">
+      <block wx:if="{{finished && allCorrect}}">这道题已进入你的稳定星轨 ✦</block>
+      <block wx:elif="{{finished}}">这道题需要重新校准，已收入错题星轨</block>
+      <block wx:else>对照标准答案，给每个小问做自评吧</block>
+    </view>
+  </view>
+
+  <view wx:if="{{deferAnalysis}}" class="notice notice-warm mb">
+    <text>训练舱作答中：先完成整套，再统一查看解析。错了也可继续。</text>
+  </view>
+  <view wx:elif="{{!deferAnalysis && isComposite}}" class="notice {{verdictState === 'err' ? 'notice-err' : 'notice-warm'}} mb">
+    <image src="/assets/icons/ic-info.png" mode="aspectFit"/>
+    <text wx:if="{{verdictState === 'err'}}">星轨偏移：有小问答错，整题已（或将）进入待校准星轨。</text>
+    <text wx:else>综合题任一小问偏移，整道题将进入待校准星轨。</text>
+  </view>
+
+  <!-- 小问结果卡 -->
+  <view class="part-result card card-{{item.state === 'correct' ? 'ok' : item.state === 'wrong' ? 'err' : 'cream'}} mt card-in"
+    wx:for="{{parts}}" wx:key="title">
+    <view class="pr-head row between">
+      <view class="row gap-s">
+      <view class="sq-num num-{{partColors[index % 3]}}">{{index + 1}}</view>
+        <view class="pr-title">{{item.title}}</view>
+      </view>
+      <view wx:if="{{item.state === 'correct'}}" class="pill pill-soft-green">★ 这对了</view>
+      <view wx:elif="{{item.state === 'wrong'}}" class="pill pill-soft-red">✗ 这错了</view>
+    </view>
+
+    <rich-text wx:if="{{item.promptNodes.length}}" nodes="{{item.promptNodes}}"/>
+    <!-- 自评按钮（非回看） -->
+    <view wx:if="{{!review}}" class="assess row gap-s mt-s">
+      <button class="btn btn-small {{item.state === 'correct' ? 'btn-cyan' : 'btn-ghost'}} uv-press" data-index="{{index}}" data-state="correct" bindtap="setPartState" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">★ 这对了</button>
+      <button class="btn btn-small {{item.state === 'wrong' ? 'btn-orange' : 'btn-ghost'}} uv-press" data-index="{{index}}" data-state="wrong" bindtap="setPartState" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">✗ 这错了</button>
+    </view>
+
+    <view class="answer-block mt-s">
+      <view class="ab-label">你的作答</view>
+      <view class="ab-content ab-mine">{{answers[index] || '（未作答）'}}</view>
+    </view>
+    <block wx:if="{{!deferAnalysis}}">
+      <view class="answer-block mt-s">
+        <view class="ab-label">标准答案</view>
+        <view class="ab-content ab-standard"><rich-text nodes="{{item.answerNodes}}"/></view>
+      </view>
+      <view wx:if="{{item.analysis}}" class="parse mt-s">
+        <view class="ab-label h-cyan">✦ 星图解析</view>
+        <view class="ab-content"><rich-text nodes="{{item.analysisNodes}}"/></view>
+      </view>
+    </block>
+  </view>
+
+  <view wx:if="{{mistakeTips}}" class="card card-cream mt card-in">
+    <view class="ab-label h-orange">易错点</view>
+    <view class="ab-content">{{mistakeTips}}</view>
+  </view>
+
+  <!-- 完成后：星能反馈 -->
+  <view wx:if="{{finished && scene === 'daily'}}" class="energy-feedback card card-data mt anim-in">
+    <view class="row gap-s">
+      <view class="starbadge">★</view>
+      <view class="flex1">
+        <view class="ef-title">{{dailyDateLabel}}星能 +1</view>
+        <view class="text-secondary" style="font-size:22rpx">打卡记录已更新，星橙Q点亮了这一天的星。</view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 专项练完对错汇总 -->
+  <view wx:if="{{finished && showPracticeSummary && practiceSummary}}" class="practice-summary card card-data mt card-in">
+    <view class="recap-check" aria-hidden="true">✓</view>
+    <view class="eyebrow">PRACTICE RECAP</view>
+    <view class="ps-title">本次练习收获</view>
+    <view class="ps-stats row gap-s wrap mt-s">
+      <text class="pill pill-soft-green">吻合 {{practiceSummary.correct}}</text>
+      <text class="pill pill-soft-red">偏移 {{practiceSummary.wrong}}</text>
+      <text class="pill pill-fill-blue">共 {{practiceSummary.total}} 题</text>
+    </view>
+    <view class="text-secondary mt-s" style="font-size:24rpx;line-height:1.6">{{practiceSummary.narrative}}</view>
+    <view class="ps-list mt">
+      <view wx:for="{{practiceSummary.items}}" wx:key="index" class="ps-row row between" data-index="{{index}}" bindtap="reviewItem">
+        <text class="ps-stem">第 {{item.index}} 题 · {{item.stem}}</text>
+        <text class="pill {{item.result === 'correct' ? 'pill-soft-green' : 'pill-soft-red'}}">{{item.result === 'correct' ? '★ 对' : '✗ 错'}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部操作：前进主按钮固定为「下一题」；「上一题」只在确实后退时出现 -->
+  <view class="result-actions mt-l">
+    <block wx:if="{{!finished}}">
+      <button class="btn btn-yellow btn-block uv-press" disabled="{{submitting || imagesLoading || imageMessage}}" loading="{{submitting}}" bindtap="finish" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">{{practiceReview ? (hasNext ? '确认自评并看下一题' : '完成自评并查看汇总') : (hasNext ? '进入下一轨' : (scene === 'practice' ? '发送本轨信号' : '完成自评'))}}</button>
+    </block>
+    <block wx:elif="{{hasNext}}">
+      <button class="btn btn-yellow btn-block uv-press" bindtap="next" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">下一题</button>
+    </block>
+    <block wx:elif="{{scene === 'practice'}}">
+      <button class="btn btn-orange btn-block uv-press" bindtap="goPractice" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">返回练习舱</button>
+    </block>
+    <button wx:else class="btn btn-yellow btn-block uv-press" bindtap="goToday" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">返回今日</button>
+
+    <view class="result-actions-sub">
+      <button wx:if="{{practiceReview && hasPrevious}}" class="btn btn-small btn-ghost uv-press" bindtap="previous" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">上一题</button>
+      <button wx:if="{{finished && scene === 'practice' && !hasNext}}" class="btn btn-small btn-ghost uv-press" bindtap="goToday" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">回今日星站</button>
+      <button wx:if="{{finished && !allCorrect && !hasNext}}" class="btn btn-small btn-ghost uv-press" bindtap="goWrong" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">校准错轨</button>
+      <button class="btn btn-small btn-ghost uv-press" bindtap="openCorrection" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">星图校准</button>
+    </view>
+  </view>
+  </block>
+
+  <view wx:if="{{correctionSuccess}}" class="correction-success overlay">
+    <view class="sheet correction-success-card"><xingcheng-q-scene scene="signal" motion="{{reduceMotion ? 'still' : 'auto'}}" size="210"/><view class="sheet-title">校准信号已发射</view><view class="corr-sub">可在「我的 → 校准记录」查看处理状态</view></view>
+  </view>
+
+  <!-- 纠错弹层（与 quiz SCREEN9 对齐） -->
+  <view wx:if="{{showCorrection}}" class="overlay uv-taprow" bindtap="closeCorrection" hover-class="uv-taprow-hover" hover-start-time="0" hover-stay-time="80" >
+    <view class="sheet corr-sheet uv-sheet-drag {{correctionTracking ? 'is-tracking' : ''}}" style="transform:translateY({{correctionOffset}}px)" catchtap="noop">
+      <view class="uv-sheet-grip-hit" bindtouchstart="onCorrectionGripStart" catchtouchmove="onCorrectionGripMove" bindtouchend="onCorrectionGripEnd" bindtouchcancel="onCorrectionGripEnd">
+        <view class="uv-sheet-grip {{correctionTracking ? 'is-dragging' : ''}}"></view>
+      </view>
+      <view class="corr-head">
+        <view class="sheet-title" style="text-align:center">题目反馈 · 星图<text class="h-cyan">校准</text></view>
+        <view class="corr-sub">发现星图有偏差？帮我们校准它 ✦</view>
+      </view>
+
+      <view class="corr-qcard card mb">
+        <view class="corr-q-label">当前星题</view>
+        <view class="corr-q-meta">{{corrSubject}} · {{corrType}}</view>
+        <view class="corr-q-stem">{{corrStem}}</view>
+      </view>
+
+      <view class="type-label">问题类型</view>
+      <view class="uv-opt-chips mb">
+        <view wx:for="{{correctionTypes}}" wx:key="*this" data-type="{{item}}" bindtap="pickCorrection"
+          class="uv-opt-chip {{correctionType === item ? 'is-on' : ''}}" hover-class="uv-opt-chip-hover" hover-start-time="0" hover-stay-time="80">
+          <text>{{item}}</text>
+        </view>
+      </view>
+
+      <view class="type-label">校准说明</view>
+      <textarea class="input-box" style="min-height:160rpx" value="{{correctionText}}" bindinput="correctionInput"
+        placeholder="请描述你发现的星图偏差…" placeholder-class="sq-ph" maxlength="300" auto-height adjust-position="{{false}}"/>
+
+      <view class="type-label mt">附图（可选）</view>
+      <view class="corr-img-box uv-taprow" bindtap="pickCorrectionImage" hover-class="uv-taprow-hover" hover-start-time="0" hover-stay-time="80" >
+        <block wx:if="{{correctionLocalPath}}">
+          <image class="corr-preview" src="{{correctionLocalPath}}" mode="aspectFit" catchtap="previewCorrectionImage"/>
+          <view class="corr-img-hint">点击重选 · 无图也可提交</view>
+        </block>
+        <block wx:else>
+          <image class="corr-img-ico" src="/assets/icons/ic-correction.png" mode="aspectFit"/>
+          <view class="corr-img-hint">添加校准参考图</view>
+        </block>
+      </view>
+
+      <button class="btn btn-yellow btn-block mt uv-press" loading="{{sendingCorrection}}" disabled="{{sendingCorrection}}" bindtap="sendCorrection" hover-class="uv-press-hover" hover-start-time="0" hover-stay-time="120">提交反馈</button>
+      <view class="corr-foot">提交后可在「我的 → 星图校准记录」查看处理状态</view>
+    </view>
+  </view>
+</view>
